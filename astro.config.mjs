@@ -136,6 +136,11 @@ export default defineConfig({
               label: "Rest and Spread Operator in JavaScript",
               link: "/javascript/javascript_rest_and_spread_operator",
             },
+
+            {
+              label: "String in JavaScript",
+              link: "/javascript/string_javascript",
+            }
           ],
         },
         {
