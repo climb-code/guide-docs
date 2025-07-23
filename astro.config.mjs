@@ -140,7 +140,11 @@ export default defineConfig({
             {
               label: "String in JavaScript",
               link: "/javascript/string_javascript",
-            }
+            },
+            {
+              label: "Numbers in JavaScript",
+              link: "/javascript/javascript_number",
+            },
           ],
         },
         {
