@@ -145,6 +145,10 @@ export default defineConfig({
               label: "Numbers in JavaScript",
               link: "/javascript/javascript_number",
             },
+            {
+              label: "Date and Time in JavaScript",
+              link: "/javascript/javascript_date_time",
+            },
           ],
         },
         {
