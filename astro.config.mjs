@@ -149,11 +149,26 @@ export default defineConfig({
               label: "Date and Time in JavaScript",
               link: "/javascript/javascript_date_time",
             },
+            {
+              label: "JavaScript Arrays", 
+              link: "/javascript/javascript_array",
+            }
           ],
         },
         {
           label: "Node",
           items: [{ label: "What is Node", link: "/node/node/" }],
+        },
+        {
+          label: "Interview Questions",
+          items: [
+            {
+              label: "Mern Stack Interview Questions", 
+              link: "/interview-questions/mern-stack-interview-questions",
+            },
+            
+            
+          ],
         },
         {
           label: "Dsa JavaScript Questions",
