@@ -166,8 +166,10 @@ export default defineConfig({
               label: "Mern Stack Interview Questions", 
               link: "/interview-questions/mern-stack-interview-questions",
             },
-            
-            
+            {
+              label: "JavaScript-100-objective-based-questions",
+              link: "/interview-questions/js-output-based-questions",
+            },
           ],
         },
         {
