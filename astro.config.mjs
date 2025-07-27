@@ -163,6 +163,10 @@ export default defineConfig({
           label: "Interview Questions",
           items: [
             {
+              label: "React Interview Questions",
+              link: "/interview-questions/react-interview-questions",
+            },
+            {
               label: "Mern Stack Interview Questions", 
               link: "/interview-questions/mern-stack-interview-questions",
             },
