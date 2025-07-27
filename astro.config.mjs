@@ -160,6 +160,17 @@ export default defineConfig({
           items: [{ label: "What is Node", link: "/node/node/" }],
         },
         {
+          label: "Interview Questions",
+          items: [
+            {
+              label: "Mern Stack Interview Questions", 
+              link: "/interview-questions/mern-stack-interview-questions",
+            },
+            
+            
+          ],
+        },
+        {
           label: "Dsa JavaScript Questions",
           items: [
             { label: "Easy", link: "/dsa-js/questions/" },
