@@ -149,6 +149,10 @@ export default defineConfig({
               label: "Date and Time in JavaScript",
               link: "/javascript/javascript_date_time",
             },
+            {
+              label: "JavaScript Arrays", 
+              link: "/javascript/javascript_array",
+            }
           ],
         },
         {
