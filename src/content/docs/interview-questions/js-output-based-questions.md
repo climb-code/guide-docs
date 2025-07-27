@@ -3,7 +3,21 @@ title: JavaScript-100-objective-based-questions
 description: Common interview questions JS
 ---
 
-# 
+This document contains 100 commonly asked JavaScript interview questions with their answers. These questions cover various aspects of JavaScript including data types, operators, functions, OOP, asynchronous programming, and more.
+
+## Table of Contents
+
+1. [Basic JavaScript Questions](#basic-javascript-questions) (Questions 1-25)
+2. [Variables and Scope](#variables-and-scope) (Questions 26-35)
+3. [Functions and Closures](#functions-and-closures) (Questions 36-50)
+4. [Error Handling](#error-handling) (Questions 51-57)
+5. [Object-Oriented Programming](#object-oriented-programming) (Questions 58-62)
+6. [Web APIs & Asynchronous JavaScript](#web-apis--asynchronous-javascript) (Questions 63-67)
+7. [Arrays and Data Manipulation](#arrays-and-data-manipulation) (Questions 68-80)
+8. [Event Loop and Performance](#event-loop-and-performance) (Questions 81-88)
+9. [DOM Manipulation and Best Practices](#dom-manipulation-and-best-practices) (Questions 89-100)
+
+## Basic JavaScript Questions
 
 **1. Can we connect JavaScript Directly with Actual Database. can you give reason of it ?**
 
@@ -52,7 +66,7 @@ Answer: a) //
 </ul>
 </details>
 
-** 4. What will typeof null return?**
+**4. What will typeof null return ?**
 
 ```js
 a) "null"
@@ -82,8 +96,7 @@ Answer: c) var  user={name:'Anil'}; Object.freeze(obj);
 </ul>
 </details>
 
-**6. Operators & Expressions
-What will 2 + "2" evaluate to? **
+**6. Operators & Expressions What will 2 + "2" evaluate to ?**
 
 ```js
 a) 4
@@ -98,7 +111,7 @@ Answer: b) "22"
 </ul>
 </details>
 
-**_ 7.Which operator is used for strict equality in JavaScript?_**
+**7.Which operator is used for strict equality in JavaScript ?**
 
 ```js
 a) ==
@@ -113,7 +126,7 @@ Answer: b) !==
 </ul>
 </details>
 
-**8. What does !!"false" evaluate to?**
+**8. What does !!"false" evaluate to ?**
 
 ```js
 a) true
@@ -128,7 +141,7 @@ Answer: a) true
 </ul>
 </details>
 
-**9. What is the result of 5 == "5"?**
+**9. What is the result of 5 == "5" ?**
 
 ```js
 a) true
@@ -141,7 +154,7 @@ Answer: a) true
 </ul>
 </details>
 
-** 10. What is the result of type of "5 " === " 5"? **
+**10. What is the result of type of "5 " === " 5" ?**
 
 ```js
 a) true
@@ -154,7 +167,7 @@ Answer: b) false
 </ul>
 </details>
 
-** 11. Which loop is guaranteed to execute at least once? **
+**11. Which loop is guaranteed to execute at least once ?**
 
 ```
 a) for loop
@@ -190,7 +203,7 @@ Answer: a) Infinit Loop
 </ul>
 </details>
 
-** 13. What will console.log(typeof NaN); print? **
+**13. What will console.log(typeof NaN); print ?**
 
 ```js
 a) "number"
@@ -226,7 +239,7 @@ Answer: c) 0
 </ul>
 </details>
 
-**_ 15. What will console.log(typeof function(){}); return? _**
+**15. What will console.log(typeof function(){}); return ?**
 
 ```js
 a) "function"
@@ -256,7 +269,7 @@ Answer: c) "undefined"
 </ul>
 </details>
 
-**_ 17. What is the default return value of a function in JavaScript if no return statement is used? _**
+**17. What is the default return value of a function in JavaScript if no return statement is used ?**
 
 ```js
 a) null
@@ -271,7 +284,7 @@ Answer: b) undefined
 </ul>
 </details>
 
-** 18. Which type of function executes immediately after its definition? **
+**18. Which type of function executes immediately after its definition ?**
 
 ```js
 a) Anonymous function
@@ -286,7 +299,7 @@ Answer: c) IIFE
 </ul>
 </details>
 
-**19 Outpout of below statment **
+**19 Output of below statement**
 
 ```js
 console.log(x);
@@ -306,7 +319,7 @@ Answer: c) ReferenceError
 </ul>
 </details>
 
-**20. How do you create an object in JavaScript? **
+**20. How do you create an object in JavaScript ?**
 
 ```js
 a) let obj = {};
@@ -321,7 +334,7 @@ Answer: c) Both a and b
 </ul>
 </details>
 
-**21 How do you access a property in an object?**
+**21 How do you access a property in an object ?**
 
 ```js
 a) obj[property]
@@ -336,7 +349,7 @@ Answer: c) Both a and b
 </ul>
 </details>
 
-**22. Which method is used to add a new element at the end of an array?**
+**22. Which method is used to add a new element at the end of an array ?**
 
 ```js
 a) push()
@@ -351,7 +364,7 @@ Answer: a) push()
 </ul>
 </details>
 
-**23 What will console.log([1,2,3].length); return? **
+**23 What will console.log([1,2,3].length); return ?**
 
 ```js
 a) 2
@@ -381,7 +394,7 @@ Answer: d) splice()
 </ul>
 </details>
 
-**25 Which keyword allows block-scoped variable declarations? **
+**25 Which keyword allows block-scoped variable declarations ?**
 
 ```js
 a) var
@@ -412,7 +425,7 @@ Answer: b) They cannot be reassigned
 </ul>
 </details>
 
-**27. What is the output of console.log(typeof([]));? **
+**27. What is the output of console.log(typeof([])); ?**
 
 ```js
 a) "object"
@@ -427,7 +440,7 @@ Answer: a) "object"
 </ul>
 </details>
 
-**28 What is a template literal in JavaScript? **
+**28 What is a template literal in JavaScript ?**
 
 ```js
 a) A type of array
@@ -442,7 +455,7 @@ Answer: b) A string enclosed in backticks (` `)
 </ul>
 </details>
 
-**29. What will console.log(..."Hello"); output? **
+**29. What will console.log(..."Hello"); output ?**
 
 ```js
 a) "H e l l o"
@@ -457,7 +470,7 @@ Answer: a) "H e l l o"
 </ul>
 </details>
 
-** 30. How do you define an arrow function? **
+** 30. How do you define an arrow function ?**
 
 ```
 a) const add = (a, b) => a + b;
@@ -472,7 +485,7 @@ Answer: a) const add = (a, b) => a + b;
 </ul>
 </details>
 
-**31 What does the spread operator ... do in JavaScript?**
+**31 What does the spread operator ... do in JavaScript ?**
 
 ```js
 a) Combines arrays
@@ -486,7 +499,7 @@ Answer: C) All of the above
 </ul>
 </details>
 
-** 32. What will console.log([...new Set([1, 2, 2, 3])]); return? **
+** 32. What will console.log([...new Set([1, 2, 2, 3])]); return ?**
 
 ```js
 a) [1, 2, 3]
@@ -501,7 +514,7 @@ Answer: a) [1, 2, 3]
 </ul>
 </details>
 
-**33. Which statement about arrow functions is true? **
+**33. Which statement about arrow functions is true ?**
 
 ```js
 a) They do not bind this
@@ -539,7 +552,7 @@ Answer: a)  ['apple', 'banana', 'grapes']
 </ul>
 </details>
 
-**35. What is the purpose of JavaScript Promises?**
+**35. What is the purpose of JavaScript Promises ?**
 
 ```js
 a) Handle synchronous code
@@ -554,7 +567,7 @@ Answer: b) Handle asynchronous operations
 </ul>
 </details>
 
-**36. Which state is NOT valid for a Promise?**
+**36. Which state is NOT valid for a Promise ?**
 
 ```js
 a) Pending
@@ -599,7 +612,7 @@ Answer: b) document.getElementById()
 </ul>
 </details>
 
-**39 Which event is triggered when an input field loses focus?**
+**39 Which event is triggered when an input field loses focus ?**
 
 ```js
 a) click
@@ -614,7 +627,7 @@ Answer: b) blur
 </ul>
 </details>
 
-**40. Which method adds an event listener to an element?**
+**40. Which method adds an event listener to an element ?**
 
 ```js
 a) element.addEventListener()
@@ -629,7 +642,7 @@ Answer: a) element.addEventListener()
 </ul>
 </details>
 
-**41. What does event.preventDefault() do?**
+**41. What does event.preventDefault() do ?**
 
 ```js
 a) Stops the default action of an event
@@ -674,7 +687,7 @@ Answer: a) JSON.stringify()
 </ul>
 </details>
 
-**45 What will console.log(parseInt("10px")) return?**
+**45 What will console.log(parseInt("10px")) return ?**
 
 ```js
 a) 10
@@ -689,7 +702,7 @@ Answer: a) 10
 </ul>
 </details>
 
-**46. Which method executes a function repeatedly with a time interval? **
+**46. Which method executes a function repeatedly with a time interval ?**
 
 ```js
 a) setInterval()
@@ -704,7 +717,7 @@ Answer: a) setInterval()
 </ul>
 </details>
 
-** 47. How do you check if a variable is an array?**
+**47. How do you check if a variable is an array ?**
 
 ```js
 a) typeof x === "array"
@@ -734,7 +747,7 @@ Answer: d) Both a and c
 </ul>
 </details>
 
-**49. Which of the following is true about closures?**
+**49. Which of the following is true about closures ?**
 
 ```js
 a) Closures have access to their own scope
@@ -777,7 +790,7 @@ Answer: a) 1 2
 </ul>
 </details>
 
-**51. Which statement about var and let is true?**
+**51. Which statement about var and let is true ?**
 
 ```js
 a) Both are function-scoped
@@ -807,7 +820,7 @@ Answer: b) undefined
 </ul>
 </details>
 
-** 53. Which statement is used for error handling in JavaScript?**
+**53. Which statement is used for error handling in JavaScript ?**
 
 ```js
 a) try...catch
@@ -822,7 +835,7 @@ Answer: d) All of the above
 </ul>
 </details>
 
-**54 What happens if an error occurs inside the try block?**
+**54 What happens if an error occurs inside the try block ?**
 
 ```js
 a) The script stops execution
@@ -852,7 +865,7 @@ Answer: c) Throw a ReferenceError
 </ul>
 </details>
 
-**56. Which method is used to generate a custom error?**
+**56. Which method is used to generate a custom error ?**
 
 ```js
 a) throw new Error()
@@ -867,7 +880,7 @@ Answer: a) throw new Error()
 </ul>
 </details>
 
-**57. What will finally do in a try-catch-finally block?**
+**57. What will finally do in a try-catch-finally block ?**
 
 ```js
 a) Execute only if no error occurs
@@ -882,8 +895,7 @@ Answer: c) Always execute
 </ul>
 </details>
 
-**58. OOP (Object-Oriented Programming) in JavaScript
-Which keyword is used to create a class in JavaScript?**
+**58. OOP (Object-Oriented Programming) in JavaScript Which keyword is used to create a class in JavaScript?**
 
 ```js
 a) class
@@ -899,7 +911,7 @@ Answer: a) class
 </ul>
 </details>
 
-**59. What is the purpose of the constructor method in a class?**
+**59. What is the purpose of the constructor method in a class ?**
 
 ```js
 a) To create private variables
@@ -914,7 +926,7 @@ Answer: b) To initialize object properties
 </ul>
 </details>
 
-**60. Which keyword is used for inheritance in JavaScript?**
+**60. Which keyword is used for inheritance in JavaScript ?**
 
 ```js
 a) implements
@@ -929,7 +941,7 @@ Answer: b) extends
 </ul>
 </details>
 
-**61. Which method in a class is used to call the parent class constructor?**
+**61. Which method in a class is used to call the parent class constructor ?**
 
 ```js
 a) parent()
@@ -944,7 +956,7 @@ Answer: b) super()
 </ul>
 </details>
 
-**62 Which statement about JavaScript classes is true?**
+**62 Which statement about JavaScript classes is true ?**
 
 ```js
 a) They support multiple inheritance
@@ -975,7 +987,7 @@ Answer: d) All of the above
 </ul>
 </details>
 
-**64. Which method sends a GET request using Fetch API?**
+**64. Which method sends a GET request using Fetch API ?**
 
 ```js
 a) fetch(url)
@@ -990,7 +1002,7 @@ Answer: c) Both a and b
 </ul>
 </details>
 
-**65. What does navigator.geolocation.getCurrentPosition() do?**
+**65. What does navigator.geolocation.getCurrentPosition() do ?**
 
 ```js
 a) Gets user’s IP address
@@ -1005,7 +1017,7 @@ Answer: b) Gets user’s location
 </ul>
 </details>
 
-**66. Which storage API stores data persistently?**
+**66. Which storage API stores data persistently ?**
 
 ```js
 a) localStorage
@@ -1020,7 +1032,7 @@ Answer: a) localStorage
 </ul>
 </details>
 
-**67. How can you set an interval in JavaScript?**
+**67. How can you set an interval in JavaScript ?**
 
 ```js
 a) setTimeout()
@@ -1035,7 +1047,7 @@ Answer: b) setInterval()
 </ul>
 </details>
 
-**68 Which method removes an element from an array?**
+**68 Which method removes an element from an array ?**
 
 ```js
 a) splice()
@@ -1050,7 +1062,7 @@ Answer: a) splice()
 </ul>
 </details>
 
-**69. Which JavaScript engine is used in Google Chrome?**
+**69. Which JavaScript engine is used in Google Chrome ?**
 
 ```js
 a) SpiderMonkey
@@ -1065,7 +1077,7 @@ Answer: b) V8
 </ul>
 </details>
 
-**70. Which method converts a string into a number?**
+**70. Which method converts a string into a number ?**
 
 ```js
 a) parseInt()
@@ -1080,7 +1092,7 @@ Answer: d) All of the above
 </ul>
 </details>
 
-** 71. Which function generates a random number between 0 and 1?**
+**71. Which function generates a random number between 0 and 1 ?**
 
 ```js
 a) Math.random()
@@ -1095,7 +1107,7 @@ Answer: a) Math.random()
 </ul>
 </details>
 
-** 72. Which of the following is a falsy value in JavaScript?**
+**72. Which of the following is a falsy value in JavaScript ?**
 
 ```js
 a) "false"
@@ -1110,7 +1122,7 @@ Answer: c) undefined
 </ul>
 </details>
 
-**73 What will console.log([] == false); return?**
+**73 What will console.log([] == false); return ?**
 
 ```js
 a) true
@@ -1125,7 +1137,7 @@ Answer: a) true
 </ul>
 </details>
 
-**74. Which of the following is NOT a primitive data type in JavaScript?**
+**74. Which of the following is NOT a primitive data type in JavaScript ?**
 
 ```js
 a) Number
@@ -1140,7 +1152,7 @@ Answer: c) Object
 </ul>
 </details>
 
-**75 How do you deep clone an object in JavaScript?**
+**75 How do you deep clone an object in JavaScript ?**
 
 ```js
 a) Object.assign({}, obj)
@@ -1155,7 +1167,7 @@ Answer: b) JSON.parse(JSON.stringify(obj))
 </ul>
 </details>
 
-**76. What is the output of console.log(2 + "2" - 1);?**
+**76. What is the output of console.log(2 + "2" - 1); ?**
 
 ```js
 a) "21"
@@ -1170,7 +1182,7 @@ Answer: b) 21
 </ul>
 </details>
 
-**77. Which method is used to filter elements from an array?**
+**77. Which method is used to filter elements from an array ?**
 
 ```js
 a) map()
@@ -1185,7 +1197,7 @@ Answer: b) filter()
 </ul>
 </details>
 
-**78 Which function combines array elements into a single value?**
+**78 Which function combines array elements into a single value ?**
 
 ```js
 a) reduce()
@@ -1200,7 +1212,7 @@ Answer: a) reduce()
 </ul>
 </details>
 
-**79. What does the following code return?**
+**79. What does the following code return ?**
 
 ```js
 console.log([1, 2, 3].map((num) => num * 2));
@@ -1234,7 +1246,7 @@ Answer: c) splice()
 </ul>
 </details>
 
-**81. What is the event loop in JavaScript?**
+**81. What is the event loop in JavaScript ?**
 
 ```js
 a) A process that handles function calls
@@ -1249,7 +1261,7 @@ Answer: b) A mechanism that allows async operations
 </ul>
 </details>
 
-**82. Which of the following executes first in the event loop?**
+**82. Which of the following executes first in the event loop ?**
 
 ```js
 a) setTimeout()
@@ -1264,7 +1276,7 @@ Answer: d) console.log()
 </ul>
 </details>
 
-**83. Which queue does setTimeout() use in JavaScript?**
+**83. Which queue does setTimeout() use in JavaScript ?**
 
 ```js
 a) Microtask queue
@@ -1279,7 +1291,7 @@ Answer: b) Callback queue
 </ul>
 </details>
 
-**84. What will be the output of this code?**
+**84. What will be the output of this code ?**
 
 ```js
 console.log("A");
@@ -1300,7 +1312,7 @@ Answer: b) A C B
 </ul>
 </details>
 
-**85. Which of the following is a best practice in JavaScript?**
+**85. Which of the following is a best practice in JavaScript ?**
 
 ```js
 a) Using == instead of ===
@@ -1345,7 +1357,7 @@ Answer: a) Executes a function only at fixed intervals
 </ul>
 </details>
 
-**88. Which of the following improves JavaScript performance?**
+**88. Which of the following improves JavaScript performance ?**
 
 ```js
 a) Minifying JavaScript files
@@ -1360,7 +1372,7 @@ Answer: d) All of the above
 </ul>
 </details>
 
-**89. What is the best way to check if a variable is null or undefined?**
+**89. What is the best way to check if a variable is null or undefined ?**
 
 ```js
 a) if (x == null)
@@ -1375,7 +1387,7 @@ Answer: c) if (x === null || x === undefined)
 </ul>
 </details>
 
-**90. What does document.createElement('div') do?**
+**90. What does document.createElement('div') do ?**
 
 ```js
 a) Creates and appends a div
@@ -1390,7 +1402,7 @@ Answer: b) Creates a div but does not append it
 </ul>
 </details>
 
-**91. Which API is used to create animations in JavaScript?**
+**91. Which API is used to create animations in JavaScript ?**
 
 ```js
 a) WebGL
@@ -1405,7 +1417,7 @@ Answer: b) requestAnimationFrame()
 </ul>
 </details>
 
-**92. Which function removes whitespace from both ends of a string?**
+**92. Which function removes whitespace from both ends of a string ?**
 
 ```js
 a) trim()
@@ -1420,7 +1432,7 @@ Answer: a) trim()
 </ul>
 </details>
 
-**93. Which method removes the last element from an array?**
+**93. Which method removes the last element from an array ?**
 
 ```js
 a) pop()
@@ -1435,7 +1447,7 @@ Answer: a) pop()
 </ul>
 </details>
 
-**94. What is the output of the following code?**
+**94. What is the output of the following code ?**
 
 ```js
 console.log(myFunc);
@@ -1458,7 +1470,7 @@ Answer: c) ƒ myFunc() { return "Hello"; }
 </ul>
 </details>
 
-**95. Which of the following is an example of a higher-order function?**
+**95. Which of the following is an example of a higher-order function ?**
 
 ```js
 a) A function that returns another function
@@ -1473,7 +1485,7 @@ Answer: a) A function that returns another function
 </ul>
 </details>
 
-**96. Which method is used to handle asynchronous functions in JavaScript?**
+**96. Which method is used to handle asynchronous functions in JavaScript ?**
 
 ```js
 a) setTimeout()
@@ -1488,7 +1500,7 @@ Answer: d) All of the above
 </ul>
 </details>
 
-**97. Which of the following is NOT true about closures?**
+**97. Which of the following is NOT true about closures ?**
 
 ```js
 a) A closure allows a function to retain access to variables from its outer scope.
@@ -1504,7 +1516,7 @@ Answer: d) Closures cannot access global variables.
 </ul>
 </details>
 
-**98. What will be the output of the following code?**
+**98. What will be the output of the following code ?**
 
 ```js
 const obj = {
@@ -1529,7 +1541,7 @@ Answer: b) undefined
 </ul>
 </details>
 
-**99 What will be the output of the following asynchronous function?**
+**99 What will be the output of the following asynchronous function ?**
 
 ```js
 async function foo() {
