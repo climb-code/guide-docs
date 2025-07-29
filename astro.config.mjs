@@ -171,7 +171,7 @@ export default defineConfig({
               link: "/interview-questions/mern-stack-interview-questions",
             },
             {
-              label: "JavaScript-100-objective-based-questions",
+              label: "JavaScript 100 Objective Based Questions",
               link: "/interview-questions/js-output-based-questions",
             },
           ],
