@@ -163,6 +163,10 @@ export default defineConfig({
           label: "Interview Questions",
           items: [
             {
+              label: "JavaScript Interview Questions",
+              link: "/interview-questions/javascript-interview-questions",
+            },
+            {
               label: "React Interview Questions",
               link: "/interview-questions/react-interview-questions",
             },
