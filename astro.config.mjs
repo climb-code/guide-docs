@@ -163,11 +163,19 @@ export default defineConfig({
           label: "Interview Questions",
           items: [
             {
+              label: "JavaScript Interview Questions",
+              link: "/interview-questions/javascript-interview-questions",
+            },
+            {
+              label: "React Interview Questions",
+              link: "/interview-questions/react-interview-questions",
+            },
+            {
               label: "Mern Stack Interview Questions", 
               link: "/interview-questions/mern-stack-interview-questions",
             },
             {
-              label: "JavaScript-100-objective-based-questions",
+              label: "JavaScript 100 Objective Based Questions",
               link: "/interview-questions/js-output-based-questions",
             },
           ],
