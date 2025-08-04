@@ -171,6 +171,10 @@ export default defineConfig({
               link: "/interview-questions/react-interview-questions",
             },
             {
+              label: "MongoDB Interview Questions",
+              link: "/interview-questions/mongodb-interview-questions",
+            },
+            {
               label: "Mern Stack Interview Questions", 
               link: "/interview-questions/mern-stack-interview-questions",
             },
