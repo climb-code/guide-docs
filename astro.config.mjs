@@ -160,6 +160,10 @@ export default defineConfig({
           items: [{ label: "What is Node", link: "/node/node/" }],
         },
         {
+          label :"MY SQL",
+          items: [{ label: "What is My SQL", link: "/mysql/info-sql/"}]
+        },
+        {
           label: "Interview Questions",
           items: [
             {
