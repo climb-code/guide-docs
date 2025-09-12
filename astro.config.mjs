@@ -38,7 +38,7 @@ export default defineConfig({
             },
             {
               label: "Numbers in Python",
-              link: "/python/numbers-in-python"
+              link: "/python/numbers-in-python",
             },
             {
               label: "Operators in Python",
@@ -150,9 +150,9 @@ export default defineConfig({
               link: "/javascript/javascript_date_time",
             },
             {
-              label: "JavaScript Arrays", 
+              label: "JavaScript Arrays",
               link: "/javascript/javascript_array",
-            }
+            },
           ],
         },
         {
@@ -160,8 +160,17 @@ export default defineConfig({
           items: [{ label: "What is Node", link: "/node/node/" }],
         },
         {
-          label :"MY SQL",
-          items: [{ label: "What is My SQL", link: "/mysql/info-sql/"}]
+          label: "MY SQL",
+          items: [{ label: "What is My SQL", link: "/mysql/info-sql/" }],
+        },
+        {
+          label: "PostgreSQL",
+          items: [
+            {
+              label: "PostgreSQL Data Types",
+              link: "/pg/data-types/",
+            },
+          ],
         },
         {
           label: "Interview Questions",
@@ -179,7 +188,7 @@ export default defineConfig({
               link: "/interview-questions/mongodb-interview-questions",
             },
             {
-              label: "Mern Stack Interview Questions", 
+              label: "Mern Stack Interview Questions",
               link: "/interview-questions/mern-stack-interview-questions",
             },
             {
