@@ -178,6 +178,11 @@ export default defineConfig({
               label: " PostgreSQL Aggregation Functions",
               link: "/pg/postgres-aggregation-functions/",
             },
+
+            {
+              label: " PostgreSQL String Functions",
+              link: "/pg/postgres-string-functions/",
+            },
           ],
         },
         {
