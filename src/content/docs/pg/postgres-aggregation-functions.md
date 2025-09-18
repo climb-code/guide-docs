@@ -231,8 +231,15 @@ FROM employees;
 | ---------- |
 | 60000.00   |
 
+```sql
+SELECT *
+FROM employees
+WHERE salary = (SELECT MAX(salary) FROM employees);
+```
 
-
+| emp_id | fname  | lname  | email                                                       | dept    | salary   | hire_date  |
+| ------ | ------ | ------ | ----------------------------------------------------------- | ------- | -------- | ---------- |
+| 9      | Anjali | Mehta  | [anjali.mehta@example.com](mailto:anjali.mehta@example.com) | Finance | 61000.00 | 2018-12-03 |
 
 ---
 
