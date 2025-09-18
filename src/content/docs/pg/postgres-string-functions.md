@@ -172,6 +172,40 @@ SELECT REVERSE(name) AS rev_name FROM students;
 
 ---
 
+## ⬅️ 9. Left Part of String
+
+```sql
+SELECT LEFT(name, 5) AS left_name, name FROM students;
+```
+
+✅ Output:
+
+| left\_name | name           |
+| ---------- | -------------- |
+| Saurab     | Saurabh Jaykar |
+| Anita      | Anita Sharma   |
+| Rahul      | Rahul Kumar    |
+| Priya      | Priya Singh    |
+
+---
+
+## ➡️ 10. Right Part of String
+
+```sql
+SELECT RIGHT(name, 5) AS right_name, name FROM students;
+```
+
+✅ Output:
+
+| right\_name | name           |
+| ----------- | -------------- |
+| Jaykar      | Saurabh Jaykar |
+| Sharma      | Anita Sharma   |
+| Kumar       | Rahul Kumar    |
+| Singh       | Priya Singh    |
+
+---
+
 ## 📋 Cheat-Sheet Table
 
 | Function      | Example                              | Result      |           |   |            |             |
