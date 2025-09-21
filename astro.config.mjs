@@ -191,7 +191,11 @@ export default defineConfig({
             {
               label: " Check Contraint",
               link: "/pg/check-constraint/",
-            }
+            },
+            {
+              label: " PostgreSQL CASE Expression",
+              link: "/pg/postgres-case-expression/",
+            },
           ],
         },
         {
