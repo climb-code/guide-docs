@@ -170,6 +170,7 @@ export default defineConfig({
               label: "PostgreSQL Data Types",
               link: "/pg/data-types/",
             },
+
             {
               label: " PostgreSQL CRUD Clauses",
               link: "/pg/postgresql-crud-clauses/",
@@ -182,6 +183,10 @@ export default defineConfig({
             {
               label: " PostgreSQL String Functions",
               link: "/pg/postgres-string-functions/",
+            },
+            {
+              label: " PostgreSQL  Table Operations",
+              link: "/pg/postgresql-table-operations/",
             },
           ],
         },
