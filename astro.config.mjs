@@ -188,6 +188,10 @@ export default defineConfig({
               label: " PostgreSQL  Table Operations",
               link: "/pg/postgresql-table-operations/",
             },
+            {
+              label: " Check Contraint",
+              link: "/pg/check-constraint/",
+            }
           ],
         },
         {
