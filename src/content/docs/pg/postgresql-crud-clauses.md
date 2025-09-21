@@ -12,6 +12,7 @@ It’s written in **simple language** with examples you can try right away.
 
 CRUD stands for **Create, Read, Update, Delete** — the four main operations you perform on data.
 
+
 ---
 
 ###### 1. Create → `INSERT`

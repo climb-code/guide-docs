@@ -174,6 +174,15 @@ export default defineConfig({
               label: " PostgreSQL CRUD Clauses",
               link: "/pg/postgresql-crud-clauses/",
             },
+            {
+              label: " PostgreSQL Aggregation Functions",
+              link: "/pg/postgres-aggregation-functions/",
+            },
+
+            {
+              label: " PostgreSQL String Functions",
+              link: "/pg/postgres-string-functions/",
+            },
           ],
         },
         {
