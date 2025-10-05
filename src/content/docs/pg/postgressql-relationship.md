@@ -3,7 +3,6 @@ title: "PostgreSQL Relationships"
 description: "PostgreSQL supports several types of relationships between tables. Here’s how to add each type"
 ---
 
-# PostgreSQL Relationships Guide
 
 This guide explains how **primary keys**, **foreign keys**, and different types of relationships work in PostgreSQL with practical SQL examples.
 

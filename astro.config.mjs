@@ -196,6 +196,14 @@ export default defineConfig({
               label: " PostgreSQL CASE Expression",
               link: "/pg/postgres-case-expression/",
             },
+            {
+              label: " PostgreSQL Relationship",
+              link: "/pg/postgressql-relationship/",
+            },
+            {
+              label: " PostgreSQL Joins",
+              link: "/pg/postgresql-joins/",
+            },
           ],
         },
         {
