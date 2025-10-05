@@ -7,7 +7,7 @@ export default defineConfig({
     starlight({
       title: "Guide Docs",
       social: {
-        github: "https://github.com/saurabhjaykar1603",
+        github: "https://github.com/climb-code/guide-docs",
       },
       sidebar: [
         {
@@ -195,6 +195,14 @@ export default defineConfig({
             {
               label: " PostgreSQL CASE Expression",
               link: "/pg/postgres-case-expression/",
+            },
+            {
+              label: " PostgreSQL Relationship",
+              link: "/pg/postgressql-relationship/",
+            },
+            {
+              label: " PostgreSQL Joins",
+              link: "/pg/postgresql-joins/",
             },
           ],
         },
