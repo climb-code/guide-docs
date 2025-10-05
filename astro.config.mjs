@@ -7,7 +7,7 @@ export default defineConfig({
     starlight({
       title: "Guide Docs",
       social: {
-        github: "https://github.com/saurabhjaykar1603",
+        github: "https://github.com/climb-code/guide-docs",
       },
       sidebar: [
         {
