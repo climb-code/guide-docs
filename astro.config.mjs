@@ -153,6 +153,10 @@ export default defineConfig({
               label: "JavaScript Arrays",
               link: "/javascript/javascript_array",
             },
+            {
+              label: "Functions in JavaScript",
+              link: "/javascript/javascript_functions",
+            },
           ],
         },
         {
