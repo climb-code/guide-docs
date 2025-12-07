@@ -157,6 +157,10 @@ export default defineConfig({
               label: "Functions in JavaScript",
               link: "/javascript/javascript_functions",
             },
+            {
+              label: "Objects in JavaScript",
+              link: "/javascript/javascript_objects",
+            },
           ],
         },
         {
