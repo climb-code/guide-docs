@@ -162,6 +162,14 @@ export default defineConfig({
               label: "Objects in JavaScript",
               link: "/javascript/javascript_objects",
             },
+            {
+              label: "Control Flow in JavaScript",
+              link: "/javascript/javascript_control_flow",
+            },
+            // {
+            //   label: "Loops in JavaScript",
+            //   link: "/javascript/javascript_loops",
+            // },
           ],
         },
         {
