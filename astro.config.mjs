@@ -6,6 +6,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Guide Docs",
+      customCss: ["./src/styles/custom.css"],
       social: {
         github: "https://github.com/climb-code/guide-docs",
       },
