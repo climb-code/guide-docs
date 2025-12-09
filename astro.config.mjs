@@ -166,10 +166,10 @@ export default defineConfig({
               label: "Control Flow in JavaScript",
               link: "/javascript/javascript_control_flow",
             },
-            // {
-            //   label: "Loops in JavaScript",
-            //   link: "/javascript/javascript_loops",
-            // },
+            {
+              label: "Loops in JavaScript",
+              link: "/javascript/javascript_loops",
+            },
           ],
         },
         {
