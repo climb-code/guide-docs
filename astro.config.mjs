@@ -170,6 +170,10 @@ export default defineConfig({
               label: "Loops in JavaScript",
               link: "/javascript/javascript_loops",
             },
+            {
+              label: "Events in JavaScript",
+              link: "/javascript/javascript_events",
+            },
           ],
         },
         {
@@ -259,6 +263,18 @@ export default defineConfig({
         {
           label: "Devops",
           items: [
+            {
+              label: "Git Beginner Guide",
+              link: "/devops/git_beginner",
+            },
+            {
+              label: "Git Intermediate Guide",
+              link: "/devops/git_intermediate",
+            },
+            {
+              label: "Git Advanced Guide",
+              link: "/devops/git_advanced",
+            },
             {
               label: "Full Node.js Deployment to AWS",
               link: "/devops/aws_node_deployment",
