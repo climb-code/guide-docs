@@ -7,6 +7,9 @@ export default defineConfig({
     starlight({
       title: "Guide Docs",
       customCss: ["./src/styles/custom.css"],
+      components: {
+        ThemeSelect: './src/components/ThemeSelect.astro',
+      },
       social: {
         github: "https://github.com/climb-code/guide-docs",
       },

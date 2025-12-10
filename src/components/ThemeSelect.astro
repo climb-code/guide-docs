@@ -1,0 +1,196 @@
+---
+// Custom theme switcher with toggle switch and icons
+---
+
+<div class="theme-switcher">
+    <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle theme"
+        class="theme-toggle-btn"
+    >
+        <span class="theme-toggle-track">
+            <span class="theme-toggle-thumb">
+                <svg
+                    class="sun-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg
+                    class="moon-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    ></path>
+                </svg>
+            </span>
+        </span>
+    </button>
+</div>
+
+<script is:inline>
+    // Theme switching logic
+    const getThemePreference = () => {
+        if (typeof localStorage !== "undefined") {
+            const stored = localStorage.getItem("starlight-theme");
+            if (stored === "light" || stored === "dark") {
+                return stored;
+            }
+        }
+        return "dark"; // Default to dark mode
+    };
+
+    const setTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        if (typeof localStorage !== "undefined") {
+            localStorage.setItem("starlight-theme", theme);
+        }
+        updateToggleState(theme);
+    };
+
+    const updateToggleState = (theme) => {
+        const toggle = document.getElementById("theme-toggle");
+        if (toggle) {
+            toggle.setAttribute("data-theme", theme);
+            toggle.setAttribute(
+                "aria-label",
+                `Switch to ${theme === "light" ? "dark" : "light"} mode`,
+            );
+        }
+    };
+
+    // Initialize theme
+    const currentTheme = getThemePreference();
+    setTheme(currentTheme);
+
+    // Add click handler
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("theme-toggle");
+        if (toggle) {
+            toggle.addEventListener("click", () => {
+                const currentTheme = document.documentElement.dataset.theme;
+                const newTheme = currentTheme === "light" ? "dark" : "light";
+                setTheme(newTheme);
+            });
+        }
+    });
+
+    // Handle view transitions
+    document.addEventListener("astro:after-swap", () => {
+        const currentTheme = getThemePreference();
+        setTheme(currentTheme);
+    });
+</script>
+
+<style>
+    .theme-switcher {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .theme-toggle-btn {
+        position: relative;
+        background: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .theme-toggle-track {
+        position: relative;
+        width: 50px;
+        height: 26px;
+        background: var(--sl-color-gray-5);
+        border-radius: 13px;
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--sl-color-gray-4);
+    }
+
+    .theme-toggle-btn:hover .theme-toggle-track {
+        background: var(--sl-color-gray-4);
+    }
+
+    .theme-toggle-thumb {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background: var(--sl-color-accent);
+        border-radius: 50%;
+        transition:
+            transform 0.3s ease,
+            background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 2px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .theme-toggle-btn[data-theme="light"] .theme-toggle-thumb {
+        transform: translateX(24px);
+    }
+
+    .sun-icon,
+    .moon-icon {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        color: white;
+        transition: opacity 0.2s ease;
+    }
+
+    /* Show sun icon in light mode */
+    .theme-toggle-btn[data-theme="light"] .sun-icon {
+        opacity: 1;
+    }
+
+    .theme-toggle-btn[data-theme="light"] .moon-icon {
+        opacity: 0;
+    }
+
+    /* Show moon icon in dark mode */
+    .theme-toggle-btn[data-theme="dark"] .sun-icon {
+        opacity: 0;
+    }
+
+    .theme-toggle-btn[data-theme="dark"] .moon-icon {
+        opacity: 1;
+    }
+
+    /* Focus styles for accessibility */
+    .theme-toggle-btn:focus-visible {
+        outline: 2px solid var(--sl-color-accent);
+        outline-offset: 4px;
+        border-radius: 14px;
+    }
+</style>
