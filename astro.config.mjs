@@ -177,6 +177,10 @@ export default defineConfig({
               label: "Events in JavaScript",
               link: "/javascript/javascript_events",
             },
+            {
+              label: "Asynchronous JavaScript",
+              link: "/javascript/asynchronous_javascript",
+            },
           ],
         },
         {
