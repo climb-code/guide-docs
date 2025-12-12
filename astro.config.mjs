@@ -7,6 +7,9 @@ export default defineConfig({
     starlight({
       title: "Guide Docs",
       customCss: ["./src/styles/custom.css"],
+      components: {
+        ThemeSelect: './src/components/ThemeSelect.astro',
+      },
       social: {
         github: "https://github.com/climb-code/guide-docs",
       },
@@ -173,6 +176,14 @@ export default defineConfig({
             {
               label: "Events in JavaScript",
               link: "/javascript/javascript_events",
+            },
+            {
+              label: "Asynchronous JavaScript",
+              link: "/javascript/asynchronous_javascript",
+            },
+            {
+              label: "Error Handling in JavaScript",
+              link: "/javascript/javascript_error_handling",
             },
           ],
         },
