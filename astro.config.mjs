@@ -181,6 +181,10 @@ export default defineConfig({
               label: "Asynchronous JavaScript",
               link: "/javascript/asynchronous_javascript",
             },
+            {
+              label: "Error Handling in JavaScript",
+              link: "/javascript/javascript_error_handling",
+            },
           ],
         },
         {
