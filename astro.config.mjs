@@ -174,6 +174,10 @@ export default defineConfig({
               link: "/javascript/javascript_loops",
             },
             {
+              label: "DOM Manipulation in JavaScript",
+              link: "/javascript/javascript_dom",
+            },
+            {
               label: "Events in JavaScript",
               link: "/javascript/javascript_events",
             },
