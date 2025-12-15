@@ -189,6 +189,10 @@ export default defineConfig({
               label: "Error Handling in JavaScript",
               link: "/javascript/javascript_error_handling",
             },
+            {
+              label: "Modules in JavaScript",
+              link: "/javascript/javascript_modules",
+            },
           ],
         },
         {
