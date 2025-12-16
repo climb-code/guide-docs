@@ -193,6 +193,10 @@ export default defineConfig({
               label: "Modules in JavaScript",
               link: "/javascript/javascript_modules",
             },
+            {
+              label: "Classes in JavaScript",
+              link: "/javascript/javascript_classes",
+            },
           ],
         },
         {
