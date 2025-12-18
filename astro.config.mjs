@@ -162,6 +162,10 @@ export default defineConfig({
               link: "/javascript/javascript_functions",
             },
             {
+              label: "Closures in JavaScript",
+              link: "/javascript/javascript_closures",
+            },
+            {
               label: "Objects in JavaScript",
               link: "/javascript/javascript_objects",
             },
