@@ -198,6 +198,10 @@ export default defineConfig({
               link: "/javascript/javascript_modules",
             },
             {
+              label: "Prototypes and Inheritance in JavaScript",
+              link: "/javascript/javascript_prototypes",
+            },
+            {
               label: "Classes in JavaScript",
               link: "/javascript/javascript_classes",
             },
