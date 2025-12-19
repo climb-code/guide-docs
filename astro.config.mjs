@@ -120,6 +120,7 @@ export default defineConfig({
         {
           label: "JavaScript",
           items: [
+            // Fundamentals
             {
               label: "What is JavaScript",
               link: "/javascript/javascript_introduction",
@@ -136,11 +137,8 @@ export default defineConfig({
               label: "Stack and Heap Memory in JavaScript",
               link: "/javascript/javascript_stack_and_heap_memory",
             },
-            {
-              label: "Rest and Spread Operator in JavaScript",
-              link: "/javascript/javascript_rest_and_spread_operator",
-            },
-
+            
+            // Primitive Data Types
             {
               label: "String in JavaScript",
               link: "/javascript/string_javascript",
@@ -153,10 +151,28 @@ export default defineConfig({
               label: "Date and Time in JavaScript",
               link: "/javascript/javascript_date_time",
             },
+            
+            // Data Structures
             {
               label: "JavaScript Arrays",
               link: "/javascript/javascript_array",
             },
+            {
+              label: "Objects in JavaScript",
+              link: "/javascript/javascript_objects",
+            },
+            
+            // Modern Syntax (requires understanding of arrays/objects)
+            {
+              label: "Rest and Spread Operator in JavaScript",
+              link: "/javascript/javascript_rest_and_spread_operator",
+            },
+            {
+              label: "Destructuring in JavaScript",
+              link: "/javascript/javascript_destructuring",
+            },
+            
+            // Functions
             {
               label: "Functions in JavaScript",
               link: "/javascript/javascript_functions",
@@ -165,10 +181,8 @@ export default defineConfig({
               label: "Closures in JavaScript",
               link: "/javascript/javascript_closures",
             },
-            {
-              label: "Objects in JavaScript",
-              link: "/javascript/javascript_objects",
-            },
+            
+            // Control Flow
             {
               label: "Control Flow in JavaScript",
               link: "/javascript/javascript_control_flow",
@@ -177,6 +191,8 @@ export default defineConfig({
               label: "Loops in JavaScript",
               link: "/javascript/javascript_loops",
             },
+            
+            // DOM and Browser APIs
             {
               label: "DOM Manipulation in JavaScript",
               link: "/javascript/javascript_dom",
@@ -185,18 +201,22 @@ export default defineConfig({
               label: "Events in JavaScript",
               link: "/javascript/javascript_events",
             },
-            {
-              label: "Asynchronous JavaScript",
-              link: "/javascript/asynchronous_javascript",
-            },
+            
+            // Advanced Concepts
             {
               label: "Error Handling in JavaScript",
               link: "/javascript/javascript_error_handling",
             },
             {
+              label: "Asynchronous JavaScript",
+              link: "/javascript/asynchronous_javascript",
+            },
+            {
               label: "Modules in JavaScript",
               link: "/javascript/javascript_modules",
             },
+            
+            // Object-Oriented Programming
             {
               label: "Prototypes and Inheritance in JavaScript",
               link: "/javascript/javascript_prototypes",
