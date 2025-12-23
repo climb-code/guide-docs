@@ -40,7 +40,7 @@ export default defineConfig({
               label: "HTML Attributes",
               link: "/html/html_attributes",
             },
-            
+
             // Text and Content
             {
               label: "HTML Text Formatting",
@@ -54,7 +54,7 @@ export default defineConfig({
               label: "HTML Lists",
               link: "/html/html_lists",
             },
-            
+
             // Media and Data
             {
               label: "HTML Images",
@@ -72,7 +72,7 @@ export default defineConfig({
               label: "HTML Tables",
               link: "/html/html_tables",
             },
-            
+
             // Interactive and Advanced
             {
               label: "HTML Forms",
@@ -88,26 +88,114 @@ export default defineConfig({
             },
           ],
         },
+
         {
-          label: "Python",
+          label: "JavaScript",
           items: [
-            { label: "Introduction to Python", link: "/python/introduction" },
-            { label: "Python inner working", link: "/python/innerworking" },
+            // Fundamentals
             {
-              label: "Mutable and Immutable Types in Python",
-              link: "/python/mutable-and-immutable",
+              label: "What is JavaScript",
+              link: "/javascript/javascript_introduction",
             },
             {
-              label: "Data Types in Python",
-              link: "/python/data-types-python",
+              label: "Variables in JavaScript",
+              link: "/javascript/javascript_variables",
             },
             {
-              label: "Numbers in Python",
-              link: "/python/numbers-in-python",
+              label: "Datatypes in JavaScript",
+              link: "/javascript/javascript_datatypes",
             },
             {
-              label: "Operators in Python",
-              link: "/python/operators-in-python",
+              label: "Stack and Heap Memory in JavaScript",
+              link: "/javascript/javascript_stack_and_heap_memory",
+            },
+
+            // Primitive Data Types
+            {
+              label: "String in JavaScript",
+              link: "/javascript/string_javascript",
+            },
+            {
+              label: "Numbers in JavaScript",
+              link: "/javascript/javascript_number",
+            },
+            {
+              label: "Date and Time in JavaScript",
+              link: "/javascript/javascript_date_time",
+            },
+
+            // Data Structures
+            {
+              label: "JavaScript Arrays",
+              link: "/javascript/javascript_array",
+            },
+            {
+              label: "Objects in JavaScript",
+              link: "/javascript/javascript_objects",
+            },
+
+            // Modern Syntax (requires understanding of arrays/objects)
+            {
+              label: "Rest and Spread Operator in JavaScript",
+              link: "/javascript/javascript_rest_and_spread_operator",
+            },
+            {
+              label: "Destructuring in JavaScript",
+              link: "/javascript/javascript_destructuring",
+            },
+
+            // Functions
+            {
+              label: "Functions in JavaScript",
+              link: "/javascript/javascript_functions",
+            },
+            {
+              label: "Closures in JavaScript",
+              link: "/javascript/javascript_closures",
+            },
+
+            // Control Flow
+            {
+              label: "Control Flow in JavaScript",
+              link: "/javascript/javascript_control_flow",
+            },
+            {
+              label: "Loops in JavaScript",
+              link: "/javascript/javascript_loops",
+            },
+
+            // DOM and Browser APIs
+            {
+              label: "DOM Manipulation in JavaScript",
+              link: "/javascript/javascript_dom",
+            },
+            {
+              label: "Events in JavaScript",
+              link: "/javascript/javascript_events",
+            },
+
+            // Advanced Concepts
+            {
+              label: "Error Handling in JavaScript",
+              link: "/javascript/javascript_error_handling",
+            },
+            {
+              label: "Asynchronous JavaScript",
+              link: "/javascript/asynchronous_javascript",
+            },
+            {
+              label: "Modules in JavaScript",
+              link: "/javascript/javascript_modules",
+            },
+
+            // Object-Oriented Programming
+            {
+              label: "Prototypes and Inheritance in JavaScript",
+              link: "/javascript/javascript_prototypes",
+            },
+            {
+              label: "Classes in JavaScript",
+              link: "/javascript/javascript_classes",
             },
           ],
         },
@@ -178,121 +266,35 @@ export default defineConfig({
           ],
         },
 
-        {
-          label: "JavaScript",
-          items: [
-            // Fundamentals
-            {
-              label: "What is JavaScript",
-              link: "/javascript/javascript_introduction",
-            },
-            {
-              label: "Variables in JavaScript",
-              link: "/javascript/javascript_variables",
-            },
-            {
-              label: "Datatypes in JavaScript",
-              link: "/javascript/javascript_datatypes",
-            },
-            {
-              label: "Stack and Heap Memory in JavaScript",
-              link: "/javascript/javascript_stack_and_heap_memory",
-            },
-            
-            // Primitive Data Types
-            {
-              label: "String in JavaScript",
-              link: "/javascript/string_javascript",
-            },
-            {
-              label: "Numbers in JavaScript",
-              link: "/javascript/javascript_number",
-            },
-            {
-              label: "Date and Time in JavaScript",
-              link: "/javascript/javascript_date_time",
-            },
-            
-            // Data Structures
-            {
-              label: "JavaScript Arrays",
-              link: "/javascript/javascript_array",
-            },
-            {
-              label: "Objects in JavaScript",
-              link: "/javascript/javascript_objects",
-            },
-            
-            // Modern Syntax (requires understanding of arrays/objects)
-            {
-              label: "Rest and Spread Operator in JavaScript",
-              link: "/javascript/javascript_rest_and_spread_operator",
-            },
-            {
-              label: "Destructuring in JavaScript",
-              link: "/javascript/javascript_destructuring",
-            },
-            
-            // Functions
-            {
-              label: "Functions in JavaScript",
-              link: "/javascript/javascript_functions",
-            },
-            {
-              label: "Closures in JavaScript",
-              link: "/javascript/javascript_closures",
-            },
-            
-            // Control Flow
-            {
-              label: "Control Flow in JavaScript",
-              link: "/javascript/javascript_control_flow",
-            },
-            {
-              label: "Loops in JavaScript",
-              link: "/javascript/javascript_loops",
-            },
-            
-            // DOM and Browser APIs
-            {
-              label: "DOM Manipulation in JavaScript",
-              link: "/javascript/javascript_dom",
-            },
-            {
-              label: "Events in JavaScript",
-              link: "/javascript/javascript_events",
-            },
-            
-            // Advanced Concepts
-            {
-              label: "Error Handling in JavaScript",
-              link: "/javascript/javascript_error_handling",
-            },
-            {
-              label: "Asynchronous JavaScript",
-              link: "/javascript/asynchronous_javascript",
-            },
-            {
-              label: "Modules in JavaScript",
-              link: "/javascript/javascript_modules",
-            },
-            
-            // Object-Oriented Programming
-            {
-              label: "Prototypes and Inheritance in JavaScript",
-              link: "/javascript/javascript_prototypes",
-            },
-            {
-              label: "Classes in JavaScript",
-              link: "/javascript/javascript_classes",
-            },
-          ],
-        },
+
         {
           label: "Node",
           items: [
             { label: "What is Node", link: "/node/node/" },
             { label: "RSA Worker Authentication Guide", link: "/node/rsa-worker-authentication/" },
+          ],
+        },
+        {
+          label: "Python",
+          items: [
+            { label: "Introduction to Python", link: "/python/introduction" },
+            { label: "Python inner working", link: "/python/innerworking" },
+            {
+              label: "Mutable and Immutable Types in Python",
+              link: "/python/mutable-and-immutable",
+            },
+            {
+              label: "Data Types in Python",
+              link: "/python/data-types-python",
+            },
+            {
+              label: "Numbers in Python",
+              link: "/python/numbers-in-python",
+            },
+            {
+              label: "Operators in Python",
+              link: "/python/operators-in-python",
+            },
           ],
         },
         {
