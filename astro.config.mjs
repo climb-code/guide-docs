@@ -266,6 +266,12 @@ export default defineConfig({
           ],
         },
 
+        {
+          label: "Swift",
+          items: [
+            { label: "Introduction to Swift", link: "/swift/swift_introduction" },
+          ],
+        },
 
         {
           label: "Node",
