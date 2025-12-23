@@ -20,13 +20,74 @@ export default defineConfig({
             { label: "Introduction to Guide Docs", link: "/intro/intro/" },
           ],
         },
-        // {
-        //   label: "HTML",
-        //   items: [
-        //     // Each item here is one entry in the navigation menu.
-        //     { label: "What is HTML", link: "/html/html/" },
-        //   ],
-        // },
+        {
+          label: "HTML",
+          items: [
+            // Fundamentals
+            {
+              label: "Introduction to HTML",
+              link: "/html/html_introduction",
+            },
+            {
+              label: "HTML Document Structure",
+              link: "/html/html_document_structure",
+            },
+            {
+              label: "HTML Elements and Tags",
+              link: "/html/html_elements_and_tags",
+            },
+            {
+              label: "HTML Attributes",
+              link: "/html/html_attributes",
+            },
+            
+            // Text and Content
+            {
+              label: "HTML Text Formatting",
+              link: "/html/html_text_formatting",
+            },
+            {
+              label: "HTML Links",
+              link: "/html/html_links",
+            },
+            {
+              label: "HTML Lists",
+              link: "/html/html_lists",
+            },
+            
+            // Media and Data
+            {
+              label: "HTML Images",
+              link: "/html/html_images",
+            },
+            {
+              label: "HTML Audio and Video",
+              link: "/html/html_audio_video",
+            },
+            {
+              label: "HTML Embedded Content",
+              link: "/html/html_embedded_content",
+            },
+            {
+              label: "HTML Tables",
+              link: "/html/html_tables",
+            },
+            
+            // Interactive and Advanced
+            {
+              label: "HTML Forms",
+              link: "/html/html_forms",
+            },
+            {
+              label: "Semantic HTML",
+              link: "/html/html_semantic",
+            },
+            {
+              label: "HTML Best Practices",
+              link: "/html/html_best_practices",
+            },
+          ],
+        },
         {
           label: "Python",
           items: [
