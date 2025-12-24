@@ -150,6 +150,14 @@ export default defineConfig({
               link: "/javascript/javascript_functions",
             },
             {
+              label: "Callbacks in JavaScript",
+              link: "/javascript/javascript_callbacks",
+            },
+            {
+              label: "This Keyword in JavaScript",
+              link: "/javascript/javascript_this",
+            },
+            {
               label: "Closures in JavaScript",
               link: "/javascript/javascript_closures",
             },
@@ -182,6 +190,10 @@ export default defineConfig({
             {
               label: "Asynchronous JavaScript",
               link: "/javascript/asynchronous_javascript",
+            },
+            {
+              label: "Fetch API in JavaScript",
+              link: "/javascript/javascript_fetch_api",
             },
             {
               label: "Modules in JavaScript",
