@@ -124,6 +124,12 @@ export default defineConfig({
               link: "/javascript/javascript_date_time",
             },
 
+            // Working with Data
+            {
+              label: "JSON in JavaScript",
+              link: "/javascript/javascript_json",
+            },
+
             // Data Structures
             {
               label: "JavaScript Arrays",
@@ -172,6 +178,12 @@ export default defineConfig({
               link: "/javascript/javascript_loops",
             },
 
+            // Timing Functions
+            {
+              label: "Timers in JavaScript",
+              link: "/javascript/javascript_timers",
+            },
+
             // DOM and Browser APIs
             {
               label: "DOM Manipulation in JavaScript",
@@ -180,6 +192,10 @@ export default defineConfig({
             {
               label: "Events in JavaScript",
               link: "/javascript/javascript_events",
+            },
+            {
+              label: "Web Storage API in JavaScript",
+              link: "/javascript/javascript_web_storage",
             },
 
             // Advanced Concepts
