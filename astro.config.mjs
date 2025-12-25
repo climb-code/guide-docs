@@ -124,6 +124,12 @@ export default defineConfig({
               link: "/javascript/javascript_date_time",
             },
 
+            // Working with Data
+            {
+              label: "JSON in JavaScript",
+              link: "/javascript/javascript_json",
+            },
+
             // Data Structures
             {
               label: "JavaScript Arrays",
@@ -150,6 +156,14 @@ export default defineConfig({
               link: "/javascript/javascript_functions",
             },
             {
+              label: "Callbacks in JavaScript",
+              link: "/javascript/javascript_callbacks",
+            },
+            {
+              label: "This Keyword in JavaScript",
+              link: "/javascript/javascript_this",
+            },
+            {
               label: "Closures in JavaScript",
               link: "/javascript/javascript_closures",
             },
@@ -164,6 +178,12 @@ export default defineConfig({
               link: "/javascript/javascript_loops",
             },
 
+            // Timing Functions
+            {
+              label: "Timers in JavaScript",
+              link: "/javascript/javascript_timers",
+            },
+
             // DOM and Browser APIs
             {
               label: "DOM Manipulation in JavaScript",
@@ -172,6 +192,10 @@ export default defineConfig({
             {
               label: "Events in JavaScript",
               link: "/javascript/javascript_events",
+            },
+            {
+              label: "Web Storage API in JavaScript",
+              link: "/javascript/javascript_web_storage",
             },
 
             // Advanced Concepts
@@ -182,6 +206,10 @@ export default defineConfig({
             {
               label: "Asynchronous JavaScript",
               link: "/javascript/asynchronous_javascript",
+            },
+            {
+              label: "Fetch API in JavaScript",
+              link: "/javascript/javascript_fetch_api",
             },
             {
               label: "Modules in JavaScript",
@@ -270,6 +298,8 @@ export default defineConfig({
           label: "Swift",
           items: [
             { label: "Introduction to Swift", link: "/swift/swift_introduction" },
+            { label: "Getting Started with Swift", link: "/swift/swift_getting_started" },
+            { label: "Variables and Constants", link: "/swift/swift_variables_constants" },
           ],
         },
 
