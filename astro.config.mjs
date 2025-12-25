@@ -298,6 +298,8 @@ export default defineConfig({
           label: "Swift",
           items: [
             { label: "Introduction to Swift", link: "/swift/swift_introduction" },
+            { label: "Getting Started with Swift", link: "/swift/swift_getting_started" },
+            { label: "Variables and Constants", link: "/swift/swift_variables_constants" },
           ],
         },
 
