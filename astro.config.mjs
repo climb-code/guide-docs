@@ -412,6 +412,7 @@ export default defineConfig({
           items: [
             { label: "Easy", link: "/dsa-js/questions/" },
             { label: "Medium", link: "/dsa-js/medium/" },
+            { label: "Hard", link: "/dsa-js/hard/" },
             { label: "Advance Linked List", link: "/dsa-js/linkedlist/" },
           ],
         },
