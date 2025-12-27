@@ -301,6 +301,7 @@ export default defineConfig({
             { label: "Getting Started with Swift", link: "/swift/swift_getting_started" },
             { label: "Variables and Constants", link: "/swift/swift_variables_constants" },
             { label: "Data Types in Swift", link: "/swift/swift_data_types" },
+            { label: "Operators in Swift", link: "/swift/swift_operators" },
           ],
         },
 
