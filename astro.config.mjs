@@ -302,6 +302,7 @@ export default defineConfig({
             { label: "Variables and Constants", link: "/swift/swift_variables_constants" },
             { label: "Data Types in Swift", link: "/swift/swift_data_types" },
             { label: "Operators in Swift", link: "/swift/swift_operators" },
+            { label: "Strings and Characters", link: "/swift/swift_strings_characters" },
           ],
         },
 
