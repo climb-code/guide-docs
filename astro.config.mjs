@@ -303,6 +303,7 @@ export default defineConfig({
             { label: "Data Types in Swift", link: "/swift/swift_data_types" },
             { label: "Operators in Swift", link: "/swift/swift_operators" },
             { label: "Strings and Characters", link: "/swift/swift_strings_characters" },
+            { label: "Collections in Swift", link: "/swift/swift_collections" },
           ],
         },
 
