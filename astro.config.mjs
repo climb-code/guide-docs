@@ -304,6 +304,7 @@ export default defineConfig({
             { label: "Operators in Swift", link: "/swift/swift_operators" },
             { label: "Strings and Characters", link: "/swift/swift_strings_characters" },
             { label: "Collections in Swift", link: "/swift/swift_collections" },
+            { label: "Control Flow in Swift", link: "/swift/swift_control_flow" },
           ],
         },
 
