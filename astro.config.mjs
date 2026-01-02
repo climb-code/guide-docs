@@ -307,6 +307,7 @@ export default defineConfig({
             { label: "Control Flow in Swift", link: "/swift/swift_control_flow" },
             { label: "Loops in Swift", link: "/swift/swift_loops" },
             { label: "Functions in Swift", link: "/swift/swift_functions" },
+            { label: "Closures in Swift", link: "/swift/swift_closures" },
           ],
         },
 
