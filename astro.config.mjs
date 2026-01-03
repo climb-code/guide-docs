@@ -308,6 +308,7 @@ export default defineConfig({
             { label: "Loops in Swift", link: "/swift/swift_loops" },
             { label: "Functions in Swift", link: "/swift/swift_functions" },
             { label: "Closures in Swift", link: "/swift/swift_closures" },
+            { label: "Optionals in Swift", link: "/swift/swift_optionals" },
           ],
         },
 
