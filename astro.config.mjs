@@ -309,6 +309,7 @@ export default defineConfig({
             { label: "Functions in Swift", link: "/swift/swift_functions" },
             { label: "Closures in Swift", link: "/swift/swift_closures" },
             { label: "Optionals in Swift", link: "/swift/swift_optionals" },
+            { label: "Enumerations in Swift", link: "/swift/swift_enumerations" },
           ],
         },
 
