@@ -310,6 +310,9 @@ export default defineConfig({
             { label: "Closures in Swift", link: "/swift/swift_closures" },
             { label: "Optionals in Swift", link: "/swift/swift_optionals" },
             { label: "Enumerations in Swift", link: "/swift/swift_enumerations" },
+            { label: "Structures and Classes", link: "/swift/swift_structures_classes" },
+            { label: "Properties in Swift", link: "/swift/swift_properties" },
+            { label: "Methods in Swift", link: "/swift/swift_methods" },
           ],
         },
 
