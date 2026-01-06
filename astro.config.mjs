@@ -313,6 +313,7 @@ export default defineConfig({
             { label: "Structures and Classes", link: "/swift/swift_structures_classes" },
             { label: "Properties in Swift", link: "/swift/swift_properties" },
             { label: "Methods in Swift", link: "/swift/swift_methods" },
+            { label: "Inheritance in Swift", link: "/swift/swift_inheritance" },
           ],
         },
 
