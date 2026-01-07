@@ -314,6 +314,7 @@ export default defineConfig({
             { label: "Properties in Swift", link: "/swift/swift_properties" },
             { label: "Methods in Swift", link: "/swift/swift_methods" },
             { label: "Inheritance in Swift", link: "/swift/swift_inheritance" },
+            { label: "Protocols in Swift", link: "/swift/swift_protocols" },
           ],
         },
 
