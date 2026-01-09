@@ -316,6 +316,7 @@ export default defineConfig({
             { label: "Inheritance in Swift", link: "/swift/swift_inheritance" },
             { label: "Protocols in Swift", link: "/swift/swift_protocols" },
             { label: "Extensions in Swift", link: "/swift/swift_extensions" },
+            { label: "Generics in Swift", link: "/swift/swift_generics" },
           ],
         },
 
