@@ -317,6 +317,7 @@ export default defineConfig({
             { label: "Protocols in Swift", link: "/swift/swift_protocols" },
             { label: "Extensions in Swift", link: "/swift/swift_extensions" },
             { label: "Generics in Swift", link: "/swift/swift_generics" },
+            { label: "Error Handling in Swift", link: "/swift/swift_error_handling" },
           ],
         },
 
