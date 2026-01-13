@@ -320,6 +320,7 @@ export default defineConfig({
             { label: "Error Handling in Swift", link: "/swift/swift_error_handling" },
             { label: "Type Casting in Swift", link: "/swift/swift_type_casting" },
             { label: "Access Control in Swift", link: "/swift/swift_access_control" },
+            { label: "Memory Management (ARC)", link: "/swift/swift_memory_management" },
           ],
         },
 
