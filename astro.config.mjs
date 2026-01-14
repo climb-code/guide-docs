@@ -321,6 +321,7 @@ export default defineConfig({
             { label: "Type Casting in Swift", link: "/swift/swift_type_casting" },
             { label: "Access Control in Swift", link: "/swift/swift_access_control" },
             { label: "Memory Management (ARC)", link: "/swift/swift_memory_management" },
+            { label: "Concurrency in Swift", link: "/swift/swift_concurrency" },
           ],
         },
 
