@@ -324,6 +324,7 @@ export default defineConfig({
             { label: "Concurrency in Swift", link: "/swift/swift_concurrency" },
             { label: "Advanced Operators", link: "/swift/swift_advanced_operators" },
             { label: "Pattern Matching", link: "/swift/swift_pattern_matching" },
+            { label: "Working with JSON", link: "/swift/swift_working_with_json" },
           ],
         },
 
