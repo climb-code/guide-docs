@@ -325,6 +325,7 @@ export default defineConfig({
             { label: "Advanced Operators", link: "/swift/swift_advanced_operators" },
             { label: "Pattern Matching", link: "/swift/swift_pattern_matching" },
             { label: "Working with JSON", link: "/swift/swift_working_with_json" },
+            { label: "Networking in Swift", link: "/swift/swift_networking" },
           ],
         },
 
