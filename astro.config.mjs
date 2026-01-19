@@ -326,6 +326,7 @@ export default defineConfig({
             { label: "Pattern Matching", link: "/swift/swift_pattern_matching" },
             { label: "Working with JSON", link: "/swift/swift_working_with_json" },
             { label: "Networking in Swift", link: "/swift/swift_networking" },
+            { label: "SwiftUI Basics", link: "/swift/swift_swiftui_basics" },
           ],
         },
 
