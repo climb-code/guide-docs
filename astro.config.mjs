@@ -326,7 +326,13 @@ export default defineConfig({
             { label: "Pattern Matching", link: "/swift/swift_pattern_matching" },
             { label: "Working with JSON", link: "/swift/swift_working_with_json" },
             { label: "Networking in Swift", link: "/swift/swift_networking" },
+
+            // SwiftUI Section
             { label: "SwiftUI Basics", link: "/swift/swift_swiftui_basics" },
+            { label: "SwiftUI Navigation", link: "/swift/swift_swiftui_navigation" },
+            { label: "SwiftUI Animations", link: "/swift/swift_swiftui_animations" },
+            { label: "SwiftUI Lists & Grids", link: "/swift/swift_swiftui_lists_grids" },
+            { label: "SwiftUI Data Flow", link: "/swift/swift_swiftui_data_flow" },
           ],
         },
 
