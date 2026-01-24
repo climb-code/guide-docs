@@ -329,10 +329,16 @@ export default defineConfig({
 
             // SwiftUI Section
             { label: "SwiftUI Basics", link: "/swift/swift_swiftui_basics" },
+            { label: "SwiftUI Layout", link: "/swift/swift_swiftui_layout" },
+            { label: "SwiftUI Modifiers", link: "/swift/swift_swiftui_modifiers" },
             { label: "SwiftUI Navigation", link: "/swift/swift_swiftui_navigation" },
-            { label: "SwiftUI Animations", link: "/swift/swift_swiftui_animations" },
             { label: "SwiftUI Lists & Grids", link: "/swift/swift_swiftui_lists_grids" },
+            { label: "SwiftUI Forms & Input", link: "/swift/swift_swiftui_forms_input" },
+            { label: "SwiftUI Images & Media", link: "/swift/swift_swiftui_images_media" },
+            { label: "SwiftUI Animations", link: "/swift/swift_swiftui_animations" },
+            { label: "SwiftUI Gestures", link: "/swift/swift_swiftui_gestures" },
             { label: "SwiftUI Data Flow", link: "/swift/swift_swiftui_data_flow" },
+            { label: "SwiftUI & UIKit Integration", link: "/swift/swift_swiftui_integration" },
           ],
         },
 
