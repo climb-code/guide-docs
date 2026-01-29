@@ -339,6 +339,9 @@ export default defineConfig({
             { label: "SwiftUI Gestures", link: "/swift/swift_swiftui_gestures" },
             { label: "SwiftUI Data Flow", link: "/swift/swift_swiftui_data_flow" },
             { label: "SwiftUI & UIKit Integration", link: "/swift/swift_swiftui_integration" },
+
+            // Data Persistence
+            { label: "Core Data", link: "/swift/swift_core_data" },
           ],
         },
 
