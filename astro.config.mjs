@@ -33,6 +33,14 @@ export default defineConfig({
               link: "/html/html_document_structure",
             },
             {
+              label: "HTML Head Elements",
+              link: "/html/html_head_elements",
+            },
+            {
+              label: "HTML Meta Tags",
+              link: "/html/html_meta_tags",
+            },
+            {
               label: "HTML Elements and Tags",
               link: "/html/html_elements_and_tags",
             },
