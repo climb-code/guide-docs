@@ -87,6 +87,18 @@ export default defineConfig({
               link: "/html/html_forms",
             },
             {
+              label: "HTML Buttons",
+              link: "/html/html_buttons",
+            },
+            {
+              label: "HTML Canvas",
+              link: "/html/html_canvas",
+            },
+            {
+              label: "HTML SVG",
+              link: "/html/html_svg",
+            },
+            {
               label: "Semantic HTML",
               link: "/html/html_semantic",
             },
