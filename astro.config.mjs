@@ -103,6 +103,10 @@ export default defineConfig({
               link: "/html/html_semantic",
             },
             {
+              label: "HTML Accessibility",
+              link: "/html/html_accessibility",
+            },
+            {
               label: "HTML Best Practices",
               link: "/html/html_best_practices",
             },
