@@ -48,6 +48,10 @@ export default defineConfig({
               label: "HTML Attributes",
               link: "/html/html_attributes",
             },
+            {
+              label: "HTML Comments and Entity Characters",
+              link: "/html/html_comments_entities",
+            },
 
             // Text and Content
             {
