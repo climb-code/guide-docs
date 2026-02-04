@@ -111,6 +111,28 @@ export default defineConfig({
               link: "/html/html_accessibility",
             },
             {
+              label: "HTML Global Attributes",
+              link: "/html/html_global_attributes",
+            },
+            {
+              label: "HTML Quotations and Citations",
+              link: "/html/html_quotations_citations",
+            },
+
+            // Advanced Topics
+            {
+              label: "HTML Performance Optimization",
+              link: "/html/html_performance",
+            },
+            {
+              label: "HTML and SEO",
+              link: "/html/html_seo",
+            },
+            {
+              label: "HTML Web APIs",
+              link: "/html/html_apis",
+            },
+            {
               label: "HTML Best Practices",
               link: "/html/html_best_practices",
             },
