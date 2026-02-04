@@ -48,6 +48,10 @@ export default defineConfig({
               label: "HTML Attributes",
               link: "/html/html_attributes",
             },
+            {
+              label: "HTML Comments and Entity Characters",
+              link: "/html/html_comments_entities",
+            },
 
             // Text and Content
             {
@@ -105,6 +109,28 @@ export default defineConfig({
             {
               label: "HTML Accessibility",
               link: "/html/html_accessibility",
+            },
+            {
+              label: "HTML Global Attributes",
+              link: "/html/html_global_attributes",
+            },
+            {
+              label: "HTML Quotations and Citations",
+              link: "/html/html_quotations_citations",
+            },
+
+            // Advanced Topics
+            {
+              label: "HTML Performance Optimization",
+              link: "/html/html_performance",
+            },
+            {
+              label: "HTML and SEO",
+              link: "/html/html_seo",
+            },
+            {
+              label: "HTML Web APIs",
+              link: "/html/html_apis",
             },
             {
               label: "HTML Best Practices",
