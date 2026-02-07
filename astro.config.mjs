@@ -294,6 +294,14 @@ export default defineConfig({
               link: "/typescript/typescript-data-types",
             },
             {
+              label: "TypeScript Arrays and Tuples",
+              link: "/typescript/typescript-arrays-and-tuples",
+            },
+            {
+              label: "TypeScript Type Aliases",
+              link: "/typescript/typescript-type-aliases",
+            },
+            {
               label: "Types and Interfaces in TypeScript",
               link: "/typescript/typescript-type-and-interfaces",
             },
