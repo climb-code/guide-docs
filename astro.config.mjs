@@ -286,8 +286,20 @@ export default defineConfig({
               link: "/typescript/innerworking",
             },
             {
+              label: "TypeScript Variables and Type Annotations",
+              link: "/typescript/typescript-variables-and-annotations",
+            },
+            {
               label: "TypeScript Data Types",
               link: "/typescript/typescript-data-types",
+            },
+            {
+              label: "TypeScript Arrays and Tuples",
+              link: "/typescript/typescript-arrays-and-tuples",
+            },
+            {
+              label: "TypeScript Type Aliases",
+              link: "/typescript/typescript-type-aliases",
             },
             {
               label: "Types and Interfaces in TypeScript",
