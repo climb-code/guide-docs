@@ -306,8 +306,16 @@ export default defineConfig({
               link: "/typescript/typescript-type-and-interfaces",
             },
             {
+              label: "Union and Intersection Types",
+              link: "/typescript/typescript-union-and-intersection-types",
+            },
+            {
               label: "TypeScript Optional Properties",
               link: "/typescript/typescript-optional-properties",
+            },
+            {
+              label: "Readonly and Const Assertions",
+              link: "/typescript/typescript-readonly-and-const-assertions",
             },
             {
               label: "TypeScript Type Assertions",
