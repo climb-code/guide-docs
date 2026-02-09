@@ -338,6 +338,10 @@ export default defineConfig({
               link: "/typescript/typescript-literal-types",
             },
             {
+              label: "Enums in TypeScript",
+              link: "/typescript/typescript-enums",
+            },
+            {
               label: "Namespaces in TypeScript",
               link: "/typescript/typescript-namespaces",
             },
