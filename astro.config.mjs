@@ -362,6 +362,10 @@ export default defineConfig({
               link: "/typescript/typescript-utility-types",
             },
             {
+              label: "Mapped Types",
+              link: "/typescript/typescript-mapped-types",
+            },
+            {
               label: "Modules in TypeScript",
               link: "/typescript/typescript-modules",
             },
