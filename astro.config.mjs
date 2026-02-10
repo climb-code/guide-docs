@@ -350,12 +350,20 @@ export default defineConfig({
               link: "/typescript/typescript-type-guards",
             },
             {
+              label: "Conditional Types",
+              link: "/typescript/typescript-conditional-types",
+            },
+            {
               label: "Index Signatures in TypeScript",
               link: "/typescript/typescript-index-signatures",
             },
             {
               label: "Utility Types in TypeScript",
               link: "/typescript/typescript-utility-types",
+            },
+            {
+              label: "Mapped Types",
+              link: "/typescript/typescript-mapped-types",
             },
             {
               label: "Modules in TypeScript",
