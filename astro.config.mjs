@@ -373,6 +373,14 @@ export default defineConfig({
               label: "Decorators in TypeScript",
               link: "/typescript/typescript-decorators",
             },
+            {
+              label: "Configuring tsconfig.json",
+              link: "/typescript/typescript-configuring-tsconfig",
+            },
+            {
+              label: "Advanced TypeScript Patterns",
+              link: "/typescript/typescript-advanced-patterns",
+            },
           ],
         },
 
