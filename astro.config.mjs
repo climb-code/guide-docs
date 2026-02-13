@@ -567,6 +567,39 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: "Docker",
+          items: [
+            {
+              label: "Foundation of Containers",
+              link: "/docker/docker-foundation",
+            },
+            {
+              label: "Containers vs Virtual Machine",
+              link: "/docker/docker-vs-vm",
+            },
+            {
+              label: "Why developers should use containers",
+              link: "/docker/docker-why-containers",
+            },
+            {
+              label: "Install Docker on Linux",
+              link: "/docker/docker-install-linux",
+            },
+            {
+              label: "Install Docker on Mac",
+              link: "/docker/docker-install-mac",
+            },
+            {
+              label: "Run your first container",
+              link: "/docker/docker-run-first-container",
+            },
+            {
+              label: "Docker cli commands",
+              link: "/docker/docker-cli-commands",
+            },
+          ],
+        },
 
         {
           label: "Tips and Tools",
