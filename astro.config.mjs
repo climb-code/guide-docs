@@ -583,6 +583,10 @@ export default defineConfig({
               link: "/docker/docker-why-containers",
             },
             {
+              label: "Key Docker Concepts",
+              link: "/docker/docker-key-concepts",
+            },
+            {
               label: "Install Docker on Linux",
               link: "/docker/docker-install-linux",
             },
