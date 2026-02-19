@@ -438,8 +438,9 @@ export default defineConfig({
         {
           label: "Node",
           items: [
-            { label: "What is Node", link: "/node/node/" },
-            { label: "RSA Worker Authentication Guide", link: "/node/rsa-worker-authentication/" },
+            { label: "Introduction to Node.js", link: "/node/node_introduction" },
+            { label: "Getting Started (What is Node)", link: "/node/node/" },
+
           ],
         },
         {
