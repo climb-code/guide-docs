@@ -439,7 +439,8 @@ export default defineConfig({
           label: "Node",
           items: [
             { label: "Introduction to Node.js", link: "/node/node_introduction" },
-            { label: "Getting Started (What is Node)", link: "/node/node/" },
+            { label: "Getting Started (What is Node)", link: "/node/node/" }, 
+            { label: "Hello World & REPL", link: "/node/node-hello-world" }
 
           ],
         },
