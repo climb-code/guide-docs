@@ -3,8 +3,6 @@ title: Hello World & REPL
 description: Learn how to run your first Node.js script and use the REPL.
 ---
 
-# Hello World & REPL
-
 Getting started with Node.js is easy. In this guide, we will run our first script and explore the interactive terminal.
 
 ## Run Your First Script
