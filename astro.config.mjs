@@ -613,6 +613,10 @@ export default defineConfig({
               label: "Dockerizing React Vite App",
               link: "/docker/docker-react-vite",
             },
+            {
+              label: "Dockerizing Node.js Express App",
+              link: "/docker/docker-node-app",
+            },
           ],
         },
 
