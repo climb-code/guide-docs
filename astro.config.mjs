@@ -606,6 +606,10 @@ export default defineConfig({
               link: "/docker/docker-cli-commands",
             },
             {
+              label: "Managing Containers",
+              link: "/docker/docker-managing-containers",
+            },
+            {
               label: "Dockerizing React Vite App",
               link: "/docker/docker-react-vite",
             },
