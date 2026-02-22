@@ -617,6 +617,10 @@ export default defineConfig({
               label: "Dockerizing Node.js Express App",
               link: "/docker/docker-node-app",
             },
+            {
+              label: "Multi-Stage Docker Builds",
+              link: "/docker/docker-multi-stage-build",
+            },
           ],
         },
 
