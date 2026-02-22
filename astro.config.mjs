@@ -439,7 +439,7 @@ export default defineConfig({
           label: "Node",
           items: [
             { label: "Introduction to Node.js", link: "/node/node_introduction" },
-            { label: "Getting Started (What is Node)", link: "/node/node/" }, 
+            { label: "Getting Started (What is Node)", link: "/node/node/" },
             { label: "Hello World & REPL", link: "/node/node-hello-world" },
             { label: "Event Loop Architecture", link: "/node/node-event-loop" }
 
@@ -604,6 +604,22 @@ export default defineConfig({
             {
               label: "Docker cli commands",
               link: "/docker/docker-cli-commands",
+            },
+            {
+              label: "Managing Containers",
+              link: "/docker/docker-managing-containers",
+            },
+            {
+              label: "Dockerizing React Vite App",
+              link: "/docker/docker-react-vite",
+            },
+            {
+              label: "Dockerizing Node.js Express App",
+              link: "/docker/docker-node-app",
+            },
+            {
+              label: "Multi-Stage Docker Builds",
+              link: "/docker/docker-multi-stage-build",
             },
           ],
         },
