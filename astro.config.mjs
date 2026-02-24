@@ -621,6 +621,10 @@ export default defineConfig({
               label: "Multi-Stage Docker Builds",
               link: "/docker/docker-multi-stage-build",
             },
+            {
+              label: "Docker Networking",
+              link: "/docker/docker-networking",
+            },
           ],
         },
 
