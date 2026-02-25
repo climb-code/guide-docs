@@ -442,7 +442,8 @@ export default defineConfig({
             { label: "Getting Started (What is Node)", link: "/node/node/" },
             { label: "Hello World & REPL", link: "/node/node-hello-world" },
             { label: "Event Loop Architecture", link: "/node/node-event-loop" },
-            { label: "Asynchronous Programming", link: "/node/node-async-programming" }
+            { label: "Asynchronous Programming", link: "/node/node-async-programming" },
+            { label: "Node.js Modules System", link: "/node/node-modules" },
           ],
         },
         {
