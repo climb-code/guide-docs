@@ -446,7 +446,7 @@ export default defineConfig({
             { label: "Node.js Modules System", link: "/node/node-modules" },
             { label: "Built-in Modules (Path & OS)", link: "/node/node-path-os-modules" },
             { label: "Working with File System (FS)", link: "/node/node-file-system" },
-            
+
           ],
         },
         {
@@ -628,6 +628,22 @@ export default defineConfig({
             {
               label: "Docker Networking",
               link: "/docker/docker-networking",
+            },
+            {
+              label: "Intro to Docker Compose",
+              link: "/docker/docker-compose-intro",
+            },
+            {
+              label: "Dockerizing a Multi-Container App",
+              link: "/docker/docker-compose-multi-container",
+            },
+            {
+              label: "Hands-On: Setting Up with docker-compose.yml",
+              link: "/docker/docker-compose-hands-on",
+            },
+            {
+              label: "Docker Compose — Summary",
+              link: "/docker/docker-compose-summary",
             },
           ],
         },
