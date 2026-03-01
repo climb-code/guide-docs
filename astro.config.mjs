@@ -447,6 +447,7 @@ export default defineConfig({
             { label: "Built-in Modules (Path & OS)", link: "/node/node-path-os-modules" },
             { label: "Working with File System (FS)", link: "/node/node-file-system" },
             { label: "Streams & Buffers", link: "/node/node-streams-buffers" },
+            { label: "NPM Package Manager", link: "/node/node-npm-basics" },
 
           ],
         },
