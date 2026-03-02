@@ -448,6 +448,7 @@ export default defineConfig({
             { label: "Working with File System (FS)", link: "/node/node-file-system" },
             { label: "Streams & Buffers", link: "/node/node-streams-buffers" },
             { label: "NPM Package Manager", link: "/node/node-npm-basics" },
+            { label: "Event Emitter", link: "/node/node-event-emitter" },
 
           ],
         },
