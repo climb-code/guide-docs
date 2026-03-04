@@ -450,6 +450,7 @@ export default defineConfig({
             { label: "NPM Package Manager", link: "/node/node-npm-basics" },
             { label: "Event Emitter", link: "/node/node-event-emitter" },
             { label: "HTTP Module (Web Server)", link: "/node/node-http-module" },
+            { label: "Express.js Framework", link: "/node/node-express-basics" },
 
           ],
         },
