@@ -451,6 +451,7 @@ export default defineConfig({
             { label: "Event Emitter", link: "/node/node-event-emitter" },
             { label: "HTTP Module (Web Server)", link: "/node/node-http-module" },
             { label: "Express.js Framework", link: "/node/node-express-basics" },
+            { label: "Error Handling Strategies", link: "/node/node-error-handling" }
 
           ],
         },
