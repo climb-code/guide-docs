@@ -452,7 +452,8 @@ export default defineConfig({
             { label: "HTTP Module (Web Server)", link: "/node/node-http-module" },
             { label: "Express.js Framework", link: "/node/node-express-basics" },
             { label: "Error Handling Strategies", link: "/node/node-error-handling" },
-            { label: "Worker Threads & Child Processes", link: "/node/node-worker-threads" }
+            { label: "Worker Threads & Child Processes", link: "/node/node-worker-threads" },
+            { label: "Databases & Performance", link: "/node/node-databases-performance" },
 
           ],
         },
