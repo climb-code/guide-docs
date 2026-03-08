@@ -454,6 +454,8 @@ export default defineConfig({
             { label: "Error Handling Strategies", link: "/node/node-error-handling" },
             { label: "Worker Threads & Child Processes", link: "/node/node-worker-threads" },
             { label: "Databases & Performance", link: "/node/node-databases-performance" },
+            { label: "Security Best Practices", link: "/node/node-security-best-practices" },
+            { label: "RSA Worker Authentication", link: "/node/rsa-worker-authentication/" },
 
           ],
         },
