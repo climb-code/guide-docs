@@ -445,7 +445,7 @@ export default defineConfig({
             { label: "Asynchronous Programming", link: "/node/node-async-programming" },
             { label: "Node.js Modules System", link: "/node/node-modules" },
             { label: "Built-in Modules (Path & OS)", link: "/node/node-path-os-modules" },
-            { label: "Working with File System (FS)", link: "/node/node-file-system" },
+            { label: "Working with File System (FS)", link: "/node/node-fs-module" },
             { label: "Streams & Buffers", link: "/node/node-streams-buffers" },
             { label: "NPM Package Manager", link: "/node/node-npm-basics" },
             { label: "Event Emitter", link: "/node/node-event-emitter" },
@@ -456,6 +456,8 @@ export default defineConfig({
             { label: "Databases & Performance", link: "/node/node-databases-performance" },
             { label: "Security Best Practices", link: "/node/node-security-best-practices" },
             { label: "RSA Worker Authentication", link: "/node/rsa-worker-authentication/" },
+            { label: "WebSockets (Socket.io)", link: "/node/node-websockets" },
+            
 
           ],
         },
