@@ -15,7 +15,7 @@ npm install express
 
 ## 2. Basic Server
 ```javascript
-const express = require('express');
+import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {

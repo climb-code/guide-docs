@@ -457,6 +457,7 @@ export default defineConfig({
             { label: "Security Best Practices", link: "/node/node-security-best-practices" },
             { label: "RSA Worker Authentication", link: "/node/rsa-worker-authentication/" },
             { label: "WebSockets (Socket.io)", link: "/node/node-websockets" },
+            { label: "Environment Variables", link: "/node/node-env-vars" },
             
 
           ],
