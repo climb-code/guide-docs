@@ -560,6 +560,7 @@ export default defineConfig({
         {
           label: "Dsa JavaScript Questions",
           items: [
+            { label: "Stack and Queue", link: "/dsa-js/stack-queue/" },
             { label: "Easy", link: "/dsa-js/questions/" },
             { label: "Medium", link: "/dsa-js/medium/" },
             { label: "Hard", link: "/dsa-js/hard/" },
