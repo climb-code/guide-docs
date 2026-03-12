@@ -459,7 +459,7 @@ export default defineConfig({
             { label: "WebSockets (Socket.io)", link: "/node/node-websockets" },
             { label: "Environment Variables", link: "/node/node-env-vars" },
             { label: "Authentication & Authorization", link: "/node/node-authentication" },
-
+            { label: "Debugging & Diagnostics", link: "/node/node-debugging" },
           ],
         },
         {
