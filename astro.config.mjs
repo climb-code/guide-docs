@@ -462,7 +462,7 @@ export default defineConfig({
             { label: "Debugging & Diagnostics", link: "/node/node-debugging" },
             { label: "Middleware Pattern", link: "/node/node-middleware" },
             { label: "Child Processes", link: "/node/node-child-processes" },
-            // { label: "Clustering & Scaling", link: "/node/node-clustering" },
+            { label: "Clustering & Scaling", link: "/node/node-clustering" },
             // { label: "Logging Best Practices", link: "/node/node-logging" },
             // { label: "Frameworks Comparison", link: "/node/node-frameworks-comparison" },
             // { label: "Validation with Zod", link: "/node/node-validation-zod" },
