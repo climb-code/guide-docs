@@ -463,8 +463,8 @@ export default defineConfig({
             { label: "Middleware Pattern", link: "/node/node-middleware" },
             { label: "Child Processes", link: "/node/node-child-processes" },
             { label: "Clustering & Scaling", link: "/node/node-clustering" },
-            { label: "Logging Best Practices", link: "/node/node-logging" }
-            // { label: "Frameworks Comparison", link: "/node/node-frameworks-comparison" },
+            { label: "Logging Best Practices", link: "/node/node-logging" },
+            { label: "Frameworks Comparison", link: "/node/node-frameworks-comparison" },
             // { label: "Validation with Zod", link: "/node/node-validation-zod" },
           ],
         },
