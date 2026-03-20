@@ -467,6 +467,11 @@ export default defineConfig({
             { label: "Frameworks Comparison", link: "/node/node-frameworks-comparison" },
             { label: "Validation with Zod", link: "/node/node-validation-zod" },
             { label: "Testing in Node.js", link: "/node/node-testing" },
+            { label: "Process & Signals", link: "/node/node-process-signals" },
+            // { label: "Crypto & Security", link: "/node/node-crypto" },
+            // { label: "Graceful Shutdown", link: "/node/node-graceful-shutdown" },
+            // { label: "File Uploads (Multer)", link: "/node/node-file-uploads" },
+            // { label: "Task Scheduling (node-cron)", link: "/node/node-task-scheduling" },
           ],
         },
         {
