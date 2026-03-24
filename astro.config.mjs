@@ -471,7 +471,7 @@ export default defineConfig({
             { label: "Crypto & Security", link: "/node/node-crypto" },
             { label: "Graceful Shutdown", link: "/node/node-graceful-shutdown" },
             { label: "File Uploads (Multer)", link: "/node/node-file-uploads" },
-            // { label: "Task Scheduling (node-cron)", link: "/node/node-task-scheduling" },
+            { label: "Task Scheduling (node-cron)", link: "/node/node-task-scheduling" },
           ],
         },
         {
