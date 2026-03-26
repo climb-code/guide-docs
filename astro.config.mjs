@@ -472,6 +472,9 @@ export default defineConfig({
             { label: "Graceful Shutdown", link: "/node/node-graceful-shutdown" },
             { label: "File Uploads (Multer)", link: "/node/node-file-uploads" },
             { label: "Task Scheduling (node-cron)", link: "/node/node-task-scheduling" },
+            { label: "CORS (Cross-Origin Resource Sharing)", link: "/node/node-cors" },
+            { label: "Process Management (PM2)", link: "/node/node-pm2-process-management" },
+            { label: "Rate Limiting", link: "/node/node-rate-limiting" },
           ],
         },
         {
