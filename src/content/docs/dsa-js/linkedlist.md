@@ -266,3 +266,154 @@ list.clear();
 - Length = 0
 
 ---
+
+## 2. Basic Singly Linked List (Alternative Implementation)
+
+### 🧩 Class Implementation with Line-by-Line Comments
+
+```js
+class Node {
+    constructor(data) {
+        this.data = data; // Assign the value passed to the node
+        this.next = null; // Initialize the next pointer to null
+    }
+}
+
+class LinkedList {
+    constructor() {
+        this.head = null; // Initialize the linked list with an empty head
+    }
+
+    // Insert a new node at the end of the linked list
+    insertAtEnd(data) {
+        const newNode = new Node(data); // Create a new node with the given data
+        if (this.head === null) {       // If the list is empty (head is null)
+            this.head = newNode;        // Make the new node the head of the list
+        } else {
+            let current = this.head;    // Start traversing from the head
+            while (current.next !== null) { // Loop until the last node is reached
+                current = current.next; // Move to the next node
+            }
+            current.next = newNode;     // Link the last node to the new node
+        }
+    }
+
+    // Traverse and print all elements in the linked list
+    travers() {
+        if (this.head === null) {       // If the list is empty, there is nothing to traverse
+            return;                     // Exit the function
+        }
+        let current = this.head;        // Start traversing from the head
+        while (current !== null) {      // Loop until the end of the list is reached
+            console.log(current.data);  // Print the data of the current node
+            current = current.next;     // Move to the next node
+        }
+    }
+
+    // Delete the first node that contains the specified value
+    deleteByValue(value) {
+        if (this.head === null) {       // If the list is empty, nothing to delete
+            return;                     // Exit the function
+        }
+        let current = this.head;        // Start at the head
+        if (current.data === value) {   // If the head itself contains the value to delete
+            this.head = current.next;   // Update the head to the next node
+            return;                     // Exit the function
+        }
+        let prev = null;                // Keep track of the previous node
+        while (current.next !== null) { // Loop as long as there is a next node
+            prev = current;             // Store the current node as previous
+            current = current.next;     // Move to the next node
+            if (current.data === value) { // If the target value is found
+                prev.next = current.next; // Skip the current node by linking previous to next
+                return;                   // Exit after deletion
+            }
+        }
+    }
+
+    // Search for a specific value in the linked list
+    search(dataTosearch) {
+        let current = this.head;        // Start traversing from the head
+        while (current !== null) {      // Loop through all nodes
+            if (current.data === dataTosearch) { // If the value matches
+                return true;            // Return true indicating value is found
+            }
+            current = current.next;     // Move to the next node
+        }
+        return false;                   // Return false if value is not found after full traversal
+    }
+
+    // Calculate the total number of nodes in the list
+    length() {
+        let current = this.head;        // Start at the head
+        let count = 0;                  // Initialize a counter to 0
+        while (current !== null) {      // Loop through the list
+            count++;                    // Increment the counter for each node
+            current = current.next;     // Move to the next node
+        }
+        return count;                   // Return the final count
+    }
+}
+```
+
+### 🧪 Example + Example Breakdown (Dry Run)
+
+```js
+const list = new LinkedList();
+list.insertAtEnd(10);
+list.insertAtEnd(20);
+list.insertAtEnd(30);
+list.travers();
+// list.deleteByValue(20);
+console.log(list.length());
+console.log(list.search(10));
+```
+
+#### 🧠 Dry Run Principle (Step-by-Step Execution)
+
+**Step 1: `const list = new LinkedList()`**
+- A new empty `LinkedList` object is created.
+- `this.head` is `null`.
+
+**Step 2: `list.insertAtEnd(10)`**
+- A `new Node(10)` is created (`data` = 10, `next` = null).
+- Since `this.head` is `null`, `this.head` now points to this new Node(10).
+- **List State:** `10 -> null`
+
+**Step 3: `list.insertAtEnd(20)`**
+- A `new Node(20)` is created.
+- `this.head` is not null. Current pointer starts at `head` (which is node 10).
+- `current.next` (which is null) is modified to point to the new Node(20).
+- **List State:** `10 -> 20 -> null`
+
+**Step 4: `list.insertAtEnd(30)`**
+- A `new Node(30)` is created.
+- Traversal starts from `head` (10) -> moves to (20). Since node 20's `next` is null, the loop stops.
+- Node 20's `next` is set to point to Node 30.
+- **List State:** `10 -> 20 -> 30 -> null`
+
+**Step 5: `list.travers()`**
+- Traversal starts from `head` (10).
+- Output: `10` -> moves to next (20).
+- Output: `20` -> moves to next (30).
+- Output: `30` -> moves to next (null). Ends.
+- **Console Output:** 
+  ```
+  10
+  20
+  30
+  ```
+
+**Step 6: `list.length()`**
+- Starts a `count` at 0.
+- Traverses node 10 (`count` = 1), moves to 20.
+- Traverses node 20 (`count` = 2), moves to 30.
+- Traverses node 30 (`count` = 3), moves to null. Ends.
+- Returns `3`.
+- **Console Output:** `3`
+
+**Step 7: `list.search(10)`**
+- Starts searching from the `head` (10).
+- Checks if node 10's data matches 10. Yes, it does.
+- Returns `true` immediately.
+- **Console Output:** `true`
