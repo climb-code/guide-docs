@@ -475,6 +475,7 @@ export default defineConfig({
             { label: "CORS (Cross-Origin Resource Sharing)", link: "/node/node-cors" },
             { label: "Process Management (PM2)", link: "/node/node-pm2-process-management" },
             { label: "Rate Limiting", link: "/node/node-rate-limiting" },
+            { label: "Caching with Redis", link: "/node/node-caching-redis" },
           ],
         },
         {
