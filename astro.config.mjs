@@ -476,6 +476,8 @@ export default defineConfig({
             { label: "Process Management (PM2)", link: "/node/node-pm2-process-management" },
             { label: "Rate Limiting", link: "/node/node-rate-limiting" },
             { label: "Caching with Redis", link: "/node/node-caching-redis" },
+            { label: "REST API Design Best Practices", link: "/node/node-rest-api-design" },
+            { label: "Session Management & Cookies", link: "/node/node-session-management" },
           ],
         },
         {
