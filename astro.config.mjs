@@ -478,6 +478,7 @@ export default defineConfig({
             { label: "Caching with Redis", link: "/node/node-caching-redis" },
             { label: "REST API Design Best Practices", link: "/node/node-rest-api-design" },
             { label: "Session Management & Cookies", link: "/node/node-session-management" },
+            { label: "Router in Node.js", link: "/node/node-router" },
           ],
         },
         {
