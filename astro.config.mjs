@@ -479,6 +479,7 @@ export default defineConfig({
             { label: "REST API Design Best Practices", link: "/node/node-rest-api-design" },
             { label: "Session Management & Cookies", link: "/node/node-session-management" },
             { label: "Router in Node.js", link: "/node/node-router" },
+            { label: "MVC Architecture in Node.js", link: "/node/node-mvc-architecture" },
           ],
         },
         {
