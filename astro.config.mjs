@@ -480,6 +480,7 @@ export default defineConfig({
             { label: "Session Management & Cookies", link: "/node/node-session-management" },
             { label: "Router in Node.js", link: "/node/node-router" },
             { label: "MVC Architecture in Node.js", link: "/node/node-mvc-architecture" },
+            { label: "GraphQL in Node.js", link: "/node/node-graphql" },
           ],
         },
         {
