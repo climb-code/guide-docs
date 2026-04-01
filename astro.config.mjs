@@ -152,10 +152,6 @@ export default defineConfig({
               link: "/javascript/javascript_variables",
             },
             {
-              label: "JS Variable",
-              link: "/javascript/jsvar",
-            },
-            {
               label: "Datatypes in JavaScript",
               link: "/javascript/javascript_datatypes",
             },
