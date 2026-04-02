@@ -193,6 +193,10 @@ export default defineConfig({
               label: "Objects in JavaScript",
               link: "/javascript/javascript_objects",
             },
+            {
+              label: "Map and Set in JavaScript",
+              link: "/javascript/javascript_map_set",
+            },
 
             // Modern Syntax (requires understanding of arrays/objects)
             {
