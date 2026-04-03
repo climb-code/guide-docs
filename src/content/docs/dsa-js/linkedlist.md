@@ -1,419 +1,338 @@
 ---
-title: JavaScript Linked List Questions Guide
-description: Advanced-Level JavaScript Data Structures and Algorithms Questions
+title: Linked List in JavaScript
+description: A comprehensive guide to Singly and Doubly Linked Lists in JavaScript.
 ---
 
-## Overview
+## What is a Linked List?
 
-This guide covers the implementation and operations of different types of linked lists in JavaScript. It serves as a comprehensive reference for understanding and working with linked list data structures.
+A **Linked List** is a linear data structure where elements are not stored in contiguous memory locations. Instead, each element (called a **Node**) contains:
+1.  **Data**: The actual value stored in the node.
+2.  **Next Pointer/Reference**: A link to the next node in the sequence.
 
-## Definition
+### Why use Linked Lists?
+- **Dynamic Size**: Unlike arrays, linked lists can easily grow or shrink without requiring expensive reallocation.
+- **Efficient Insertions/Deletions**: Adding or removing elements at the beginning or middle is more efficient than in arrays because it only involves updating pointers.
 
-A Linked list is a linear data structure where elements, called **nodes**, are not stored contiguously in memory. Instead, each node contains **data** and a **references** , or link, to the next node in the sequence,
+---
 
 ## Types of Linked Lists
 
-### 1. Singly Linked List
-
-A singly linked list is a linear data structure where each element (node) contains a data field and a reference (link) to the next node in the sequence.
-
-#### Core Operations
-
-- **Push**: Add a new node at the end of the list
-- **Pop**: Remove the last node from the list
-- **Unshift**: Add a new node at the beginning of the list
-- **Shift**: Remove the first node from the list
-- **GetFirst**: Retrieve the first node
-- **GetLast**: Retrieve the last node
-- **Set**: Update the value of a node at a specific position
-- **Insert**: Add a new node at a specific position
-- **Size**: Get the total number of nodes
-- **Clear**: Remove all nodes from the list
-
-### 2. Doubly Linked List
-
-A doubly linked list is an extension of the singly linked list where each node contains references to both the next and previous nodes.
-
-#### Core Operations
-
-- **Push**: Add a new node at the end of the list
-- **Pop**: Remove the last node from the list
-- **Unshift**: Add a new node at the beginning of the list
-- **Shift**: Remove the first node from the list
-
-### 3. Reverse Linked List
-
-A specialized operation that reverses the order of nodes in a linked list.
-
-
-
-## 1. Node + LinkedList Class (Singly)
-
-### 🧩 Node Class
-
-```js
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
-```
-
-### 🛠 LinkedList Class
-
-```js
-class LinkedList {
-  constructor(value) {
-    this.head = new Node(value);
-    this.tail = this.head;
-    this.length = 1;
-  }
-
-  push(value) {
-    const newNode = new Node(value);
-    if (!this.head) {
-      this.head = newNode;
-      this.tail = newNode;
-    } else {
-      this.tail.next = newNode;
-      this.tail = newNode;
-    }
-    this.length++;
-  }
-
-  pop() {
-    if (!this.head) return undefined;
-    let temp = this.head;
-    let prev = this.head;
-    while (temp.next) {
-      prev = temp;
-      temp = temp.next;
-    }
-    this.tail = prev;
-    this.tail.next = null;
-    this.length--;
-    if (this.length === 0) {
-      this.head = null;
-      this.tail = null;
-    }
-    return temp;
-  }
-
-  unShift(value) {
-    const newNode = new Node(value);
-    if (!this.head) {
-      this.head = newNode;
-      this.tail = newNode;
-    } else {
-      newNode.next = this.head;
-      this.head = newNode;
-    }
-    this.length++;
-    return this;
-  }
-
-  shift() {
-    if (!this.head) return undefined;
-    let temp = this.head;
-    this.head = this.head.next;
-    temp.next = null;
-    this.length--;
-    if (this.length === 0) this.tail = null;
-    return temp;
-  }
-
-  getFirst() {
-    return this.head;
-  }
-
-  getLast() {
-    let temp = this.head;
-    while (temp && temp.next) {
-      temp = temp.next;
-    }
-    return temp;
-  }
-
-  get(index) {
-    let count = 0;
-    let temp = this.head;
-    while (temp) {
-      if (count === index) return temp;
-      temp = temp.next;
-      count++;
-    }
-    return null;
-  }
-
-  set(index, value) {
-    const found = this.get(index);
-    if (found) {
-      found.value = value;
-      return true;
-    }
-    return false;
-  }
-
-  insert(index, value) {
-    if (index === 0) return this.unShift(value);
-    if (index === this.length) return this.push(value);
-    const newNode = new Node(value);
-    const prev = this.get(index - 1);
-    if (!prev) return false;
-    newNode.next = prev.next;
-    prev.next = newNode;
-    this.length++;
-    return true;
-  }
-
-  size() {
-    return this.length;
-  }
-
-  clear() {
-    this.head = null;
-    this.tail = null;
-    this.length = 0;
-  }
-}
-```
+1.  **Singly Linked List**: Each node points only to the next node. Navigation is one-way (forward).
+2.  **Doubly Linked List**: Each node points to both the next and the previous node. Navigation is two-way (forward and backward).
 
 ---
 
-## 🧪 Example + Step-by-Step Breakdown
+## 1. Singly Linked List Implementation
 
-```js
-const list = new LinkedList(10);
-list.push(20);
-list.push(30);
-list.unshift(5);
-list.pop();
-list.shift();
+In a Singly Linked List, each node has a `data` property and a `next` pointer.
 
-console.log("First Node:", list.getFirst());
-console.log("Last Node:", list.getLast());
-console.log("Size:", list.size());
-list.set(1, 100);
-list.insert(1, 50);
-list.clear();
-```
-
----
-
-### 🧠 Let’s Understand Step by Step
-
-#### ✅ Step 1: `new LinkedList(10)`
-
-- List: `10`
-- Head = Tail = 10
-- Length = 1
-
-#### ✅ Step 2: `push(20)`
-
-- List: `10 → 20`
-- Tail is now 20
-- Length = 2
-
-#### ✅ Step 3: `push(30)`
-
-- List: `10 → 20 → 30`
-- Tail is now 30
-- Length = 3
-
-#### ✅ Step 4: `unshift(5)`
-
-- List: `5 → 10 → 20 → 30`
-- Head is now 5
-- Length = 4
-
-#### ✅ Step 5: `pop()`
-
-- Removes 30
-- List: `5 → 10 → 20`
-- Tail is now 20
-- Length = 3
-
-#### ✅ Step 6: `shift()`
-
-- Removes 5
-- List: `10 → 20`
-- Head is now 10
-- Length = 2
-
-#### ✅ Step 7: `getFirst()` → returns `10`
-
-#### ✅ Step 8: `getLast()` → returns `20`
-
-#### ✅ Step 9: `size()` → returns `2`
-
-#### ✅ Step 10: `set(1, 100)`
-
-- Updates index 1 (which is 20) to 100
-- List: `10 → 100`
-
-#### ✅ Step 11: `insert(1, 50)`
-
-- Insert 50 at index 1
-- List: `10 → 50 → 100`
-- Length = 3
-
-#### ✅ Step 12: `clear()`
-
-- Empties the list
-- List: empty
-- Head = Tail = null
-- Length = 0
-
----
-
-## 2. Basic Singly Linked List (Alternative Implementation)
-
-### 🧩 Class Implementation with Line-by-Line Comments
+### 🧩 Node & LinkedList Class
 
 ```js
 class Node {
     constructor(data) {
-        this.data = data; // Assign the value passed to the node
-        this.next = null; // Initialize the next pointer to null
+        this.data = data
+        this.next = null
     }
 }
 
 class LinkedList {
     constructor() {
-        this.head = null; // Initialize the linked list with an empty head
+        this.head = null
     }
 
-    // Insert a new node at the end of the linked list
+    // Insert at the end of the list
     insertAtEnd(data) {
-        const newNode = new Node(data); // Create a new node with the given data
-        if (this.head === null) {       // If the list is empty (head is null)
-            this.head = newNode;        // Make the new node the head of the list
-        } else {
-            let current = this.head;    // Start traversing from the head
-            while (current.next !== null) { // Loop until the last node is reached
-                current = current.next; // Move to the next node
+        const newNode = new Node(data)
+        if (this.head === null) {
+            this.head = newNode
+        }
+        else {
+            let current = this.head
+            while (current.next !== null) {
+                current = current.next
             }
-            current.next = newNode;     // Link the last node to the new node
+            current.next = newNode
         }
     }
 
-    // Traverse and print all elements in the linked list
+    // Insert at the beginning of the list
+    insertAtStart(data) {
+        const newNode = new Node(data)
+        newNode.next = this.head
+        this.head = newNode
+    }
+
+    // Traverse and print all nodes
     travers() {
-        if (this.head === null) {       // If the list is empty, there is nothing to traverse
-            return;                     // Exit the function
+        if (this.head === null) {
+            return
         }
-        let current = this.head;        // Start traversing from the head
-        while (current !== null) {      // Loop until the end of the list is reached
-            console.log(current.data);  // Print the data of the current node
-            current = current.next;     // Move to the next node
+        let current = this.head
+        while (current !== null) {
+            console.log(current.data)
+            current = current.next
         }
     }
 
-    // Delete the first node that contains the specified value
+    // Delete a node by its value
     deleteByValue(value) {
-        if (this.head === null) {       // If the list is empty, nothing to delete
-            return;                     // Exit the function
+        if (this.head === null) {
+            return
         }
-        let current = this.head;        // Start at the head
-        if (current.data === value) {   // If the head itself contains the value to delete
-            this.head = current.next;   // Update the head to the next node
-            return;                     // Exit the function
+        let current = this.head
+        if (current.data === value) {
+            this.head = current.next
+            return
         }
-        let prev = null;                // Keep track of the previous node
-        while (current.next !== null) { // Loop as long as there is a next node
-            prev = current;             // Store the current node as previous
-            current = current.next;     // Move to the next node
-            if (current.data === value) { // If the target value is found
-                prev.next = current.next; // Skip the current node by linking previous to next
-                return;                   // Exit after deletion
+        let prev = null
+        while (current.next !== null) {
+            prev = current
+            current = current.next
+            if (current.data === value) {
+                prev.next = current.next
+                return
             }
         }
     }
 
-    // Search for a specific value in the linked list
+    // Search for a specific value
     search(dataTosearch) {
-        let current = this.head;        // Start traversing from the head
-        while (current !== null) {      // Loop through all nodes
-            if (current.data === dataTosearch) { // If the value matches
-                return true;            // Return true indicating value is found
+        let current = this.head
+        while (current !== null) {
+            if (current.data === dataTosearch) {
+                return true
             }
-            current = current.next;     // Move to the next node
+            current = current.next
         }
-        return false;                   // Return false if value is not found after full traversal
+        return false
     }
 
-    // Calculate the total number of nodes in the list
+    // Calculate the total number of nodes
     length() {
-        let current = this.head;        // Start at the head
-        let count = 0;                  // Initialize a counter to 0
-        while (current !== null) {      // Loop through the list
-            count++;                    // Increment the counter for each node
-            current = current.next;     // Move to the next node
+        let current = this.head
+        let count = 0
+        while (current !== null) {
+            count++
+            current = current.next
         }
-        return count;                   // Return the final count
+        return count
+    }
+
+    // Add a node at a specific index
+    addAt(index, data) {
+        if (index < 0 || index > this.length()) {
+            console.log("Invalid Index")
+            return
+        }
+
+        const newNode = new Node(data)
+
+        if (index === 0) {
+            newNode.next = this.head
+            this.head = newNode
+            return
+        }
+
+        let current = this.head
+        for (let i = 0; i < index - 1; i++) {
+            current = current.next
+        }
+        newNode.next = current.next
+        current.next = newNode
+    }
+
+    // Remove the first node
+    removeTop() {
+        if (this.head === null) {
+            return
+        }
+        this.head = this.head.next
+    }
+
+    // Remove the last node
+    removeLast() {
+        if (this.head === null) {
+            return
+        }
+        let current = this.head
+        while (current.next.next !== null) {
+            current = current.next
+        }
+        current.next = null
+    }
+
+    // Remove a node at a specific index
+    removeAt(index) {
+        if (index < 0 || index >= this.length()) {
+            console.log("Invalid Index")
+            return
+        }
+        if (index === 0) {
+            this.removeTop()
+            return
+        }
+        if (index === this.length() - 1) {
+            this.removeLast()
+            return
+        }
+        let current = this.head
+        for (let i = 0; i < index - 1; i++) {
+            current = current.next
+        }
+        if (current.next !== null) {
+            current.next = current.next.next
+        }
     }
 }
 ```
 
-### 🧪 Example + Example Breakdown (Dry Run)
+### 🚀 Example Usage & Console Output
 
 ```js
-const list = new LinkedList();
-list.insertAtEnd(10);
-list.insertAtEnd(20);
-list.insertAtEnd(30);
-list.travers();
-// list.deleteByValue(20);
-console.log(list.length());
-console.log(list.search(10));
+const list = new LinkedList()
+
+list.insertAtEnd(10)   // List: 10
+list.insertAtEnd(20)   // List: 10 -> 20
+list.insertAtEnd(30)   // List: 10 -> 20 -> 30
+list.insertAtStart(5)  // List: 5 -> 10 -> 20 -> 30
+
+console.log("List traversal:")
+list.travers() 
+// Output:
+// 5
+// 10
+// 20
+// 30
+
+console.log("Current Length:", list.length()) // Output: 4
+console.log("Search for 10:", list.search(10)) // Output: true
+
+list.addAt(2, 15) // List: 5 -> 10 -> 15 -> 20 -> 30
+console.log("After adding 15 at index 2:")
+list.travers()
+// Output:
+// 5
+// 10
+// 15
+// 20
+// 30
 ```
 
-#### 🧠 Dry Run Principle (Step-by-Step Execution)
+---
 
-**Step 1: `const list = new LinkedList()`**
-- A new empty `LinkedList` object is created.
-- `this.head` is `null`.
+## 2. Doubly Linked List Implementation
 
-**Step 2: `list.insertAtEnd(10)`**
-- A `new Node(10)` is created (`data` = 10, `next` = null).
-- Since `this.head` is `null`, `this.head` now points to this new Node(10).
-- **List State:** `10 -> null`
+A **Doubly Linked List** node contains three things: the `data`, a pointer to the `next` node, and a pointer to the `previous` node.
 
-**Step 3: `list.insertAtEnd(20)`**
-- A `new Node(20)` is created.
-- `this.head` is not null. Current pointer starts at `head` (which is node 10).
-- `current.next` (which is null) is modified to point to the new Node(20).
-- **List State:** `10 -> 20 -> null`
+### 🧩 DoublyNode & DoublyLinkedList Class
 
-**Step 4: `list.insertAtEnd(30)`**
-- A `new Node(30)` is created.
-- Traversal starts from `head` (10) -> moves to (20). Since node 20's `next` is null, the loop stops.
-- Node 20's `next` is set to point to Node 30.
-- **List State:** `10 -> 20 -> 30 -> null`
+```js
+class DoublyNode {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+        this.prev = null;
+    }
+}
 
-**Step 5: `list.travers()`**
-- Traversal starts from `head` (10).
-- Output: `10` -> moves to next (20).
-- Output: `20` -> moves to next (30).
-- Output: `30` -> moves to next (null). Ends.
-- **Console Output:** 
-  ```
-  10
-  20
-  30
-  ```
+class DoublyLinkedList {
+    constructor() {
+        this.head = null;
+        this.tail = null;
+    }
 
-**Step 6: `list.length()`**
-- Starts a `count` at 0.
-- Traverses node 10 (`count` = 1), moves to 20.
-- Traverses node 20 (`count` = 2), moves to 30.
-- Traverses node 30 (`count` = 3), moves to null. Ends.
-- Returns `3`.
-- **Console Output:** `3`
+    // Add node to the end
+    insertAtEnd(data) {
+        const newNode = new DoublyNode(data);
+        if (!this.head) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            newNode.prev = this.tail;
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+    }
 
-**Step 7: `list.search(10)`**
-- Starts searching from the `head` (10).
-- Checks if node 10's data matches 10. Yes, it does.
-- Returns `true` immediately.
-- **Console Output:** `true`
+    // Add node to the start
+    insertAtStart(data) {
+        const newNode = new DoublyNode(data);
+        if (!this.head) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            newNode.next = this.head;
+            this.head.prev = newNode;
+            this.head = newNode;
+        }
+    }
+
+    // Forward Traversal
+    traverseForward() {
+        let current = this.head;
+        let result = [];
+        while (current) {
+            result.push(current.data);
+            current = current.next;
+        }
+        console.log("Forward Traversal:", result.join(" <-> "));
+    }
+
+    // Backward Traversal
+    traverseBackward() {
+        let current = this.tail;
+        let result = [];
+        while (current) {
+            result.push(current.data);
+            current = current.prev;
+        }
+        console.log("Backward Traversal:", result.join(" <-> "));
+    }
+
+    // Delete node by value
+    deleteByValue(value) {
+        if (!this.head) return;
+
+        let current = this.head;
+        while (current && current.data !== value) {
+            current = current.next;
+        }
+
+        if (!current) return; // Not found
+
+        if (current === this.head) {
+            this.head = current.next;
+            if (this.head) this.head.prev = null;
+            else this.tail = null;
+        } else if (current === this.tail) {
+            this.tail = current.prev;
+            this.tail.next = null;
+        } else {
+            current.prev.next = current.next;
+            current.next.prev = current.prev;
+        }
+    }
+}
+```
+
+### 🚀 Doubly Example & Console Output
+
+```js
+const dList = new DoublyLinkedList();
+
+dList.insertAtEnd(100);
+dList.insertAtEnd(200);
+dList.insertAtStart(50);
+
+dList.traverseForward();  
+// Output: Forward Traversal: 50 <-> 100 <-> 200
+
+dList.traverseBackward(); 
+// Output: Backward Traversal: 200 <-> 100 <-> 50
+
+dList.deleteByValue(100);
+console.log("After deleting 100:");
+dList.traverseForward();  
+// Output: Forward Traversal: 50 <-> 200
+```
