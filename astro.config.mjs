@@ -505,6 +505,10 @@ export default defineConfig({
               link: "/python/data-types-python",
             },
             {
+              label: "Strings in Python",
+              link: "/python/strings-in-python",
+            },
+            {
               label: "Numbers in Python",
               link: "/python/numbers-in-python",
             },
