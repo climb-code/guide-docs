@@ -509,6 +509,10 @@ export default defineConfig({
               link: "/python/strings-in-python",
             },
             {
+              label: "Lists in Python",
+              link: "/python/lists-in-python",
+            },
+            {
               label: "Numbers in Python",
               link: "/python/numbers-in-python",
             },
