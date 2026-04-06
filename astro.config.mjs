@@ -513,6 +513,10 @@ export default defineConfig({
               link: "/python/lists-in-python",
             },
             {
+              label: "Tuples in Python",
+              link: "/python/tuples-in-python",
+            },
+            {
               label: "Numbers in Python",
               link: "/python/numbers-in-python",
             },
