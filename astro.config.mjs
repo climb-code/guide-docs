@@ -517,6 +517,10 @@ export default defineConfig({
               link: "/python/tuples-in-python",
             },
             {
+              label: "Dictionaries in Python",
+              link: "/python/dictionaries-in-python",
+            },
+            {
               label: "Numbers in Python",
               link: "/python/numbers-in-python",
             },
