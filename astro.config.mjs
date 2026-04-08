@@ -521,6 +521,10 @@ export default defineConfig({
               link: "/python/dictionaries-in-python",
             },
             {
+              label: "Sets in Python",
+              link: "/python/sets-in-python",
+            },
+            {
               label: "Numbers in Python",
               link: "/python/numbers-in-python",
             },
