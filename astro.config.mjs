@@ -532,6 +532,14 @@ export default defineConfig({
               label: "Operators in Python",
               link: "/python/operators-in-python",
             },
+            {
+              label: "Control Flow in Python",
+              link: "/python/control-flow-python",
+            },
+            {
+              label: "Control Flow in Python",
+              link: "/python/control-flow-python",
+            },
           ],
         },
         {
