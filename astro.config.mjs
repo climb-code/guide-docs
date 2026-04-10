@@ -537,8 +537,8 @@ export default defineConfig({
               link: "/python/control-flow-python",
             },
             {
-              label: "Control Flow in Python",
-              link: "/python/control-flow-python",
+              label: "Loops in Python",
+              link: "/python/loops-in-python",
             },
           ],
         },
