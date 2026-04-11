@@ -540,6 +540,10 @@ export default defineConfig({
               label: "Loops in Python",
               link: "/python/loops-in-python",
             },
+            {
+              label: "Functions in Python",
+              link: "/python/functions-in-python",
+            },
           ],
         },
         {
