@@ -544,6 +544,10 @@ export default defineConfig({
               label: "Functions in Python",
               link: "/python/functions-in-python",
             },
+            {
+              label: "Exception Handling in Python",
+              link: "/python/exception-handling-python",
+            },
           ],
         },
         {
