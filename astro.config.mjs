@@ -548,6 +548,10 @@ export default defineConfig({
               label: "Exception Handling in Python",
               link: "/python/exception-handling-python",
             },
+            {
+              label: "OOP in Python",
+              link: "/python/oop-in-python",
+            },
           ],
         },
         {
