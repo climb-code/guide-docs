@@ -552,6 +552,10 @@ export default defineConfig({
               label: "OOP in Python",
               link: "/python/oop-in-python",
             },
+            {
+              label: "File Handling in Python",
+              link: "/python/file-handling-python",
+            },
           ],
         },
         {
