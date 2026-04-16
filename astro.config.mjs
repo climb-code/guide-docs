@@ -556,6 +556,10 @@ export default defineConfig({
               label: "File Handling in Python",
               link: "/python/file-handling-python",
             },
+            {
+              label: "Modules and Packages in Python",
+              link: "/python/modules-and-packages",
+            },
           ],
         },
         {
