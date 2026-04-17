@@ -564,6 +564,14 @@ export default defineConfig({
               label: "Lambda Functions in Python",
               link: "/python/lambda-functions-python",
             },
+            {
+              label: "Pip and Virtual Environments",
+              link: "/python/pip-and-virtual-environments",
+            },
+            {
+              label: "Date and Time in Python",
+              link: "/python/date-and-time-python",
+            },
           ],
         },
         {
