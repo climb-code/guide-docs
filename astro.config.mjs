@@ -560,6 +560,10 @@ export default defineConfig({
               label: "Modules and Packages in Python",
               link: "/python/modules-and-packages",
             },
+            {
+              label: "Lambda Functions in Python",
+              link: "/python/lambda-functions-python",
+            },
           ],
         },
         {
