@@ -576,6 +576,10 @@ export default defineConfig({
               label: "RegEx in Python",
               link: "/python/regex-in-python",
             },
+            {
+              label: "Iterators and Generators",
+              link: "/python/iterators-and-generators",
+            },
           ],
         },
         {
