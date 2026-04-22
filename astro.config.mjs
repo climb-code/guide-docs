@@ -594,6 +594,10 @@ export default defineConfig({
           label: "Java",
           items: [
             { label: "Introduction to Java", link: "/java/introduction" },
+            {
+              label: "Java JDK and Environment Setup",
+              link: "/java/java-jdk-setup",
+            },
           ],
         },
         {
