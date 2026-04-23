@@ -580,6 +580,10 @@ export default defineConfig({
               label: "Iterators and Generators",
               link: "/python/iterators-and-generators",
             },
+            {
+              label: "Decorators in Python",
+              link: "/python/decorators-in-python",
+            },
           ],
         },
         {
