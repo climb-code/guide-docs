@@ -584,6 +584,10 @@ export default defineConfig({
               label: "Decorators in Python",
               link: "/python/decorators-in-python",
             },
+            {
+              label: "JSON in Python",
+              link: "/python/json-in-python",
+            },
           ],
         },
         {
