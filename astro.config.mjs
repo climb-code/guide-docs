@@ -591,6 +591,12 @@ export default defineConfig({
           ],
         },
         {
+          label: "Java",
+          items: [
+            { label: "Introduction to Java", link: "/java/introduction" },
+          ],
+        },
+        {
           label: "MY SQL",
           items: [{ label: "What is My SQL", link: "/mysql/info-sql/" }],
         },
