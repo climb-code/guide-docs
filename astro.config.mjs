@@ -598,6 +598,10 @@ export default defineConfig({
               label: "Java JDK and Environment Setup",
               link: "/java/java-jdk-setup",
             },
+            {
+              label: "Variables and Data Types",
+              link: "/java/java-variables-data-types",
+            },
           ],
         },
         {
