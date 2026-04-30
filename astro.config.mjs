@@ -496,6 +496,7 @@ export default defineConfig({
           items: [
             { label: "Introduction to Express.js", link: "/express/express-introduction" },
             { label: "Routing in Express", link: "/express/express-routing" },
+            { label: "Express Middleware", link: "/express/express-middleware" },
           ],
         },
         {
