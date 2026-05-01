@@ -8,7 +8,7 @@ export default defineConfig({
       title: "Guide Docs",
       customCss: ["./src/styles/custom.css"],
       components: {
-        ThemeSelect: './src/components/ThemeSelect.astro',
+        ThemeSelect: "./src/components/ThemeSelect.astro",
       },
       social: {
         github: "https://github.com/climb-code/guide-docs",
@@ -395,48 +395,117 @@ export default defineConfig({
         {
           label: "Swift",
           items: [
-            { label: "Introduction to Swift", link: "/swift/swift_introduction" },
-            { label: "Getting Started with Swift", link: "/swift/swift_getting_started" },
-            { label: "Variables and Constants", link: "/swift/swift_variables_constants" },
+            {
+              label: "Introduction to Swift",
+              link: "/swift/swift_introduction",
+            },
+            {
+              label: "Getting Started with Swift",
+              link: "/swift/swift_getting_started",
+            },
+            {
+              label: "Variables and Constants",
+              link: "/swift/swift_variables_constants",
+            },
             { label: "Data Types in Swift", link: "/swift/swift_data_types" },
             { label: "Operators in Swift", link: "/swift/swift_operators" },
-            { label: "Strings and Characters", link: "/swift/swift_strings_characters" },
+            {
+              label: "Strings and Characters",
+              link: "/swift/swift_strings_characters",
+            },
             { label: "Collections in Swift", link: "/swift/swift_collections" },
-            { label: "Control Flow in Swift", link: "/swift/swift_control_flow" },
+            {
+              label: "Control Flow in Swift",
+              link: "/swift/swift_control_flow",
+            },
             { label: "Loops in Swift", link: "/swift/swift_loops" },
             { label: "Functions in Swift", link: "/swift/swift_functions" },
             { label: "Closures in Swift", link: "/swift/swift_closures" },
             { label: "Optionals in Swift", link: "/swift/swift_optionals" },
-            { label: "Enumerations in Swift", link: "/swift/swift_enumerations" },
-            { label: "Structures and Classes", link: "/swift/swift_structures_classes" },
+            {
+              label: "Enumerations in Swift",
+              link: "/swift/swift_enumerations",
+            },
+            {
+              label: "Structures and Classes",
+              link: "/swift/swift_structures_classes",
+            },
             { label: "Properties in Swift", link: "/swift/swift_properties" },
             { label: "Methods in Swift", link: "/swift/swift_methods" },
             { label: "Inheritance in Swift", link: "/swift/swift_inheritance" },
             { label: "Protocols in Swift", link: "/swift/swift_protocols" },
             { label: "Extensions in Swift", link: "/swift/swift_extensions" },
             { label: "Generics in Swift", link: "/swift/swift_generics" },
-            { label: "Error Handling in Swift", link: "/swift/swift_error_handling" },
-            { label: "Type Casting in Swift", link: "/swift/swift_type_casting" },
-            { label: "Access Control in Swift", link: "/swift/swift_access_control" },
-            { label: "Memory Management (ARC)", link: "/swift/swift_memory_management" },
+            {
+              label: "Error Handling in Swift",
+              link: "/swift/swift_error_handling",
+            },
+            {
+              label: "Type Casting in Swift",
+              link: "/swift/swift_type_casting",
+            },
+            {
+              label: "Access Control in Swift",
+              link: "/swift/swift_access_control",
+            },
+            {
+              label: "Memory Management (ARC)",
+              link: "/swift/swift_memory_management",
+            },
             { label: "Concurrency in Swift", link: "/swift/swift_concurrency" },
-            { label: "Advanced Operators", link: "/swift/swift_advanced_operators" },
-            { label: "Pattern Matching", link: "/swift/swift_pattern_matching" },
-            { label: "Working with JSON", link: "/swift/swift_working_with_json" },
+            {
+              label: "Advanced Operators",
+              link: "/swift/swift_advanced_operators",
+            },
+            {
+              label: "Pattern Matching",
+              link: "/swift/swift_pattern_matching",
+            },
+            {
+              label: "Working with JSON",
+              link: "/swift/swift_working_with_json",
+            },
             { label: "Networking in Swift", link: "/swift/swift_networking" },
 
             // SwiftUI Section
             { label: "SwiftUI Basics", link: "/swift/swift_swiftui_basics" },
             { label: "SwiftUI Layout", link: "/swift/swift_swiftui_layout" },
-            { label: "SwiftUI Modifiers", link: "/swift/swift_swiftui_modifiers" },
-            { label: "SwiftUI Navigation", link: "/swift/swift_swiftui_navigation" },
-            { label: "SwiftUI Lists & Grids", link: "/swift/swift_swiftui_lists_grids" },
-            { label: "SwiftUI Forms & Input", link: "/swift/swift_swiftui_forms_input" },
-            { label: "SwiftUI Images & Media", link: "/swift/swift_swiftui_images_media" },
-            { label: "SwiftUI Animations", link: "/swift/swift_swiftui_animations" },
-            { label: "SwiftUI Gestures", link: "/swift/swift_swiftui_gestures" },
-            { label: "SwiftUI Data Flow", link: "/swift/swift_swiftui_data_flow" },
-            { label: "SwiftUI & UIKit Integration", link: "/swift/swift_swiftui_integration" },
+            {
+              label: "SwiftUI Modifiers",
+              link: "/swift/swift_swiftui_modifiers",
+            },
+            {
+              label: "SwiftUI Navigation",
+              link: "/swift/swift_swiftui_navigation",
+            },
+            {
+              label: "SwiftUI Lists & Grids",
+              link: "/swift/swift_swiftui_lists_grids",
+            },
+            {
+              label: "SwiftUI Forms & Input",
+              link: "/swift/swift_swiftui_forms_input",
+            },
+            {
+              label: "SwiftUI Images & Media",
+              link: "/swift/swift_swiftui_images_media",
+            },
+            {
+              label: "SwiftUI Animations",
+              link: "/swift/swift_swiftui_animations",
+            },
+            {
+              label: "SwiftUI Gestures",
+              link: "/swift/swift_swiftui_gestures",
+            },
+            {
+              label: "SwiftUI Data Flow",
+              link: "/swift/swift_swiftui_data_flow",
+            },
+            {
+              label: "SwiftUI & UIKit Integration",
+              link: "/swift/swift_swiftui_integration",
+            },
 
             // Data Persistence
             { label: "Core Data", link: "/swift/swift_core_data" },
@@ -446,57 +515,127 @@ export default defineConfig({
         {
           label: "Node",
           items: [
-            { label: "Introduction to Node.js", link: "/node/node_introduction" },
+            {
+              label: "Introduction to Node.js",
+              link: "/node/node_introduction",
+            },
             { label: "Getting Started (What is Node)", link: "/node/node/" },
             { label: "Hello World & REPL", link: "/node/node-hello-world" },
             { label: "Event Loop Architecture", link: "/node/node-event-loop" },
-            { label: "Asynchronous Programming", link: "/node/node-async-programming" },
+            {
+              label: "Asynchronous Programming",
+              link: "/node/node-async-programming",
+            },
             { label: "Node.js Modules System", link: "/node/node-modules" },
-            { label: "Built-in Modules (Path & OS)", link: "/node/node-path-os-modules" },
-            { label: "Working with File System (FS)", link: "/node/node-fs-module" },
+            {
+              label: "Built-in Modules (Path & OS)",
+              link: "/node/node-path-os-modules",
+            },
+            {
+              label: "Working with File System (FS)",
+              link: "/node/node-fs-module",
+            },
             { label: "Streams & Buffers", link: "/node/node-streams-buffers" },
             { label: "NPM Package Manager", link: "/node/node-npm-basics" },
             { label: "Event Emitter", link: "/node/node-event-emitter" },
-            { label: "HTTP Module (Web Server)", link: "/node/node-http-module" },
-            { label: "Express.js Framework", link: "/node/node-express-basics" },
-            { label: "Error Handling Strategies", link: "/node/node-error-handling" },
-            { label: "Worker Threads & Child Processes", link: "/node/node-worker-threads" },
-            { label: "Databases & Performance", link: "/node/node-databases-performance" },
-            { label: "Security Best Practices", link: "/node/node-security-best-practices" },
-            { label: "RSA Worker Authentication", link: "/node/rsa-worker-authentication/" },
+            {
+              label: "HTTP Module (Web Server)",
+              link: "/node/node-http-module",
+            },
+            {
+              label: "Express.js Framework",
+              link: "/node/node-express-basics",
+            },
+            {
+              label: "Error Handling Strategies",
+              link: "/node/node-error-handling",
+            },
+            {
+              label: "Worker Threads & Child Processes",
+              link: "/node/node-worker-threads",
+            },
+            {
+              label: "Databases & Performance",
+              link: "/node/node-databases-performance",
+            },
+            {
+              label: "Security Best Practices",
+              link: "/node/node-security-best-practices",
+            },
+            {
+              label: "RSA Worker Authentication",
+              link: "/node/rsa-worker-authentication/",
+            },
             { label: "WebSockets (Socket.io)", link: "/node/node-websockets" },
             { label: "Environment Variables", link: "/node/node-env-vars" },
-            { label: "Authentication & Authorization", link: "/node/node-authentication" },
+            {
+              label: "Authentication & Authorization",
+              link: "/node/node-authentication",
+            },
             { label: "Debugging & Diagnostics", link: "/node/node-debugging" },
             { label: "Middleware Pattern", link: "/node/node-middleware" },
             { label: "Child Processes", link: "/node/node-child-processes" },
             { label: "Clustering & Scaling", link: "/node/node-clustering" },
             { label: "Logging Best Practices", link: "/node/node-logging" },
-            { label: "Frameworks Comparison", link: "/node/node-frameworks-comparison" },
+            {
+              label: "Frameworks Comparison",
+              link: "/node/node-frameworks-comparison",
+            },
             { label: "Validation with Zod", link: "/node/node-validation-zod" },
             { label: "Testing in Node.js", link: "/node/node-testing" },
             { label: "Process & Signals", link: "/node/node-process-signals" },
             { label: "Crypto & Security", link: "/node/node-crypto" },
-            { label: "Graceful Shutdown", link: "/node/node-graceful-shutdown" },
+            {
+              label: "Graceful Shutdown",
+              link: "/node/node-graceful-shutdown",
+            },
             { label: "File Uploads (Multer)", link: "/node/node-file-uploads" },
-            { label: "Task Scheduling (node-cron)", link: "/node/node-task-scheduling" },
-            { label: "CORS (Cross-Origin Resource Sharing)", link: "/node/node-cors" },
-            { label: "Process Management (PM2)", link: "/node/node-pm2-process-management" },
+            {
+              label: "Task Scheduling (node-cron)",
+              link: "/node/node-task-scheduling",
+            },
+            {
+              label: "CORS (Cross-Origin Resource Sharing)",
+              link: "/node/node-cors",
+            },
+            {
+              label: "Process Management (PM2)",
+              link: "/node/node-pm2-process-management",
+            },
             { label: "Rate Limiting", link: "/node/node-rate-limiting" },
             { label: "Caching with Redis", link: "/node/node-caching-redis" },
-            { label: "REST API Design Best Practices", link: "/node/node-rest-api-design" },
-            { label: "Session Management & Cookies", link: "/node/node-session-management" },
+            {
+              label: "REST API Design Best Practices",
+              link: "/node/node-rest-api-design",
+            },
+            {
+              label: "Session Management & Cookies",
+              link: "/node/node-session-management",
+            },
             { label: "Router in Node.js", link: "/node/node-router" },
-            { label: "MVC Architecture in Node.js", link: "/node/node-mvc-architecture" },
+            {
+              label: "MVC Architecture in Node.js",
+              link: "/node/node-mvc-architecture",
+            },
             { label: "GraphQL in Node.js", link: "/node/node-graphql" },
           ],
         },
         {
           label: "Express.js",
           items: [
-            { label: "Introduction to Express.js", link: "/express/express-introduction" },
+            {
+              label: "Introduction to Express.js",
+              link: "/express/express-introduction",
+            },
             { label: "Routing in Express", link: "/express/express-routing" },
-            { label: "Express Middleware", link: "/express/express-middleware" },
+            {
+              label: "Express Middleware",
+              link: "/express/express-middleware",
+            },
+            {
+              label: "Request Handling",
+              link: "/express/express-request-handling",
+            },
           ],
         },
         {
