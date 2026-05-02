@@ -636,6 +636,10 @@ export default defineConfig({
               label: "Request Handling",
               link: "/express/express-request-handling",
             },
+            {
+              label: "Error Handling in Express",
+              link: "/express/express-error-handling",
+            },
           ],
         },
         {
