@@ -640,6 +640,10 @@ export default defineConfig({
               label: "Error Handling in Express",
               link: "/express/express-error-handling",
             },
+            {
+              label: "Express with MongoDB & Mongoose",
+              link: "/express/express-mongodb-mongoose",
+            },
           ],
         },
         {
