@@ -644,6 +644,10 @@ export default defineConfig({
               label: "Express with MongoDB & Mongoose",
               link: "/express/express-mongodb-mongoose",
             },
+            {
+              label: "Authentication & Authorization",
+              link: "/express/express-authentication",
+            },
           ],
         },
         {
