@@ -648,6 +648,10 @@ export default defineConfig({
               label: "Authentication & Authorization",
               link: "/express/express-authentication",
             },
+            {
+              label: "MVC Architecture",
+              link: "/express/express-mvc",
+            },
           ],
         },
         {
