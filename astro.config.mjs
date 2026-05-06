@@ -652,6 +652,10 @@ export default defineConfig({
               label: "MVC Architecture",
               link: "/express/express-mvc",
             },
+            {
+              label: "Validation with Zod",
+              link: "/express/express-validation-zod",
+            },
           ],
         },
         {
