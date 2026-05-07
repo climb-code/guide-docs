@@ -641,6 +641,10 @@ export default defineConfig({
               link: "/express/express-template-engines",
             },
             {
+              label: "File Uploads (Multer)",
+              link: "/express/express-file-uploads",
+            },
+            {
               label: "Error Handling in Express",
               link: "/express/express-error-handling",
             },
