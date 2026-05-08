@@ -637,6 +637,10 @@ export default defineConfig({
               link: "/express/express-request-handling",
             },
             {
+              label: "Template Engines",
+              link: "/express/express-template-engines",
+            },
+            {
               label: "Error Handling in Express",
               link: "/express/express-error-handling",
             },
