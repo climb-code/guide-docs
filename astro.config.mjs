@@ -660,6 +660,10 @@ export default defineConfig({
               label: "Validation with Zod",
               link: "/express/express-validation-zod",
             },
+            {
+              label: "Security Best Practices",
+              link: "/express/express-security",
+            },
           ],
         },
         {
