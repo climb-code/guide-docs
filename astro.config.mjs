@@ -637,6 +637,10 @@ export default defineConfig({
               link: "/express/express-request-handling",
             },
             {
+              label: "Template Engines",
+              link: "/express/express-template-engines",
+            },
+            {
               label: "Error Handling in Express",
               link: "/express/express-error-handling",
             },
@@ -655,6 +659,10 @@ export default defineConfig({
             {
               label: "Validation with Zod",
               link: "/express/express-validation-zod",
+            },
+            {
+              label: "Security Best Practices",
+              link: "/express/express-security",
             },
           ],
         },
