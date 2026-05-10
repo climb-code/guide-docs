@@ -668,6 +668,10 @@ export default defineConfig({
               label: "Security Best Practices",
               link: "/express/express-security",
             },
+            {
+              label: "Testing Express Applications",
+              link: "/express/express-testing",
+            },
           ],
         },
         {
