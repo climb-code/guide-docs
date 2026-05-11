@@ -672,6 +672,10 @@ export default defineConfig({
               label: "Testing Express Applications",
               link: "/express/express-testing",
             },
+            {
+              label: "Best Practices & Performance",
+              link: "/express/express-best-practices",
+            },
           ],
         },
         {
