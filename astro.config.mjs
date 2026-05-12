@@ -676,6 +676,10 @@ export default defineConfig({
               label: "Best Practices & Performance",
               link: "/express/express-best-practices",
             },
+            {
+              label: "WebSockets with Socket.io",
+              link: "/express/express-websockets",
+            },
           ],
         },
         {
