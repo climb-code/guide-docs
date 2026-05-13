@@ -680,6 +680,10 @@ export default defineConfig({
               label: "WebSockets with Socket.io",
               link: "/express/express-websockets",
             },
+            {
+              label: "API Documentation with Swagger",
+              link: "/express/express-swagger",
+            },
           ],
         },
         {
