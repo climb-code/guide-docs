@@ -653,6 +653,10 @@ export default defineConfig({
               link: "/express/express-mongodb-mongoose",
             },
             {
+              label: "Express with SQL (Prisma)",
+              link: "/express/express-prisma",
+            },
+            {
               label: "Authentication & Authorization",
               link: "/express/express-authentication",
             },
