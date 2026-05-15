@@ -688,6 +688,18 @@ export default defineConfig({
               label: "API Documentation with Swagger",
               link: "/express/express-swagger",
             },
+            {
+              label: "Rate Limiting",
+              link: "/express/express-rate-limiting",
+            },
+            {
+              label: "Sessions and Cookies",
+              link: "/express/express-sessions-cookies",
+            },
+            {
+              label: "Deployment",
+              link: "/express/express-deployment",
+            },
           ],
         },
         {
