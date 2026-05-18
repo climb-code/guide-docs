@@ -700,6 +700,10 @@ export default defineConfig({
               label: "Deployment",
               link: "/express/express-deployment",
             },
+            {
+              label: "CORS in Express",
+              link: "/express/express-cors",
+            },
           ],
         },
         {
