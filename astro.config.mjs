@@ -704,6 +704,10 @@ export default defineConfig({
               label: "CORS in Express",
               link: "/express/express-cors",
             },
+            {
+              label: "Express with TypeScript",
+              link: "/express/express-typescript",
+            },
           ],
         },
         {
