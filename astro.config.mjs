@@ -708,6 +708,10 @@ export default defineConfig({
               label: "Express with TypeScript",
               link: "/express/express-typescript",
             },
+            {
+              label: "API Versioning",
+              link: "/express/express-api-versioning",
+            },
           ],
         },
         {
