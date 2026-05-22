@@ -712,6 +712,10 @@ export default defineConfig({
               label: "API Versioning",
               link: "/express/express-api-versioning",
             },
+            {
+              label: "Pagination, Filtering, and Sorting",
+              link: "/express/express-pagination-filtering-sorting",
+            },
           ],
         },
         {
