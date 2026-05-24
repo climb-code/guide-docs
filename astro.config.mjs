@@ -627,6 +627,10 @@ export default defineConfig({
               label: "Introduction to Express.js",
               link: "/express/express-introduction",
             },
+            {
+              label: "Getting Started with Express.js",
+              link: "/express/express-getting-started",
+            },
             { label: "Routing in Express", link: "/express/express-routing" },
             {
               label: "Express Middleware",
@@ -639,6 +643,10 @@ export default defineConfig({
             {
               label: "Template Engines",
               link: "/express/express-template-engines",
+            },
+            {
+              label: "Serving Static Files",
+              link: "/express/express-static-files",
             },
             {
               label: "File Uploads (Multer)",
