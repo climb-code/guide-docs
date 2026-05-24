@@ -645,6 +645,10 @@ export default defineConfig({
               link: "/express/express-template-engines",
             },
             {
+              label: "Serving Static Files",
+              link: "/express/express-static-files",
+            },
+            {
               label: "File Uploads (Multer)",
               link: "/express/express-file-uploads",
             },
