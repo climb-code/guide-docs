@@ -681,6 +681,10 @@ export default defineConfig({
               link: "/express/express-security",
             },
             {
+              label: "HTTPS and SSL Configuration",
+              link: "/express/express-https-ssl",
+            },
+            {
               label: "Testing Express Applications",
               link: "/express/express-testing",
             },
