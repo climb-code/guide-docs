@@ -713,6 +713,10 @@ export default defineConfig({
               link: "/express/express-deployment",
             },
             {
+              label: "Express behind Reverse Proxies",
+              link: "/express/express-reverse-proxy",
+            },
+            {
               label: "CORS in Express",
               link: "/express/express-cors",
             },
