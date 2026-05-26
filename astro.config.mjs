@@ -1,8 +1,10 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://guidedocs.netlify.app",
   integrations: [
     starlight({
       title: "Guide Docs",
@@ -1048,5 +1050,6 @@ export default defineConfig({
         },
       ],
     }),
+    sitemap(),
   ],
 });
