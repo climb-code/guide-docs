@@ -735,6 +735,15 @@ export default defineConfig({
           ],
         },
         {
+          label: "Next.js",
+          items: [
+            {
+              label: "Introduction to Next.js",
+              link: "/nextjs/nextjs-introduction",
+            },
+          ],
+        },
+        {
           label: "Python",
           items: [
             { label: "Introduction to Python", link: "/python/introduction" },
