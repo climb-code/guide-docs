@@ -3,7 +3,6 @@ title: Introduction to Next.js
 description: Learn about Next.js, the React framework for building full-stack web applications.
 ---
 
-# Introduction to Next.js
 
 Next.js is a flexible **React framework** created by Vercel that gives you building blocks to create fast, full-stack web applications. 
 
