@@ -743,6 +743,10 @@ export default defineConfig({
               label: "Introduction to Next.js",
               link: "/nextjs/nextjs-introduction",
             },
+            {
+              label: "Getting Started & Setup",
+              link: "/nextjs/nextjs-getting-started",
+            },
           ],
         },
         {
