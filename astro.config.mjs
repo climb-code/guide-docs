@@ -1,8 +1,10 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://guidedocs.netlify.app",
   integrations: [
     starlight({
       title: "Guide Docs",
@@ -741,6 +743,10 @@ export default defineConfig({
               label: "Introduction to Next.js",
               link: "/nextjs/nextjs-introduction",
             },
+            {
+              label: "Getting Started & Setup",
+              link: "/nextjs/nextjs-getting-started",
+            },
           ],
         },
         {
@@ -1048,5 +1054,6 @@ export default defineConfig({
         },
       ],
     }),
+    sitemap(),
   ],
 });
