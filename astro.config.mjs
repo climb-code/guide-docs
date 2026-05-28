@@ -747,6 +747,10 @@ export default defineConfig({
               label: "Getting Started & Setup",
               link: "/nextjs/nextjs-getting-started",
             },
+            {
+              label: "Routing in Next.js",
+              link: "/nextjs/nextjs-routing",
+            },
           ],
         },
         {
