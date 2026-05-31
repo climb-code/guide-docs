@@ -751,6 +751,14 @@ export default defineConfig({
               label: "Routing in Next.js",
               link: "/nextjs/nextjs-routing",
             },
+            {
+              label: "Server & Client Components",
+              link: "/nextjs/nextjs-rendering",
+            },
+            {
+              label: "Data Fetching & Caching",
+              link: "/nextjs/nextjs-data-fetching",
+            },
           ],
         },
         {
