@@ -759,6 +759,10 @@ export default defineConfig({
               label: "Data Fetching & Caching",
               link: "/nextjs/nextjs-data-fetching",
             },
+            {
+              label: "Styling in Next.js",
+              link: "/nextjs/nextjs-styling",
+            },
           ],
         },
         {
