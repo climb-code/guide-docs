@@ -763,6 +763,10 @@ export default defineConfig({
               label: "Styling in Next.js",
               link: "/nextjs/nextjs-styling",
             },
+            {
+              label: "Route Handlers & Middleware",
+              link: "/nextjs/nextjs-route-handlers-middleware",
+            },
           ],
         },
         {
