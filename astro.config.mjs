@@ -771,7 +771,10 @@ export default defineConfig({
               label: "Advanced Server Actions",
               link: "/nextjs/nextjs-server-actions",
             },
-
+            {
+              label: "Next.js Optimizations",
+              link: "/nextjs/nextjs-optimizations",
+            },
           ],
         },
         {
