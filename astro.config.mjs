@@ -767,6 +767,11 @@ export default defineConfig({
               label: "Route Handlers & Middleware",
               link: "/nextjs/nextjs-route-handlers-middleware",
             },
+            {
+              label: "Advanced Server Actions",
+              link: "/nextjs/nextjs-server-actions",
+            },
+
           ],
         },
         {
