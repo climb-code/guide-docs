@@ -775,6 +775,10 @@ export default defineConfig({
               label: "Next.js Optimizations",
               link: "/nextjs/nextjs-optimizations",
             },
+            {
+              label: "Error Handling in Next.js",
+              link: "/nextjs/nextjs-error-handling",
+            },
           ],
         },
         {
