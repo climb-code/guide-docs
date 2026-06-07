@@ -783,6 +783,10 @@ export default defineConfig({
               label: "Authentication in Next.js",
               link: "/nextjs/nextjs-authentication",
             },
+            {
+              label: "Testing in Next.js",
+              link: "/nextjs/nextjs-testing",
+            },
           ],
         },
         {
