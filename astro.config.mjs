@@ -779,6 +779,14 @@ export default defineConfig({
               label: "Error Handling in Next.js",
               link: "/nextjs/nextjs-error-handling",
             },
+            {
+              label: "Authentication in Next.js",
+              link: "/nextjs/nextjs-authentication",
+            },
+            {
+              label: "Testing in Next.js",
+              link: "/nextjs/nextjs-testing",
+            },
           ],
         },
         {
