@@ -787,6 +787,10 @@ export default defineConfig({
               label: "Testing in Next.js",
               link: "/nextjs/nextjs-testing",
             },
+            {
+              label: "Next.js Deployment & Self-Hosting",
+              link: "/nextjs/nextjs-deployment",
+            },
           ],
         },
         {
