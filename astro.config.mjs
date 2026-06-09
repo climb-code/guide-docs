@@ -791,6 +791,10 @@ export default defineConfig({
               label: "Next.js Deployment & Self-Hosting",
               link: "/nextjs/nextjs-deployment",
             },
+            {
+              label: "Internationalization (i18n) in Next.js",
+              link: "/nextjs/nextjs-i18n",
+            },
           ],
         },
         {
