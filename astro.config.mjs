@@ -795,6 +795,10 @@ export default defineConfig({
               label: "Internationalization (i18n) in Next.js",
               link: "/nextjs/nextjs-i18n",
             },
+            {
+              label: "State Management in Next.js",
+              link: "/nextjs/nextjs-state-management",
+            },
           ],
         },
         {
