@@ -799,6 +799,10 @@ export default defineConfig({
               label: "State Management in Next.js",
               link: "/nextjs/nextjs-state-management",
             },
+            {
+              label: "Database Integration & ORMs",
+              link: "/nextjs/nextjs-databases",
+            },
           ],
         },
         {
