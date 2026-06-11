@@ -184,6 +184,64 @@ class LinkedList {
             current.next = current.next.next
         }
     }
+
+    // Reverses a sub-list between indices m and n (0-based)
+    reverseBetween(m, n) {
+        // Example: If list is empty (null), there is nothing to reverse. Just stop here.
+        if (!this.head) return null; 
+        
+        // Example: Create a fake node (0). If m = 0, this dummy node protects our original head.
+        let dummy = new Node(0);  
+        
+        // Example: Connect dummy to list. Now list looks like: 0 -> 1 -> 2 -> 3 -> 4 -> 5
+        dummy.next = this.head; 
+        
+        // Example: Sit 'before' pointer on dummy node (0) to start the journey.
+        let before = dummy;  
+        
+        // STEP 1: Move 'before' pointer to the node just BEFORE the sub-list that needs reversal.
+        // Example: Loop runs from i = 0 to 0 (since m = 1). 'before' moves from 0 to node 1.
+        for (let i = 0; i < m; i++) {
+            before = before.next;
+        }
+
+        // STEP 2: Setup pointers for the actual reversal process.
+        // Example: 'current' starts at before.next, which is node 2 (the first node to reverse).
+        let current = before.next;
+        
+        // Example: 'prev' is set to null because node 2 will become the last node and point to nothing for now.
+        let prev = null;
+        
+        // Example: If m = 1 and n = 3, then 3 - 1 + 1 = 3. We need to reverse exactly 3 nodes (2, 3, and 4).
+        let numElements = n - m + 1;
+        
+        // STEP 3: Loop through the sub-list and flip the arrows backwards.
+        for (let i = 0; i < numElements; i++) {
+            // Example: If current is 2, nextNode saves node 3 so we don't lose the rest of the list.
+            let nextNode = current.next; 
+            
+            // Example: Break the forward arrow of node 2 and point it backward to 'prev' (null).
+            current.next = prev; 
+            
+            // Example: Move 'prev' one step forward. 'prev' now stands on node 2.
+            prev = current; 
+            
+            // Example: Move 'current' one step forward using our backup. 'current' now stands on node 3.
+            current = nextNode; 
+        }
+
+        // STEP 4: Reconnect the reversed sub-list back to the main list (Patchwork).
+        // Example: Node 2 (which is before.next) is now at the end of reversed part. 
+        // We connect its next (.next.next) to 'current' (node 5). So, 2 points to 5.
+        before.next.next = current;
+        
+        // Example: Connect 'before' (node 1) to 'prev' (node 4, which is the new head of reversed part).
+        // Now list becomes: 1 -> 4 -> 3 -> 2 -> 5
+        before.next = prev;
+        
+        // Example: Update the official head of the list. If dummy.next changed, this keeps it accurate.
+        this.head = dummy.next;
+    }
 }
 ```
 
@@ -218,6 +276,49 @@ list.travers()
 // 20
 // 30
 ```
+
+### 🔄 Reversing a Sub-list Between m and n
+
+To reverse a portion of a Singly Linked List between 0-based indices `m` and `n` (inclusive), we use a multi-pointer strategy.
+
+#### Step-by-Step Visualization
+
+Let's trace `reverseBetween(1, 3)` on a list: `1 -> 2 -> 3 -> 4 -> 5` (Indices: `1` is index 0, `2` is index 1, `3` is index 2, `4` is index 3, `5` is index 4).
+
+1. **Dummy Node & Setup**:
+   - `dummy -> 1 -> 2 -> 3 -> 4 -> 5`
+   - `before` starts on `dummy` (index -1).
+2. **Move 'before' to position `m - 1`** (since `m = 1`):
+   - Loop runs once, `before` moves to `before.next` (node `1` at index 0).
+3. **Setup Reversal Pointers**:
+   - `current` = node `2` (the start of the reversal sub-list).
+   - `prev` = `null`.
+   - `numElements` = `3 - 1 + 1` = `3` nodes (`2`, `3`, and `4`).
+4. **Sub-list Reversal (Loop runs 3 times)**:
+   - **Iteration 1**:
+     - `nextNode` = node `3`.
+     - Node `2` points backward to `prev` (`null`).
+     - `prev` moves to node `2`.
+     - `current` moves to node `3`.
+   - **Iteration 2**:
+     - `nextNode` = node `4`.
+     - Node `3` points backward to `prev` (node `2`).
+     - `prev` moves to node `3`.
+     - `current` moves to node `4`.
+   - **Iteration 3**:
+     - `nextNode` = node `5`.
+     - Node `4` points backward to `prev` (node `3`).
+     - `prev` moves to node `4`.
+     - `current` moves to node `5`.
+5. **Reconnection**:
+   - The tail of our reversed sub-list is node `2` (`before.next`).
+   - We connect its next (`before.next.next`) to `current` (node `5`): `2.next = 5`.
+   - We connect `before` (node `1`) to `prev` (node `4`): `1.next = 4`.
+   - The list becomes: `1 -> 4 -> 3 -> 2 -> 5`.
+
+#### Complexity
+- **Time Complexity**: $O(N)$ since we scan the list to find the start index and then reverse a subset of nodes.
+- **Space Complexity**: $O(1)$ auxiliary space as we modify the pointers in-place.
 
 ---
 
