@@ -803,6 +803,10 @@ export default defineConfig({
               label: "Database Integration & ORMs",
               link: "/nextjs/nextjs-databases",
             },
+            {
+              label: "Next.js Security Best Practices",
+              link: "/nextjs/nextjs-security",
+            },
           ],
         },
         {
