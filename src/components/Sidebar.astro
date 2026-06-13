@@ -1,0 +1,88 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+
+import MobileMenuFooter from '@astrojs/starlight/components/MobileMenuFooter.astro';
+import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
+
+const { sidebar } = Astro.props;
+---
+
+<SidebarSublist sublist={sidebar} />
+<div class="md:sl-hidden">
+	<MobileMenuFooter {...Astro.props} />
+</div>
+
+<script>
+	// Preserve sidebar scroll position across page navigations
+	const STORAGE_KEY = 'starlight-sidebar-scroll';
+
+	function getSidebarPane(): HTMLElement | null {
+		return document.getElementById('starlight__sidebar');
+	}
+
+	// Save scroll position before navigation
+	function saveScrollPosition(): void {
+		const sidebar = getSidebarPane();
+		if (sidebar) {
+			sessionStorage.setItem(STORAGE_KEY, String(sidebar.scrollTop));
+		}
+	}
+
+	// Restore scroll position after page load
+	function restoreScrollPosition(): void {
+		const sidebar = getSidebarPane();
+		const saved = sessionStorage.getItem(STORAGE_KEY);
+		if (sidebar && saved !== null) {
+			sidebar.scrollTop = Number(saved);
+		}
+	}
+
+	// Also scroll to the currently active item if no saved position
+	function scrollToActiveItem(): void {
+		const sidebar = getSidebarPane();
+		const saved = sessionStorage.getItem(STORAGE_KEY);
+		if (sidebar && saved === null) {
+			const activeLink = sidebar.querySelector('[aria-current="page"]');
+			if (activeLink) {
+				// Scroll sidebar so the active link is visible (centered if possible)
+				const sidebarRect = sidebar.getBoundingClientRect();
+				const linkRect = activeLink.getBoundingClientRect();
+				const offset = linkRect.top - sidebarRect.top - sidebarRect.height / 3;
+				sidebar.scrollTop += offset;
+			}
+		}
+	}
+
+	// Save scroll position on every sidebar link click
+	function attachClickListeners(): void {
+		const sidebar = getSidebarPane();
+		if (!sidebar) return;
+		sidebar.addEventListener('click', (e: Event) => {
+			const target = e.target as HTMLElement;
+			const link = target.closest('a');
+			if (link) {
+				saveScrollPosition();
+			}
+		});
+	}
+
+	// Restore on page load
+	restoreScrollPosition();
+	scrollToActiveItem();
+	attachClickListeners();
+
+	// Also handle Astro view transitions (if enabled)
+	document.addEventListener('astro:before-preparation', () => {
+		saveScrollPosition();
+	});
+
+	document.addEventListener('astro:after-swap', () => {
+		restoreScrollPosition();
+		attachClickListeners();
+	});
+
+	// Save before unload as fallback
+	window.addEventListener('beforeunload', () => {
+		saveScrollPosition();
+	});
+</script>

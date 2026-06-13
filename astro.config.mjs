@@ -11,6 +11,7 @@ export default defineConfig({
       customCss: ["./src/styles/custom.css"],
       components: {
         ThemeSelect: "./src/components/ThemeSelect.astro",
+        Sidebar: "./src/components/Sidebar.astro",
       },
       social: {
         github: "https://github.com/climb-code/guide-docs",
