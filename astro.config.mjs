@@ -808,6 +808,10 @@ export default defineConfig({
               label: "Next.js Security Best Practices",
               link: "/nextjs/nextjs-security",
             },
+            {
+              label: "Advanced Routing (Parallel & Intercepting)",
+              link: "/nextjs/nextjs-advanced-routing",
+            },
           ],
         },
         {
