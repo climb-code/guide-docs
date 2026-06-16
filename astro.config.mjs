@@ -812,6 +812,10 @@ export default defineConfig({
               label: "Advanced Routing (Parallel & Intercepting)",
               link: "/nextjs/nextjs-advanced-routing",
             },
+            {
+              label: "SSG and ISR in Next.js",
+              link: "/nextjs/nextjs-ssg-isr",
+            },
           ],
         },
         {
