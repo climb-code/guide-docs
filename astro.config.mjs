@@ -929,6 +929,10 @@ export default defineConfig({
               label: "Variables and Data Types",
               link: "/java/java-variables-data-types",
             },
+            {
+              label: "Control Flow",
+              link: "/java/java-control-flow",
+            },
           ],
         },
         {
