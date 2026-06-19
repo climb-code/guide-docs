@@ -933,6 +933,10 @@ export default defineConfig({
               label: "Control Flow",
               link: "/java/java-control-flow",
             },
+            {
+              label: "Loops",
+              link: "/java/java-loops",
+            },
           ],
         },
         {
