@@ -937,6 +937,10 @@ export default defineConfig({
               label: "Loops",
               link: "/java/java-loops",
             },
+            {
+              label: "Methods",
+              link: "/java/java-methods",
+            },
           ],
         },
         {
