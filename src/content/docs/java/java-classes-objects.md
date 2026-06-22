@@ -1,8 +1,6 @@
-    ---
-
+---
 title: Classes and Objects in Java
 description: Learn the fundamentals of Object-Oriented Programming (OOP) in Java by understanding classes, creating objects, and working with constructors.
-
 ---
 
 Java is an **Object-Oriented Programming (OOP)** language. In OOP, programs are organized around "objects" rather than actions and logic.
