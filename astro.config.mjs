@@ -945,6 +945,10 @@ export default defineConfig({
               label: "Arrays",
               link: "/java/java-arrays",
             },
+            {
+              label: "Classes and Objects",
+              link: "/java/java-classes-objects",
+            },
           ],
         },
         {
