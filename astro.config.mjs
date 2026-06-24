@@ -816,6 +816,10 @@ export default defineConfig({
               label: "SSG and ISR in Next.js",
               link: "/nextjs/nextjs-ssg-isr",
             },
+            {
+              label: "Caching in Next.js",
+              link: "/nextjs/nextjs-caching",
+            },
           ],
         },
         {
