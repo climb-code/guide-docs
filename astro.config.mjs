@@ -953,6 +953,10 @@ export default defineConfig({
               label: "Classes and Objects",
               link: "/java/java-classes-objects",
             },
+            {
+              label: "Constructors, this and super",
+              link: "/java/java-constructors-this-super",
+            },
           ],
         },
         {
