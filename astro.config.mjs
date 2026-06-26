@@ -957,6 +957,10 @@ export default defineConfig({
               label: "Constructors, this and super",
               link: "/java/java-constructors-this-super",
             },
+            {
+              label: "Inheritance",
+              link: "/java/java-inheritance",
+            },
           ],
         },
         {
