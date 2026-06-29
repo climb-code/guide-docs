@@ -961,6 +961,14 @@ export default defineConfig({
               label: "Inheritance",
               link: "/java/java-inheritance",
             },
+            {
+              label: "Polymorphism",
+              link: "/java/java-polymorphism",
+            },
+            {
+              label: "Encapsulation",
+              link: "/java/java-encapsulation",
+            },
           ],
         },
         {
