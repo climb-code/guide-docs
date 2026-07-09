@@ -969,6 +969,10 @@ export default defineConfig({
               label: "Encapsulation",
               link: "/java/java-encapsulation",
             },
+            {
+              label: "Abstraction",
+              link: "/java/java-abstraction",
+            },
           ],
         },
         {
