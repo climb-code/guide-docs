@@ -973,6 +973,10 @@ export default defineConfig({
               label: "Abstraction",
               link: "/java/java-abstraction",
             },
+            {
+              label: "Interfaces",
+              link: "/java/java-interfaces",
+            },
           ],
         },
         {
