@@ -977,6 +977,10 @@ export default defineConfig({
               label: "Interfaces",
               link: "/java/java-interfaces",
             },
+            {
+              label: "Exception Handling",
+              link: "/java/java-exception-handling",
+            },
           ],
         },
         {
