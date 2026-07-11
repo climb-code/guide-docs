@@ -969,6 +969,18 @@ export default defineConfig({
               label: "Encapsulation",
               link: "/java/java-encapsulation",
             },
+            {
+              label: "Abstraction",
+              link: "/java/java-abstraction",
+            },
+            {
+              label: "Interfaces",
+              link: "/java/java-interfaces",
+            },
+            {
+              label: "Exception Handling",
+              link: "/java/java-exception-handling",
+            },
           ],
         },
         {
