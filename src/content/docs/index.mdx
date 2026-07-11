@@ -1,32 +1,171 @@
 ---
 title: Welcome to Guide Docs
-description: Get started building your docs site with Starlight.
+description: Free, beginner-friendly guides on HTML, JavaScript, TypeScript, Node.js, Python, Java, Docker, databases, DSA and interview prep — all in one place.
 template: splash
 hero:
-  tagline: Next-gen documentation that builds reading habits into your workflow.
+  title: Learn to Code, One Guide at a Time
+  tagline: Free, beginner-friendly documentation covering web development, programming languages, databases, DevOps and interview preparation — written for developers, by developers.
   image:
     file: ../../assets/logo.png
   actions:
-    - text: Check out the docs
+    - text: Start Learning
       link: /intro/intro/
       icon: right-arrow
       variant: primary
+    - text: View on GitHub
+      link: https://github.com/climb-code/guide-docs
+      icon: github
+      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Coming Soon 🚀
+## 🌐 Web Development
+
+Build a strong foundation for the web — structure, logic and type safety.
 
 <CardGrid stagger>
-  <Card title="0 to 100 JavaScript" icon="heart">
-    Kickstart your JavaScript journey with our beginner-to-advanced guide.  
+  <Card title="HTML" icon="seti:html">
+    Document structure, forms, tables, media, semantic HTML, accessibility, SEO and best practices — 25+ in-depth guides.
     <br />
-    <a href="/intro/intro/">Start Learning →</a>
+    <a href="/html/html_introduction">Start with HTML →</a>
   </Card>
 
-  <Card title="More Guides Coming Soon" icon="heart">
-    Stay tuned! More programming guides, interview prep, and dev tools will be added here.  
+  <Card title="JavaScript" icon="seti:javascript">
+    From variables and hoisting to closures, async and modern ES syntax — the complete 0 to 100 JavaScript journey.
     <br />
-    📘 Python, TypeScript, PostgreSQL & much more on the way!
+    <a href="/javascript/javascript_introduction">Start with JavaScript →</a>
+  </Card>
+
+  <Card title="TypeScript" icon="seti:typescript">
+    Type annotations, interfaces, generics and how TypeScript works under the hood.
+    <br />
+    <a href="/typescript/typescript/">Start with TypeScript →</a>
+  </Card>
+</CardGrid>
+
+## ⚙️ Backend Development
+
+Take JavaScript to the server and build real APIs and full-stack apps.
+
+<CardGrid stagger>
+  <Card title="Node.js" icon="node">
+    Event loop, modules, streams, HTTP servers, worker threads, MVC architecture and GraphQL.
+    <br />
+    <a href="/node/node_introduction">Start with Node.js →</a>
+  </Card>
+
+  <Card title="Express.js" icon="puzzle">
+    Routing, middleware, MongoDB and SQL integration, security and TypeScript setup.
+    <br />
+    <a href="/express/express-introduction">Start with Express →</a>
+  </Card>
+
+  <Card title="Next.js" icon="rocket">
+    App router, rendering strategies, optimizations, deployment and security best practices.
+    <br />
+    <a href="/nextjs/nextjs-introduction">Start with Next.js →</a>
+  </Card>
+</CardGrid>
+
+## 💻 Programming Languages
+
+Learn general-purpose languages used everywhere — from scripting to mobile apps.
+
+<CardGrid stagger>
+  <Card title="Python" icon="seti:python">
+    Data types, OOP, file handling, decorators, iterators, regex and virtual environments.
+    <br />
+    <a href="/python/introduction">Start with Python →</a>
+  </Card>
+
+  <Card title="Java" icon="seti:java">
+    Core Java and OOP — classes, inheritance, polymorphism, encapsulation, abstraction, interfaces and exception handling.
+    <br />
+    <a href="/java/introduction">Start with Java →</a>
+  </Card>
+
+  <Card title="Swift & SwiftUI" icon="apple">
+    Swift fundamentals plus SwiftUI layout, navigation, animations, gestures and data flow for iOS apps.
+    <br />
+    <a href="/swift/swift_introduction">Start with Swift →</a>
+  </Card>
+</CardGrid>
+
+## 🗄️ Databases
+
+Store, query and manage data with the world's most popular databases.
+
+<CardGrid stagger>
+  <Card title="MySQL" icon="seti:db">
+    Understand what MySQL is and how relational databases work.
+    <br />
+    <a href="/mysql/info-sql/">Start with MySQL →</a>
+  </Card>
+
+  <Card title="PostgreSQL" icon="seti:db">
+    Data types and core concepts of the most advanced open-source database.
+    <br />
+    <a href="/pg/data-types/">Start with PostgreSQL →</a>
+  </Card>
+</CardGrid>
+
+## 🚀 DevOps & Deployment
+
+Ship your code with confidence — version control, containers and cloud deployment.
+
+<CardGrid stagger>
+  <Card title="Git & DevOps" icon="seti:git">
+    Git from beginner to advanced, plus full Node.js deployment to AWS.
+    <br />
+    <a href="/devops/git_beginner">Start with Git →</a>
+  </Card>
+
+  <Card title="Docker" icon="seti:docker">
+    Containers vs VMs, CLI commands, Dockerizing apps, networking and Docker Compose — a complete hands-on series.
+    <br />
+    <a href="/docker/docker-foundation">Start with Docker →</a>
+  </Card>
+</CardGrid>
+
+## 🎯 Interview Preparation
+
+Crack your next interview with focused question banks and DSA practice.
+
+<CardGrid stagger>
+  <Card title="Interview Questions" icon="open-book">
+    Curated JavaScript and React interview questions, including 100 objective-based questions.
+    <br />
+    <a href="/interview-questions/javascript-interview-questions">Start Preparing →</a>
+  </Card>
+
+  <Card title="DSA with JavaScript" icon="setting">
+    Stack, queue and linked list problems — sorted by Easy, Medium and Hard.
+    <br />
+    <a href="/dsa-js/stack-queue/">Start Solving →</a>
+  </Card>
+
+  <Card title="Tips & Tools" icon="pencil">
+    Handy references like regular expressions and HTTP response status codes.
+    <br />
+    <a href="/tipsandtools/regularexpressions/">Explore Tips →</a>
+  </Card>
+</CardGrid>
+
+---
+
+## Why Guide Docs?
+
+<CardGrid>
+  <Card title="Beginner Friendly" icon="heart">
+    Every guide starts from zero — no prior experience assumed, with plenty of runnable examples.
+  </Card>
+
+  <Card title="Always Growing" icon="star">
+    New guides are added regularly across languages, frameworks and tools.
+  </Card>
+
+  <Card title="Open Source" icon="github">
+    Found a typo or want to add a guide? Contributions are always welcome on GitHub.
   </Card>
 </CardGrid>
