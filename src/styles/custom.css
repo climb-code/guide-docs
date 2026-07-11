@@ -42,3 +42,43 @@
   --sl-color-gray-7: #f5f6f8;
   --sl-color-black: #ffffff;
 }
+
+/* ── Home page hero ─────────────────────────────── */
+
+/* Orange gradient mixed into the hero background */
+[data-has-hero] .main-pane {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(255, 140, 0, 0.20), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 12% 28%, rgba(255, 179, 71, 0.10), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 88% 32%, rgba(234, 88, 12, 0.14), transparent 70%);
+}
+
+:root[data-theme="light"] [data-has-hero] .main-pane {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(255, 140, 0, 0.14), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 12% 28%, rgba(255, 179, 71, 0.10), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 88% 32%, rgba(234, 88, 12, 0.08), transparent 70%);
+}
+
+/* Floating + glowing animation for the hero logo */
+.hero img {
+  animation: hero-float 5s ease-in-out infinite;
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 4px 18px rgba(255, 140, 0, 0.25));
+  }
+  50% {
+    transform: translateY(-14px);
+    filter: drop-shadow(0 18px 42px rgba(255, 140, 0, 0.5));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero img {
+    animation: none;
+  }
+}
