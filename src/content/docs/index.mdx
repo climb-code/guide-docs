@@ -6,7 +6,52 @@ hero:
   title: Learn to Code, One Guide at a Time
   tagline: Free, beginner-friendly documentation covering web development, programming languages, databases, DevOps and interview preparation — written for developers, by developers.
   image:
-    file: ../../assets/logo.png
+    html: |
+      <svg viewBox="0 0 420 440" width="380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Guide Docs animated logo">
+        <style>
+          .gd-rays line { transform-box: fill-box; transform-origin: center; animation: gd-ray 2.4s ease-in-out infinite; }
+          .gd-r2 { animation-delay: 0.3s !important; }
+          .gd-r3 { animation-delay: 0.6s !important; }
+          .gd-r4 { animation-delay: 0.9s !important; }
+          .gd-eyes { transform-box: fill-box; transform-origin: center; animation: gd-blink 4.5s ease-in-out infinite; }
+          .gd-sun { animation: gd-bob 4s ease-in-out infinite; }
+          .gd-text { animation: gd-glow 4s ease-in-out infinite; }
+          @keyframes gd-ray { 0%, 100% { opacity: 0.35; transform: scale(0.82); } 50% { opacity: 1; transform: scale(1.12); } }
+          @keyframes gd-blink { 0%, 91%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.08); } }
+          @keyframes gd-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+          @keyframes gd-glow { 0%, 100% { opacity: 0.9; } 50% { opacity: 1; } }
+          @media (prefers-reduced-motion: reduce) { .gd-rays line, .gd-eyes, .gd-sun, .gd-text { animation: none !important; } }
+        </style>
+        <!-- Rays -->
+        <g class="gd-rays" stroke="#F79A3E" stroke-width="13" stroke-linecap="round">
+          <line class="gd-r1" x1="210" y1="42" x2="210" y2="72" />
+          <line class="gd-r2" x1="146" y1="64" x2="161" y2="90" />
+          <line class="gd-r2" x1="274" y1="64" x2="259" y2="90" />
+          <line class="gd-r3" x1="98" y1="106" x2="121" y2="124" />
+          <line class="gd-r3" x1="322" y1="106" x2="299" y2="124" />
+          <line class="gd-r4" x1="70" y1="160" x2="98" y2="168" />
+          <line class="gd-r4" x1="350" y1="160" x2="322" y2="168" />
+        </g>
+        <!-- Sun with face -->
+        <g class="gd-sun">
+          <path d="M 130 268 A 82 82 0 1 1 290 268" fill="none" stroke="#F79A3E" stroke-width="15" stroke-linecap="round" />
+          <g class="gd-eyes">
+            <circle cx="182" cy="190" r="13" fill="none" stroke="#F79A3E" stroke-width="7" />
+            <circle cx="186" cy="186" r="4.5" fill="#F79A3E" />
+            <circle cx="238" cy="190" r="13" fill="none" stroke="#F79A3E" stroke-width="7" />
+            <circle cx="242" cy="186" r="4.5" fill="#F79A3E" />
+          </g>
+          <path d="M 192 220 Q 210 237 228 220" fill="none" stroke="#F79A3E" stroke-width="8" stroke-linecap="round" />
+        </g>
+        <!-- Open book -->
+        <g stroke-linejoin="round">
+          <path d="M 210 355 Q 150 318 92 336 L 92 254 Q 150 236 210 273 Z" fill="#FFC97E" stroke="#F79A3E" stroke-width="13" />
+          <path d="M 210 355 Q 270 318 328 336 L 328 254 Q 270 236 210 273 Z" fill="#FFC97E" stroke="#F79A3E" stroke-width="13" />
+          <path d="M 210 273 L 210 355" fill="none" stroke="#F79A3E" stroke-width="10" stroke-linecap="round" />
+        </g>
+        <!-- Wordmark -->
+        <text class="gd-text" x="210" y="425" text-anchor="middle" font-family="'Baloo 2','Arial Rounded MT Bold','Nunito','Trebuchet MS',sans-serif" font-size="54" font-weight="800" fill="#F79A3E">Guide Docs</text>
+      </svg>
   actions:
     - text: Start Learning
       link: /intro/intro/

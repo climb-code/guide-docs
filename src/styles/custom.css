@@ -82,3 +82,10 @@
     animation: none;
   }
 }
+
+/* Glow for the animated inline SVG logo */
+.hero svg {
+  filter: drop-shadow(0 12px 36px rgba(255, 140, 0, 0.35));
+  max-width: 100%;
+  height: auto;
+}
