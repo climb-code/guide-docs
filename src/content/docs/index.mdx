@@ -1,32 +1,219 @@
 ---
 title: Welcome to Guide Docs
-description: Get started building your docs site with Starlight.
+description: Free, beginner-friendly guides on HTML, JavaScript, TypeScript, Node.js, Python, Java, Docker, databases, DSA and interview prep — all in one place.
 template: splash
 hero:
-  tagline: Next-gen documentation that builds reading habits into your workflow.
+  title: Learn to Code, One Guide at a Time
+  tagline: Free, beginner-friendly documentation covering web development, programming languages, databases, DevOps and interview preparation — written for developers, by developers.
   image:
-    file: ../../assets/logo.png
+    html: |
+      <svg viewBox="0 0 460 470" width="380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Guide Docs animated logo">
+        <style>
+          .gd-rays line { transform-box: fill-box; transform-origin: center; animation: gd-ray 2.4s ease-in-out infinite; }
+          .gd-r2 { animation-delay: 0.3s !important; }
+          .gd-r3 { animation-delay: 0.6s !important; }
+          .gd-r4 { animation-delay: 0.9s !important; }
+          .gd-eyes { transform-box: fill-box; transform-origin: center; animation: gd-blink 4.5s ease-in-out infinite; }
+          .gd-sun { animation: gd-bob 4s ease-in-out infinite; }
+          .gd-text { animation: gd-glow 4s ease-in-out infinite; }
+          @keyframes gd-ray { 0%, 100% { opacity: 0.35; transform: scale(0.82); } 50% { opacity: 1; transform: scale(1.12); } }
+          @keyframes gd-blink { 0%, 91%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.08); } }
+          @keyframes gd-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+          @keyframes gd-glow { 0%, 100% { opacity: 0.9; } 50% { opacity: 1; } }
+          @media (prefers-reduced-motion: reduce) { .gd-rays line, .gd-eyes, .gd-sun, .gd-text { animation: none !important; } }
+        </style>
+        <!-- Rays -->
+        <g class="gd-rays" stroke="#F79A3E" stroke-width="14" stroke-linecap="round">
+          <line class="gd-r1" x1="230" y1="66" x2="230" y2="32" />
+          <line class="gd-r2" x1="167" y1="84" x2="148" y2="55" />
+          <line class="gd-r2" x1="293" y1="84" x2="312" y2="55" />
+          <line class="gd-r3" x1="125" y1="133" x2="93" y2="119" />
+          <line class="gd-r3" x1="335" y1="133" x2="367" y2="119" />
+          <line class="gd-r4" x1="116" y1="190" x2="81" y2="193" />
+          <line class="gd-r4" x1="344" y1="190" x2="379" y2="193" />
+        </g>
+        <!-- Sun with face -->
+        <g class="gd-sun">
+          <circle cx="230" cy="180" r="85" fill="none" stroke="#F79A3E" stroke-width="14" />
+          <g class="gd-eyes">
+            <circle cx="204" cy="170" r="15" fill="none" stroke="#F79A3E" stroke-width="7" />
+            <circle cx="209" cy="165" r="5" fill="#F79A3E" />
+            <circle cx="256" cy="170" r="15" fill="none" stroke="#F79A3E" stroke-width="7" />
+            <circle cx="261" cy="165" r="5" fill="#F79A3E" />
+          </g>
+          <path d="M 208 202 Q 230 224 252 202" fill="none" stroke="#F79A3E" stroke-width="10" stroke-linecap="round" />
+        </g>
+        <!-- Open book -->
+        <g stroke-linejoin="round">
+          <path d="M 230 366 C 195 340, 135 322, 78 328 C 70 314, 66 280, 72 236 C 78 228, 88 226, 96 230 C 145 244, 195 264, 230 296 Z" fill="#F5A94F" stroke="none" />
+          <path d="M 230 366 C 265 340, 325 322, 382 328 C 390 314, 394 280, 388 236 C 382 228, 372 226, 364 230 C 315 244, 265 264, 230 296 Z" fill="#F5A94F" stroke="none" />
+          <path d="M 230 258 C 200 232, 150 212, 98 202 L 74 186 C 62 232, 64 286, 76 318 C 132 312, 192 326, 230 354 Z" fill="#FFDFAE" stroke="#F79A3E" stroke-width="13" />
+          <path d="M 230 258 C 260 232, 310 212, 362 202 L 386 186 C 398 232, 396 286, 384 318 C 328 312, 268 326, 230 354 Z" fill="#FFDFAE" stroke="#F79A3E" stroke-width="13" />
+          <path d="M 230 258 L 230 354" fill="none" stroke="#F79A3E" stroke-width="11" stroke-linecap="round" />
+          <path d="M 196 368 Q 230 390 264 368 Q 230 380 196 368 Z" fill="#F79A3E" stroke="#F79A3E" stroke-width="8" stroke-linecap="round" />
+        </g>
+        <!-- Wordmark -->
+        <text class="gd-text" x="230" y="448" text-anchor="middle" font-family="'Baloo 2','Arial Rounded MT Bold','Nunito','Trebuchet MS',sans-serif" font-size="58" font-weight="800" fill="#F79A3E">Guide Docs</text>
+      </svg>
   actions:
-    - text: Check out the docs
+    - text: Start Learning
       link: /intro/intro/
       icon: right-arrow
       variant: primary
+    - text: View on GitHub
+      link: https://github.com/climb-code/guide-docs
+      icon: github
+      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Coming Soon 🚀
+## 🌐 Web Development
+
+Build a strong foundation for the web — structure, logic and type safety.
 
 <CardGrid stagger>
-  <Card title="0 to 100 JavaScript" icon="heart">
-    Kickstart your JavaScript journey with our beginner-to-advanced guide.  
+  <Card title="HTML" icon="seti:html">
+    Document structure, forms, tables, media, semantic HTML, accessibility, SEO and best practices — 25+ in-depth guides.
     <br />
-    <a href="/intro/intro/">Start Learning →</a>
+    <a href="/html/html_introduction">Start with HTML →</a>
   </Card>
 
-  <Card title="More Guides Coming Soon" icon="heart">
-    Stay tuned! More programming guides, interview prep, and dev tools will be added here.  
+  <Card title="JavaScript" icon="seti:javascript">
+    From variables and hoisting to closures, async and modern ES syntax — the complete 0 to 100 JavaScript journey.
     <br />
-    📘 Python, TypeScript, PostgreSQL & much more on the way!
+    <a href="/javascript/javascript_introduction">Start with JavaScript →</a>
+  </Card>
+
+  <Card title="TypeScript" icon="seti:typescript">
+    Type annotations, interfaces, generics and how TypeScript works under the hood.
+    <br />
+    <a href="/typescript/typescript/">Start with TypeScript →</a>
+  </Card>
+</CardGrid>
+
+## ⚙️ Backend Development
+
+Take JavaScript to the server and build real APIs and full-stack apps.
+
+<CardGrid stagger>
+  <Card title="Node.js" icon="node">
+    Event loop, modules, streams, HTTP servers, worker threads, MVC architecture and GraphQL.
+    <br />
+    <a href="/node/node_introduction">Start with Node.js →</a>
+  </Card>
+
+  <Card title="Express.js" icon="puzzle">
+    Routing, middleware, MongoDB and SQL integration, security and TypeScript setup.
+    <br />
+    <a href="/express/express-introduction">Start with Express →</a>
+  </Card>
+
+  <Card title="Next.js" icon="rocket">
+    App router, rendering strategies, optimizations, deployment and security best practices.
+    <br />
+    <a href="/nextjs/nextjs-introduction">Start with Next.js →</a>
+  </Card>
+</CardGrid>
+
+## 💻 Programming Languages
+
+Learn general-purpose languages used everywhere — from scripting to mobile apps.
+
+<CardGrid stagger>
+  <Card title="Python" icon="seti:python">
+    Data types, OOP, file handling, decorators, iterators, regex and virtual environments.
+    <br />
+    <a href="/python/introduction">Start with Python →</a>
+  </Card>
+
+  <Card title="Java" icon="seti:java">
+    Core Java and OOP — classes, inheritance, polymorphism, encapsulation, abstraction, interfaces and exception handling.
+    <br />
+    <a href="/java/introduction">Start with Java →</a>
+  </Card>
+
+  <Card title="Swift & SwiftUI" icon="apple">
+    Swift fundamentals plus SwiftUI layout, navigation, animations, gestures and data flow for iOS apps.
+    <br />
+    <a href="/swift/swift_introduction">Start with Swift →</a>
+  </Card>
+</CardGrid>
+
+## 🗄️ Databases
+
+Store, query and manage data with the world's most popular databases.
+
+<CardGrid stagger>
+  <Card title="MySQL" icon="seti:db">
+    Understand what MySQL is and how relational databases work.
+    <br />
+    <a href="/mysql/info-sql/">Start with MySQL →</a>
+  </Card>
+
+  <Card title="PostgreSQL" icon="seti:db">
+    Data types and core concepts of the most advanced open-source database.
+    <br />
+    <a href="/pg/data-types/">Start with PostgreSQL →</a>
+  </Card>
+</CardGrid>
+
+## 🚀 DevOps & Deployment
+
+Ship your code with confidence — version control, containers and cloud deployment.
+
+<CardGrid stagger>
+  <Card title="Git & DevOps" icon="seti:git">
+    Git from beginner to advanced, plus full Node.js deployment to AWS.
+    <br />
+    <a href="/devops/git_beginner">Start with Git →</a>
+  </Card>
+
+  <Card title="Docker" icon="seti:docker">
+    Containers vs VMs, CLI commands, Dockerizing apps, networking and Docker Compose — a complete hands-on series.
+    <br />
+    <a href="/docker/docker-foundation">Start with Docker →</a>
+  </Card>
+</CardGrid>
+
+## 🎯 Interview Preparation
+
+Crack your next interview with focused question banks and DSA practice.
+
+<CardGrid stagger>
+  <Card title="Interview Questions" icon="open-book">
+    Curated JavaScript and React interview questions, including 100 objective-based questions.
+    <br />
+    <a href="/interview-questions/javascript-interview-questions">Start Preparing →</a>
+  </Card>
+
+  <Card title="DSA with JavaScript" icon="setting">
+    Stack, queue and linked list problems — sorted by Easy, Medium and Hard.
+    <br />
+    <a href="/dsa-js/stack-queue/">Start Solving →</a>
+  </Card>
+
+  <Card title="Tips & Tools" icon="pencil">
+    Handy references like regular expressions and HTTP response status codes.
+    <br />
+    <a href="/tipsandtools/regularexpressions/">Explore Tips →</a>
+  </Card>
+</CardGrid>
+
+---
+
+## Why Guide Docs?
+
+<CardGrid>
+  <Card title="Beginner Friendly" icon="heart">
+    Every guide starts from zero — no prior experience assumed, with plenty of runnable examples.
+  </Card>
+
+  <Card title="Always Growing" icon="star">
+    New guides are added regularly across languages, frameworks and tools.
+  </Card>
+
+  <Card title="Open Source" icon="github">
+    Found a typo or want to add a guide? Contributions are always welcome on GitHub.
   </Card>
 </CardGrid>
