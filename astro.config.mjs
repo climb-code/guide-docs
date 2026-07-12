@@ -981,6 +981,10 @@ export default defineConfig({
               label: "Exception Handling",
               link: "/java/java-exception-handling",
             },
+            {
+              label: "Strings",
+              link: "/java/java-strings",
+            },
           ],
         },
         {
