@@ -985,6 +985,10 @@ export default defineConfig({
               label: "Strings",
               link: "/java/java-strings",
             },
+            {
+              label: "Collections Framework",
+              link: "/java/java-collections",
+            },
           ],
         },
         {
