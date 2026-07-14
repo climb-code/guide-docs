@@ -989,6 +989,10 @@ export default defineConfig({
               label: "Collections Framework",
               link: "/java/java-collections",
             },
+            {
+              label: "Generics",
+              link: "/java/java-generics",
+            },
           ],
         },
         {
