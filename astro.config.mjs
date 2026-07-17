@@ -993,6 +993,14 @@ export default defineConfig({
               label: "Generics",
               link: "/java/java-generics",
             },
+            {
+              label: "Lambda Expressions",
+              link: "/java/java-lambda-expressions",
+            },
+            {
+              label: "Streams API",
+              link: "/java/java-streams",
+            },
           ],
         },
         {
