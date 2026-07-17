@@ -997,6 +997,10 @@ export default defineConfig({
               label: "Lambda Expressions",
               link: "/java/java-lambda-expressions",
             },
+            {
+              label: "Streams API",
+              link: "/java/java-streams",
+            },
           ],
         },
         {
