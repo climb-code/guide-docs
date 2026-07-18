@@ -1001,6 +1001,10 @@ export default defineConfig({
               label: "Streams API",
               link: "/java/java-streams",
             },
+            {
+              label: "Multithreading and Concurrency",
+              link: "/java/java-multithreading",
+            },
           ],
         },
         {
