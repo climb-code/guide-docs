@@ -990,6 +990,10 @@ export default defineConfig({
               link: "/java/java-collections",
             },
             {
+              label: "File Handling",
+              link: "/java/java-file-handling",
+            },
+            {
               label: "Generics",
               link: "/java/java-generics",
             },
