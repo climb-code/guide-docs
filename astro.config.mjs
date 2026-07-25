@@ -994,6 +994,10 @@ export default defineConfig({
               link: "/java/java-file-handling",
             },
             {
+              label: "JDBC",
+              link: "/java/java-jdbc",
+            },
+            {
               label: "Generics",
               link: "/java/java-generics",
             },
