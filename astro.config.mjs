@@ -1010,6 +1010,10 @@ export default defineConfig({
               link: "/java/java-streams",
             },
             {
+              label: "JVM Internals",
+              link: "/java/java-jvm-internals",
+            },
+            {
               label: "Multithreading and Concurrency",
               link: "/java/java-multithreading",
             },
