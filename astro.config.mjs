@@ -994,6 +994,10 @@ export default defineConfig({
               link: "/java/java-file-handling",
             },
             {
+              label: "JDBC",
+              link: "/java/java-jdbc",
+            },
+            {
               label: "Generics",
               link: "/java/java-generics",
             },
@@ -1004,6 +1008,14 @@ export default defineConfig({
             {
               label: "Streams API",
               link: "/java/java-streams",
+            },
+            {
+              label: "Optional",
+              link: "/java/java-optional",
+            },
+            {
+              label: "JVM Internals",
+              link: "/java/java-jvm-internals",
             },
             {
               label: "Multithreading and Concurrency",
