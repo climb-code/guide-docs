@@ -1010,6 +1010,10 @@ export default defineConfig({
               link: "/java/java-streams",
             },
             {
+              label: "Optional",
+              link: "/java/java-optional",
+            },
+            {
               label: "JVM Internals",
               link: "/java/java-jvm-internals",
             },
