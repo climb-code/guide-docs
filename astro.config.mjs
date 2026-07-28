@@ -1014,6 +1014,10 @@ export default defineConfig({
               link: "/java/java-optional",
             },
             {
+              label: "Annotations",
+              link: "/java/java-annotations",
+            },
+            {
               label: "JVM Internals",
               link: "/java/java-jvm-internals",
             },
