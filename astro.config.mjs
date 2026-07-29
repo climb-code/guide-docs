@@ -978,6 +978,10 @@ export default defineConfig({
               link: "/java/java-interfaces",
             },
             {
+              label: "Enums",
+              link: "/java/java-enums",
+            },
+            {
               label: "Exception Handling",
               link: "/java/java-exception-handling",
             },
