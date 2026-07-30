@@ -990,6 +990,10 @@ export default defineConfig({
               link: "/java/java-strings",
             },
             {
+              label: "Date and Time API",
+              link: "/java/java-date-time",
+            },
+            {
               label: "Collections Framework",
               link: "/java/java-collections",
             },
