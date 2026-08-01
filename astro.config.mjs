@@ -982,6 +982,10 @@ export default defineConfig({
               link: "/java/java-interfaces",
             },
             {
+              label: "Nested and Inner Classes",
+              link: "/java/java-nested-inner-classes",
+            },
+            {
               label: "Enums",
               link: "/java/java-enums",
             },
