@@ -998,6 +998,10 @@ export default defineConfig({
               link: "/java/java-strings",
             },
             {
+              label: "Regular Expressions",
+              link: "/java/java-regex",
+            },
+            {
               label: "Date and Time API",
               link: "/java/java-date-time",
             },
