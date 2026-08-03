@@ -990,6 +990,10 @@ export default defineConfig({
               link: "/java/java-enums",
             },
             {
+              label: "Records",
+              link: "/java/java-records",
+            },
+            {
               label: "Exception Handling",
               link: "/java/java-exception-handling",
             },
