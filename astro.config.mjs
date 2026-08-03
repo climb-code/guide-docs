@@ -982,8 +982,16 @@ export default defineConfig({
               link: "/java/java-interfaces",
             },
             {
+              label: "Nested and Inner Classes",
+              link: "/java/java-nested-inner-classes",
+            },
+            {
               label: "Enums",
               link: "/java/java-enums",
+            },
+            {
+              label: "Records",
+              link: "/java/java-records",
             },
             {
               label: "Exception Handling",
@@ -992,6 +1000,10 @@ export default defineConfig({
             {
               label: "Strings",
               link: "/java/java-strings",
+            },
+            {
+              label: "Regular Expressions",
+              link: "/java/java-regex",
             },
             {
               label: "Date and Time API",
