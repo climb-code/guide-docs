@@ -934,6 +934,10 @@ export default defineConfig({
               link: "/java/java-variables-data-types",
             },
             {
+              label: "Operators",
+              link: "/java/java-operators",
+            },
+            {
               label: "Control Flow",
               link: "/java/java-control-flow",
             },
