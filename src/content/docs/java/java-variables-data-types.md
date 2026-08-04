@@ -106,4 +106,4 @@ Used to determine the logic between variables or values.
 ---
 
 ### Next Steps
-Now that you understand variables and data types, the next topic will cover **Control Flow: If-Else, Switch, and Loops**.
+Now that you understand variables and data types, the next topic will cover **Operators in Java**, which let you build expressions out of those values.
