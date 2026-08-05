@@ -1014,6 +1014,10 @@ export default defineConfig({
               link: "/java/java-date-time",
             },
             {
+              label: "Wrapper Classes and Autoboxing",
+              link: "/java/java-wrapper-classes",
+            },
+            {
               label: "Collections Framework",
               link: "/java/java-collections",
             },
