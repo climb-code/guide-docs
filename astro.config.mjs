@@ -1018,6 +1018,10 @@ export default defineConfig({
               link: "/java/java-wrapper-classes",
             },
             {
+              label: "Static and Final Keywords",
+              link: "/java/java-static-final-keywords",
+            },
+            {
               label: "Collections Framework",
               link: "/java/java-collections",
             },
