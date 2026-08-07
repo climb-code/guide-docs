@@ -1022,6 +1022,10 @@ export default defineConfig({
               link: "/java/java-static-final-keywords",
             },
             {
+              label: "StringBuilder and StringBuffer",
+              link: "/java/java-stringbuilder-stringbuffer",
+            },
+            {
               label: "Collections Framework",
               link: "/java/java-collections",
             },
