@@ -1018,6 +1018,18 @@ export default defineConfig({
               link: "/java/java-wrapper-classes",
             },
             {
+              label: "Static and Final Keywords",
+              link: "/java/java-static-final-keywords",
+            },
+            {
+              label: "StringBuilder and StringBuffer",
+              link: "/java/java-stringbuilder-stringbuffer",
+            },
+            {
+              label: "Comparable and Comparator",
+              link: "/java/java-comparable-comparator",
+            },
+            {
               label: "Collections Framework",
               link: "/java/java-collections",
             },
