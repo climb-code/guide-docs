@@ -1026,6 +1026,10 @@ export default defineConfig({
               link: "/java/java-stringbuilder-stringbuffer",
             },
             {
+              label: "Comparable and Comparator",
+              link: "/java/java-comparable-comparator",
+            },
+            {
               label: "Collections Framework",
               link: "/java/java-collections",
             },
