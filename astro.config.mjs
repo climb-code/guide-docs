@@ -1030,6 +1030,10 @@ export default defineConfig({
               link: "/java/java-comparable-comparator",
             },
             {
+              label: "Serialization and Deserialization",
+              link: "/java/java-serialization",
+            },
+            {
               label: "Collections Framework",
               link: "/java/java-collections",
             },
