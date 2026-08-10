@@ -1070,6 +1070,10 @@ export default defineConfig({
               link: "/java/java-jvm-internals",
             },
             {
+              label: "Garbage Collection",
+              link: "/java/java-garbage-collection",
+            },
+            {
               label: "Multithreading and Concurrency",
               link: "/java/java-multithreading",
             },
