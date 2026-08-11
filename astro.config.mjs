@@ -1066,6 +1066,10 @@ export default defineConfig({
               link: "/java/java-annotations",
             },
             {
+              label: "Reflection",
+              link: "/java/java-reflection",
+            },
+            {
               label: "JVM Internals",
               link: "/java/java-jvm-internals",
             },
