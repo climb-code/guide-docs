@@ -1054,6 +1054,10 @@ export default defineConfig({
               link: "/java/java-lambda-expressions",
             },
             {
+              label: "Functional Interfaces",
+              link: "/java/java-functional-interfaces",
+            },
+            {
               label: "Streams API",
               link: "/java/java-streams",
             },
