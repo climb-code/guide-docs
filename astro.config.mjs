@@ -1058,6 +1058,10 @@ export default defineConfig({
               link: "/java/java-jdbc",
             },
             {
+              label: "HTTP Client",
+              link: "/java/java-http-client",
+            },
+            {
               label: "Generics",
               link: "/java/java-generics",
             },
