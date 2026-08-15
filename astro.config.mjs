@@ -1102,6 +1102,10 @@ export default defineConfig({
               link: "/java/java-multithreading",
             },
             {
+              label: "Concurrency Utilities",
+              link: "/java/java-concurrency-utilities",
+            },
+            {
               label: "Virtual Threads",
               link: "/java/java-virtual-threads",
             },
