@@ -1090,6 +1090,10 @@ export default defineConfig({
               link: "/java/java-reflection",
             },
             {
+              label: "Common Design Patterns",
+              link: "/java/java-design-patterns",
+            },
+            {
               label: "JVM Internals",
               link: "/java/java-jvm-internals",
             },
