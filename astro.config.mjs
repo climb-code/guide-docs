@@ -998,6 +998,10 @@ export default defineConfig({
               link: "/java/java-records",
             },
             {
+              label: "Sealed Classes",
+              link: "/java/java-sealed-classes",
+            },
+            {
               label: "Exception Handling",
               link: "/java/java-exception-handling",
             },
