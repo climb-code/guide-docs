@@ -1097,6 +1097,10 @@ export default defineConfig({
               label: "Multithreading and Concurrency",
               link: "/java/java-multithreading",
             },
+            {
+              label: "Virtual Threads",
+              link: "/java/java-virtual-threads",
+            },
           ],
         },
         {
