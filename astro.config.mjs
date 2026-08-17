@@ -966,6 +966,10 @@ export default defineConfig({
               link: "/java/java-packages-access-modifiers",
             },
             {
+              label: "Java Modules",
+              link: "/java/java-modules",
+            },
+            {
               label: "Constructors, this and super",
               link: "/java/java-constructors-this-super",
             },
