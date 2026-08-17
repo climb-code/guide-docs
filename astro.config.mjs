@@ -942,6 +942,10 @@ export default defineConfig({
               link: "/java/java-control-flow",
             },
             {
+              label: "Switch Expressions",
+              link: "/java/java-switch-expressions",
+            },
+            {
               label: "Loops",
               link: "/java/java-loops",
             },
@@ -960,6 +964,10 @@ export default defineConfig({
             {
               label: "Packages and Access Modifiers",
               link: "/java/java-packages-access-modifiers",
+            },
+            {
+              label: "Java Modules",
+              link: "/java/java-modules",
             },
             {
               label: "Constructors, this and super",
@@ -996,6 +1004,10 @@ export default defineConfig({
             {
               label: "Records",
               link: "/java/java-records",
+            },
+            {
+              label: "Sealed Classes",
+              link: "/java/java-sealed-classes",
             },
             {
               label: "Exception Handling",
@@ -1084,6 +1096,10 @@ export default defineConfig({
             {
               label: "Multithreading and Concurrency",
               link: "/java/java-multithreading",
+            },
+            {
+              label: "Virtual Threads",
+              link: "/java/java-virtual-threads",
             },
           ],
         },
