@@ -1058,6 +1058,10 @@ export default defineConfig({
               link: "/java/java-jdbc",
             },
             {
+              label: "HTTP Client",
+              link: "/java/java-http-client",
+            },
+            {
               label: "Generics",
               link: "/java/java-generics",
             },
@@ -1086,6 +1090,10 @@ export default defineConfig({
               link: "/java/java-reflection",
             },
             {
+              label: "Common Design Patterns",
+              link: "/java/java-design-patterns",
+            },
+            {
               label: "JVM Internals",
               link: "/java/java-jvm-internals",
             },
@@ -1096,6 +1104,10 @@ export default defineConfig({
             {
               label: "Multithreading and Concurrency",
               link: "/java/java-multithreading",
+            },
+            {
+              label: "Concurrency Utilities",
+              link: "/java/java-concurrency-utilities",
             },
             {
               label: "Virtual Threads",
