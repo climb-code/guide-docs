@@ -942,6 +942,10 @@ export default defineConfig({
               link: "/java/java-control-flow",
             },
             {
+              label: "Switch Expressions",
+              link: "/java/java-switch-expressions",
+            },
+            {
               label: "Loops",
               link: "/java/java-loops",
             },
