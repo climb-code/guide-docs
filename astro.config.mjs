@@ -1113,6 +1113,10 @@ export default defineConfig({
               label: "Virtual Threads",
               link: "/java/java-virtual-threads",
             },
+            {
+              label: "Unit Testing with JUnit 5",
+              link: "/java/java-unit-testing-junit",
+            },
           ],
         },
         {
