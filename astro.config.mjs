@@ -1010,6 +1010,10 @@ export default defineConfig({
               link: "/java/java-sealed-classes",
             },
             {
+              label: "Pattern Matching",
+              link: "/java/java-pattern-matching",
+            },
+            {
               label: "Exception Handling",
               link: "/java/java-exception-handling",
             },
@@ -1062,6 +1066,10 @@ export default defineConfig({
               link: "/java/java-http-client",
             },
             {
+              label: "Logging with SLF4J and Logback",
+              link: "/java/java-logging",
+            },
+            {
               label: "Generics",
               link: "/java/java-generics",
             },
@@ -1112,6 +1120,10 @@ export default defineConfig({
             {
               label: "Virtual Threads",
               link: "/java/java-virtual-threads",
+            },
+            {
+              label: "Java Build Tools: Maven & Gradle",
+              link: "/java/java-build-tools",
             },
             {
               label: "Unit Testing with JUnit 5",
