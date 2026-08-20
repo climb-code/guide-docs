@@ -1129,6 +1129,10 @@ export default defineConfig({
               label: "Unit Testing with JUnit 5",
               link: "/java/java-unit-testing-junit",
             },
+            {
+              label: "Spring Boot Overview & REST APIs",
+              link: "/java/java-spring-boot",
+            },
           ],
         },
         {
