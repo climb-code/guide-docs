@@ -143,6 +143,16 @@ export default defineConfig({
         },
 
         {
+          label: "CSS",
+          items: [
+            {
+              label: "Introduction to CSS",
+              link: "/css/css-introduction",
+            },
+          ],
+        },
+
+        {
           label: "JavaScript",
           items: [
             // Fundamentals
