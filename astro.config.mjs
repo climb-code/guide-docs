@@ -149,6 +149,10 @@ export default defineConfig({
               label: "Introduction to CSS",
               link: "/css/css-introduction",
             },
+            {
+              label: "CSS Selectors",
+              link: "/css/css-selectors",
+            },
           ],
         },
 
