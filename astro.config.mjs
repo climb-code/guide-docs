@@ -149,6 +149,14 @@ export default defineConfig({
               label: "Introduction to CSS",
               link: "/css/css-introduction",
             },
+            {
+              label: "CSS Selectors",
+              link: "/css/css-selectors",
+            },
+            {
+              label: "CSS Colors and Backgrounds",
+              link: "/css/css-colors-backgrounds",
+            },
           ],
         },
 
