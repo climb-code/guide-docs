@@ -153,6 +153,10 @@ export default defineConfig({
               label: "CSS Selectors",
               link: "/css/css-selectors",
             },
+            {
+              label: "CSS Colors and Backgrounds",
+              link: "/css/css-colors-backgrounds",
+            },
           ],
         },
 
