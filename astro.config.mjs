@@ -161,6 +161,10 @@ export default defineConfig({
               label: "CSS Box Model",
               link: "/css/css-box-model",
             },
+            {
+              label: "CSS Units and Sizing",
+              link: "/css/css-units-sizing",
+            },
           ],
         },
 
