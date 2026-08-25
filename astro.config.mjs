@@ -157,6 +157,14 @@ export default defineConfig({
               label: "CSS Colors and Backgrounds",
               link: "/css/css-colors-backgrounds",
             },
+            {
+              label: "CSS Box Model",
+              link: "/css/css-box-model",
+            },
+            {
+              label: "CSS Units and Sizing",
+              link: "/css/css-units-sizing",
+            },
           ],
         },
 
