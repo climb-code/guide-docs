@@ -165,6 +165,10 @@ export default defineConfig({
               label: "CSS Units and Sizing",
               link: "/css/css-units-sizing",
             },
+            {
+              label: "CSS Typography",
+              link: "/css/css-typography",
+            },
           ],
         },
 
