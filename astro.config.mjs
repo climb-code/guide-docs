@@ -169,6 +169,10 @@ export default defineConfig({
               label: "CSS Typography",
               link: "/css/css-typography",
             },
+            {
+              label: "CSS Display",
+              link: "/css/css-display",
+            },
           ],
         },
 
