@@ -173,6 +173,10 @@ export default defineConfig({
               label: "CSS Display",
               link: "/css/css-display",
             },
+            {
+              label: "CSS Positioning",
+              link: "/css/css-positioning",
+            },
           ],
         },
 
