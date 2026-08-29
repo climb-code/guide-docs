@@ -177,6 +177,10 @@ export default defineConfig({
               label: "CSS Positioning",
               link: "/css/css-positioning",
             },
+            {
+              label: "CSS Flexbox",
+              link: "/css/css-flexbox",
+            },
           ],
         },
 
