@@ -185,6 +185,10 @@ export default defineConfig({
               label: "CSS Grid",
               link: "/css/css-grid",
             },
+            {
+              label: "Responsive Web Design",
+              link: "/css/css-responsive-design",
+            },
           ],
         },
 
