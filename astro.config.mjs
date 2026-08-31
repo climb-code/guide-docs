@@ -181,6 +181,14 @@ export default defineConfig({
               label: "CSS Flexbox",
               link: "/css/css-flexbox",
             },
+            {
+              label: "CSS Grid",
+              link: "/css/css-grid",
+            },
+            {
+              label: "Responsive Web Design",
+              link: "/css/css-responsive-design",
+            },
           ],
         },
 
