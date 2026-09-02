@@ -189,6 +189,10 @@ export default defineConfig({
               label: "Responsive Web Design",
               link: "/css/css-responsive-design",
             },
+            {
+              label: "CSS Transitions and Animations",
+              link: "/css/css-transitions-animations",
+            },
           ],
         },
 
