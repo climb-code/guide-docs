@@ -154,6 +154,10 @@ export default defineConfig({
               link: "/css/css-selectors",
             },
             {
+              label: "CSS Cascade and Specificity",
+              link: "/css/css-cascade-specificity",
+            },
+            {
               label: "CSS Colors and Backgrounds",
               link: "/css/css-colors-backgrounds",
             },
