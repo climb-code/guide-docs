@@ -225,6 +225,10 @@ export default defineConfig({
               label: "CSS Cascade Layers",
               link: "/css/css-cascade-layers",
             },
+            {
+              label: "CSS Scoping",
+              link: "/css/css-scoping",
+            },
           ],
         },
 
