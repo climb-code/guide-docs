@@ -229,6 +229,14 @@ export default defineConfig({
               label: "CSS Scoping",
               link: "/css/css-scoping",
             },
+            {
+              label: "CSS Logical Properties",
+              link: "/css/css-logical-properties",
+            },
+            {
+              label: "CSS @property",
+              link: "/css/css-property",
+            },
           ],
         },
 
