@@ -237,6 +237,10 @@ export default defineConfig({
               label: "CSS @property",
               link: "/css/css-property",
             },
+            {
+              label: "CSS Functions",
+              link: "/css/css-functions",
+            },
           ],
         },
 
