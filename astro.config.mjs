@@ -241,6 +241,10 @@ export default defineConfig({
               label: "CSS Functions",
               link: "/css/css-functions",
             },
+            {
+              label: "CSS Filters and Blend Modes",
+              link: "/css/css-filters-blend-modes",
+            },
           ],
         },
 
