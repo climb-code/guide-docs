@@ -245,6 +245,22 @@ export default defineConfig({
               label: "CSS Filters and Blend Modes",
               link: "/css/css-filters-blend-modes",
             },
+            {
+              label: "CSS Shapes, Clipping, and Masks",
+              link: "/css/css-shapes-clipping-masks",
+            },
+            {
+              label: "CSS Scroll Snap",
+              link: "/css/css-scroll-snap",
+            },
+            {
+              label: "CSS Overflow",
+              link: "/css/css-overflow",
+            },
+            {
+              label: "CSS Writing Modes",
+              link: "/css/css-writing-modes",
+            },
           ],
         },
 
