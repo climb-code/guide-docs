@@ -265,6 +265,18 @@ export default defineConfig({
               label: "CSS Performance Optimization",
               link: "/css/css-performance",
             },
+            {
+              label: "CSS View Transitions",
+              link: "/css/css-view-transitions",
+            },
+            {
+              label: "CSS Anchor Positioning",
+              link: "/css/css-anchor-positioning",
+            },
+            {
+              label: "CSS Subgrid",
+              link: "/css/css-subgrid",
+            },
           ],
         },
 
