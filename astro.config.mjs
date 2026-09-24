@@ -261,6 +261,10 @@ export default defineConfig({
               label: "CSS Writing Modes",
               link: "/css/css-writing-modes",
             },
+            {
+              label: "CSS Performance Optimization",
+              link: "/css/css-performance",
+            },
           ],
         },
 
