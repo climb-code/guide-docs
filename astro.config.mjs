@@ -174,6 +174,10 @@ export default defineConfig({
               link: "/css/css-variables",
             },
             {
+              label: "CSS Font Loading",
+              link: "/css/css-font-loading",
+            },
+            {
               label: "CSS Typography",
               link: "/css/css-typography",
             },
