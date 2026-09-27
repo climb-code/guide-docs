@@ -178,6 +178,10 @@ export default defineConfig({
               link: "/css/css-font-loading",
             },
             {
+              label: "CSS Object Fit and Position",
+              link: "/css/css-object-fit",
+            },
+            {
               label: "CSS Typography",
               link: "/css/css-typography",
             },
