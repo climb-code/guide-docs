@@ -182,8 +182,16 @@ export default defineConfig({
               link: "/css/css-object-fit",
             },
             {
+              label: "CSS Aspect Ratio",
+              link: "/css/css-aspect-ratio",
+            },
+            {
               label: "CSS Typography",
               link: "/css/css-typography",
+            },
+            {
+              label: "CSS Form Controls",
+              link: "/css/css-form-controls",
             },
             {
               label: "CSS Display",
