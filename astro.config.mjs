@@ -190,6 +190,10 @@ export default defineConfig({
               link: "/css/css-typography",
             },
             {
+              label: "CSS Counters",
+              link: "/css/css-counters",
+            },
+            {
               label: "CSS Form Controls",
               link: "/css/css-form-controls",
             },
