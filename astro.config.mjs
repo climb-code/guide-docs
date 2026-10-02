@@ -214,6 +214,10 @@ export default defineConfig({
               link: "/css/css-grid",
             },
             {
+              label: "CSS Multi-column Layout",
+              link: "/css/css-multi-column",
+            },
+            {
               label: "Responsive Web Design",
               link: "/css/css-responsive-design",
             },
