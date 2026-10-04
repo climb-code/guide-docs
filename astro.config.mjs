@@ -150,6 +150,10 @@ export default defineConfig({
               link: "/css/css-introduction",
             },
             {
+              label: "CSS Reset and Normalize",
+              link: "/css/css-reset-normalize",
+            },
+            {
               label: "CSS Selectors",
               link: "/css/css-selectors",
             },
