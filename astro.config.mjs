@@ -150,6 +150,10 @@ export default defineConfig({
               link: "/css/css-introduction",
             },
             {
+              label: "CSS Margin Collapsing",
+              link: "/css/css-margin-collapsing",
+            },
+            {
               label: "CSS Reset and Normalize",
               link: "/css/css-reset-normalize",
             },
