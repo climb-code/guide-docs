@@ -154,6 +154,10 @@ export default defineConfig({
               link: "/css/css-margin-collapsing",
             },
             {
+              label: "CSS Print Styles",
+              link: "/css/css-print-styles",
+            },
+            {
               label: "CSS Reset and Normalize",
               link: "/css/css-reset-normalize",
             },
