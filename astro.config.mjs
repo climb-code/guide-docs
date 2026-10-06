@@ -178,6 +178,10 @@ export default defineConfig({
               link: "/css/css-box-model",
             },
             {
+              label: "CSS Borders, Outlines and Shadows",
+              link: "/css/css-borders-outlines-shadows",
+            },
+            {
               label: "CSS Units and Sizing",
               link: "/css/css-units-sizing",
             },
