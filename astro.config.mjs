@@ -1364,6 +1364,10 @@ export default defineConfig({
           label: "Interview Questions",
           items: [
             {
+              label: "Python Interview Questions",
+              link: "/interview-questions/python-interview-questions",
+            },
+            {
               label: "JavaScript Interview Questions",
               link: "/interview-questions/javascript-interview-questions",
             },
