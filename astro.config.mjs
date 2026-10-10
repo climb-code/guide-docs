@@ -210,6 +210,10 @@ export default defineConfig({
               link: "/css/css-counters",
             },
             {
+              label: "CSS Lists and Markers",
+              link: "/css/css-lists-markers",
+            },
+            {
               label: "CSS Form Controls",
               link: "/css/css-form-controls",
             },
