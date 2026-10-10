@@ -218,6 +218,10 @@ export default defineConfig({
               link: "/css/css-display",
             },
             {
+              label: "CSS Block Formatting Context",
+              link: "/css/css-block-formatting-context",
+            },
+            {
               label: "CSS Positioning",
               link: "/css/css-positioning",
             },
