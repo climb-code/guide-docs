@@ -242,6 +242,10 @@ export default defineConfig({
               link: "/css/css-responsive-design",
             },
             {
+              label: "CSS Feature Queries",
+              link: "/css/css-feature-queries",
+            },
+            {
               label: "CSS Transitions and Animations",
               link: "/css/css-transitions-animations",
             },
