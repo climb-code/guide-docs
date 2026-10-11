@@ -218,6 +218,10 @@ export default defineConfig({
               link: "/css/css-display",
             },
             {
+              label: "CSS Block Formatting Context",
+              link: "/css/css-block-formatting-context",
+            },
+            {
               label: "CSS Positioning",
               link: "/css/css-positioning",
             },
@@ -236,6 +240,10 @@ export default defineConfig({
             {
               label: "Responsive Web Design",
               link: "/css/css-responsive-design",
+            },
+            {
+              label: "CSS Feature Queries",
+              link: "/css/css-feature-queries",
             },
             {
               label: "CSS Transitions and Animations",
