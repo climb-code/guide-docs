@@ -306,6 +306,10 @@ export default defineConfig({
               link: "/css/css-scroll-snap",
             },
             {
+              label: "CSS Scroll-driven Animations",
+              link: "/css/css-scroll-driven-animations",
+            },
+            {
               label: "CSS Overflow",
               link: "/css/css-overflow",
             },
