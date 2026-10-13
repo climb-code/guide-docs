@@ -5,6 +5,10 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://guidedocs.netlify.app",
+  redirects: {
+    "/system-design/security-interview-questions/":
+      "/system-design/jwt-interview-questions/",
+  },
   integrations: [
     starlight({
       title: "Guide Docs",
@@ -1373,6 +1377,19 @@ export default defineConfig({
             {
               label: " PostgreSQL Joins",
               link: "/pg/postgresql-joins/",
+            },
+          ],
+        },
+        {
+          label: "System Design",
+          items: [
+            {
+              label: "JWT Interview Questions",
+              link: "/system-design/jwt-interview-questions/",
+            },
+            {
+              label: "Hashing and Encryption",
+              link: "/system-design/hashing-encryption-interview-questions/",
             },
           ],
         },
