@@ -80,11 +80,28 @@ Yes. It adds a shared-store lookup to protected requests. If the requirement is 
 
 ### Short interview answer
 
-> An expired access token must be rejected. If the refresh token is still valid and its session is active, the client can exchange it for a new access token without asking for the password again. I would rotate refresh tokens, detect reuse, and require login when the refresh session expires or is revoked.
+> When an access token expires, the API returns 401. The client sends its refresh token to the refresh endpoint. If that token is valid and its session is active, the server returns a new access token and, with refresh-token rotation, a new refresh token. The client retries the failed API request using the new access token. If the refresh session has expired or been revoked, the user must log in again.
 
 ### Understand it with an example
 
-Maya's access token expires after 15 minutes. Her refresh session can last up to seven days in this example. At minute 16, the client refreshes its credentials and retries the failed request once. It should preserve the form contents if login becomes necessary.
+**A1 and A2 are access tokens. R1 and R2 are refresh tokens.** The numbers just mean old and new.
+
+1. Maya logs in and receives **A1 + R1**. A1 lasts 15 minutes; her refresh session can last up to seven days in this example.
+2. At minute 16, the browser sends A1 to an API. A1 has expired, so the API returns **401 Unauthorized**.
+3. The browser sends **R1 to `/refresh`**. The server checks the refresh token and its session.
+4. If valid, the server returns **A2 + R2** and invalidates R1. This replacement of R1 with R2 is **refresh-token rotation**.
+5. The browser replaces its stored tokens and retries the failed API request once using **A2**. R2 is kept for the next refresh.
+6. If refreshing fails because the refresh session has expired or been revoked, preserve the form contents and ask Maya to log in again.
+
+```text
+API request with expired A1 → 401
+Refresh request with valid R1 → new A2 + new R2; R1 becomes invalid
+Retry the original API request with A2 → success
+```
+
+**Which token goes where?** Normal protected API requests use the access token. The refresh endpoint uses the refresh token. Receiving two new tokens does not mean both are required to authorize each API request.
+
+Do not refresh on every 401 without checking the reason. An expired access token can be refreshed through an active session; a revoked refresh session requires login. [RFC 6750 explains expired-token responses and retrying with a new access token](https://www.rfc-editor.org/rfc/rfc6750.html#section-3.1).
 
 ![An expired access token leads to a refresh check. A valid refresh credential is rotated; an expired or revoked one requires login.](/system-design/refresh-token.svg)
 
@@ -93,6 +110,12 @@ Maya's access token expires after 15 minutes. Her refresh session can last up to
 **What is refresh-token rotation?**
 
 When refresh token **R1** is used, the server invalidates it and issues **R2**. Store their relationship so reuse of R1 can trigger revocation of the session's refresh-token family, including R2. Rotation and reuse detection help contain refresh-token theft. [RFC 9700 describes this approach](https://www.rfc-editor.org/rfc/rfc9700.html#section-4.14).
+
+**Does issuing A2 automatically invalidate the old access token A1?**
+
+No. Refresh-token rotation invalidates **R1**, not A1. If A1 has expired, the API rejects it with 401. If A1 has not expired, it can still work unless the server separately blocks it or revokes its session and the API checks that status.
+
+**Example:** A1 expires at **10:15**. Maya refreshes early at **10:05** and receives A2 + R2. R1 is now invalid, but A1 can still work until **10:15** unless separately blocked. This is why rotation alone does not stop a stolen, unexpired access token.
 
 **What if the attacker uses R1 first?**
 
