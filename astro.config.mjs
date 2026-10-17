@@ -190,6 +190,10 @@ export default defineConfig({
               link: "/css/css-units-sizing",
             },
             {
+              label: "CSS Intrinsic Sizing",
+              link: "/css/css-intrinsic-sizing",
+            },
+            {
               label: "CSS Variables",
               link: "/css/css-variables",
             },
@@ -232,6 +236,10 @@ export default defineConfig({
             {
               label: "CSS Positioning",
               link: "/css/css-positioning",
+            },
+            {
+              label: "CSS Stacking Contexts",
+              link: "/css/css-stacking-contexts",
             },
             {
               label: "CSS Flexbox",
@@ -312,6 +320,10 @@ export default defineConfig({
             {
               label: "CSS Scroll-driven Animations",
               link: "/css/css-scroll-driven-animations",
+            },
+            {
+              label: "CSS Scrollbar Styling",
+              link: "/css/css-scrollbar-styling",
             },
             {
               label: "CSS Overflow",
