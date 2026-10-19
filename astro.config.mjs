@@ -338,6 +338,10 @@ export default defineConfig({
               link: "/css/css-performance",
             },
             {
+              label: "CSS Containment",
+              link: "/css/css-containment",
+            },
+            {
               label: "CSS View Transitions",
               link: "/css/css-view-transitions",
             },
