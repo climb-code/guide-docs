@@ -266,6 +266,10 @@ export default defineConfig({
               link: "/css/css-transitions-animations",
             },
             {
+              label: "CSS Starting Style",
+              link: "/css/css-starting-style",
+            },
+            {
               label: "CSS Pseudo-classes and Pseudo-elements",
               link: "/css/css-pseudo-classes-elements",
             },
