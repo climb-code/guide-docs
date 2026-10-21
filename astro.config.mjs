@@ -194,6 +194,10 @@ export default defineConfig({
               link: "/css/css-intrinsic-sizing",
             },
             {
+              label: "CSS Intrinsic Size Interpolation",
+              link: "/css/css-intrinsic-size-interpolation",
+            },
+            {
               label: "CSS Variables",
               link: "/css/css-variables",
             },
@@ -264,6 +268,10 @@ export default defineConfig({
             {
               label: "CSS Transitions and Animations",
               link: "/css/css-transitions-animations",
+            },
+            {
+              label: "CSS Starting Style",
+              link: "/css/css-starting-style",
             },
             {
               label: "CSS Pseudo-classes and Pseudo-elements",
