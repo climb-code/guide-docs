@@ -194,6 +194,10 @@ export default defineConfig({
               link: "/css/css-intrinsic-sizing",
             },
             {
+              label: "CSS Intrinsic Size Interpolation",
+              link: "/css/css-intrinsic-size-interpolation",
+            },
+            {
               label: "CSS Variables",
               link: "/css/css-variables",
             },
