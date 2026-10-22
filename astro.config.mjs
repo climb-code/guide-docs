@@ -262,6 +262,10 @@ export default defineConfig({
               link: "/css/css-responsive-design",
             },
             {
+              label: "CSS Media Queries",
+              link: "/css/css-media-queries",
+            },
+            {
               label: "CSS Feature Queries",
               link: "/css/css-feature-queries",
             },
