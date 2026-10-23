@@ -1429,6 +1429,10 @@ export default defineConfig({
               link: "/interview-questions/python-interview-questions",
             },
             {
+              label: "MCP Interview Questions",
+              link: "/interview-questions/mcp-interview-questions",
+            },
+            {
               label: "JavaScript Interview Questions",
               link: "/interview-questions/javascript-interview-questions",
             },
