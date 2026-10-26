@@ -218,6 +218,18 @@ export default defineConfig({
               link: "/css/css-typography",
             },
             {
+              label: "CSS Text Decoration",
+              link: "/css/css-text-decoration",
+            },
+            {
+              label: "CSS Text Wrapping",
+              link: "/css/css-text-wrapping",
+            },
+            {
+              label: "CSS Table Layout",
+              link: "/css/css-table-layout",
+            },
+            {
               label: "CSS Counters",
               link: "/css/css-counters",
             },
