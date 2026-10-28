@@ -42,3 +42,21 @@ I treat its suggestions as hypotheses. I verify them against logs, traces, sourc
 I compare customer impact, severity, scope, and urgency. A widespread outage, data loss, security concern, or failure of a critical user journey takes priority over a minor or easily worked-around defect. I use incident procedures to assign an owner, communicate status, and avoid multiple people making conflicting changes.
 
 While investigating the highest-impact issue, I preserve evidence and look for safe mitigations such as rollback, traffic shifting, or disabling a failing feature. I reassess priorities as new evidence arrives, then follow up on lower-priority reports and document the resolution and any prevention work.
+
+### 7. How would you investigate an intermittent bug?
+
+I would first look for patterns in the failures: timing, affected instances, input shape, traffic level, recent deployments, and dependency behavior. I would correlate logs, metrics, and traces with request IDs, and add focused instrumentation if the existing data does not narrow the cause. I would avoid logging sensitive values and capture enough context to compare a failing request with a successful one.
+
+Then I would investigate causes that depend on timing or shared state, such as race conditions, cache behavior, retries, and resource contention. I would try to reproduce the issue with controlled concurrency or load and create a regression test around the triggering conditions once the cause is understood.
+
+### 8. When would you roll back a production change while debugging?
+
+If a recent release is strongly associated with a serious increase in errors or customer impact, and rollback is a known safe option, I would follow the incident process to mitigate first. I would confirm the suspected release, check data and compatibility risks, communicate the plan, and monitor the rollback so we can tell whether it helped.
+
+After service is stable, I would preserve logs and traces, compare behavior before and after the change, and investigate the root cause outside the immediate mitigation. I would only redeploy a fix after targeted checks and a staged rollout plan are ready, then verify the relevant service and customer metrics.
+
+### 9. How do you confirm that a fix addresses the root cause?
+
+I connect the proposed cause to the evidence: the failing trace, relevant code path, and conditions that trigger the issue. I reproduce the failure when possible, then check that a focused change prevents it under those conditions. I also add a regression test that would have failed before the fix.
+
+After deployment, I monitor the same error rate, latency, or customer-impact signals that exposed the problem and check for related regressions. If the symptom returns, I revisit the hypothesis instead of layering on another workaround.
