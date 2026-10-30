@@ -1437,6 +1437,18 @@ export default defineConfig({
           label: "Interview Questions",
           items: [
             {
+              label: "SQL Injection Interview Question",
+              link: "/interview-questions/sql-injection-interview-question",
+            },
+            {
+              label: "Debugging Interview Questions and Answers",
+              link: "/interview-questions/debugging-interview-questions",
+            },
+            {
+              label: "Next.js and CDN Cache Interview Question",
+              link: "/interview-questions/nextjs-cdn-cache-interview-question",
+            },
+            {
               label: "Python Interview Questions",
               link: "/interview-questions/python-interview-questions",
             },
