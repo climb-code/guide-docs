@@ -174,6 +174,10 @@ export default defineConfig({
               link: "/css/css-cascade-specificity",
             },
             {
+              label: "CSS Inheritance",
+              link: "/css/css-inheritance",
+            },
+            {
               label: "CSS Colors and Backgrounds",
               link: "/css/css-colors-backgrounds",
             },
