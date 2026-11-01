@@ -358,6 +358,10 @@ export default defineConfig({
               link: "/css/css-overflow",
             },
             {
+              label: "CSS Overscroll Behavior",
+              link: "/css/css-overscroll-behavior",
+            },
+            {
               label: "CSS Writing Modes",
               link: "/css/css-writing-modes",
             },
