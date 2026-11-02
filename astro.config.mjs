@@ -154,6 +154,10 @@ export default defineConfig({
               link: "/css/css-introduction",
             },
             {
+              label: "CSS Debugging and DevTools",
+              link: "/css/css-debugging",
+            },
+            {
               label: "CSS Margin Collapsing",
               link: "/css/css-margin-collapsing",
             },
