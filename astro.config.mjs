@@ -158,6 +158,10 @@ export default defineConfig({
               link: "/css/css-debugging",
             },
             {
+              label: "CSS Color Schemes",
+              link: "/css/css-color-schemes",
+            },
+            {
               label: "CSS Margin Collapsing",
               link: "/css/css-margin-collapsing",
             },
