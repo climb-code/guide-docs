@@ -362,6 +362,10 @@ export default defineConfig({
               link: "/css/css-scrollbar-styling",
             },
             {
+              label: "CSS Scrollbar Gutter",
+              link: "/css/css-scrollbar-gutter",
+            },
+            {
               label: "CSS Overflow",
               link: "/css/css-overflow",
             },
