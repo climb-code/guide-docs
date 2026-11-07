@@ -1,40 +1,31 @@
 ---
 title: CSS Nesting
-description: Group related CSS rules with native nesting while keeping selectors clear and maintainable.
+description: Write related CSS rules inside a parent selector to keep component styles organized.
 ---
 
-CSS nesting lets you write related selectors inside one another. It can make component styles easier to scan because the styles for a parent, its children, and its states stay together.
+CSS nesting lets you place selectors inside another rule. The nested selector is combined with the parent selector, which can keep styles for one component together.
+
+## Nest a child selector
+
+Write a nested selector directly inside its parent:
 
 ```css
 .card {
   padding: 1rem;
   border: 1px solid #d1d5db;
 
-  h2 {
+  .card-title {
     margin: 0;
-  }
-
-  p {
-    color: #4b5563;
+    font-size: 1.25rem;
   }
 }
 ```
 
-The nested rules above are equivalent to:
+This is equivalent to `.card .card-title`. The nested selector targets descendants of the parent.
 
-```css
-.card h2 {
-  margin: 0;
-}
+## Use the nesting selector
 
-.card p {
-  color: #4b5563;
-}
-```
-
-## Nest states with `&`
-
-Use `&` to refer to the selector of the current rule. This is especially useful for hover, focus, and modifier states.
+Use `&` when the nested selector needs to refer to the parent itself, such as for a modifier or pseudo-class:
 
 ```css
 .button {
@@ -45,93 +36,37 @@ Use `&` to refer to the selector of the current rule. This is especially useful 
     background: #1d4ed8;
   }
 
-  &:focus-visible {
-    outline: 3px solid #93c5fd;
-    outline-offset: 3px;
-  }
-
-  &.is-loading {
-    cursor: progress;
-    opacity: 0.7;
+  &.button--quiet {
+    background: transparent;
+    color: #1d4ed8;
   }
 }
 ```
 
-This produces selectors such as `.button:hover` and `.button.is-loading`.
+Here, `&:hover` becomes `.button:hover`, and `&.button--quiet` becomes `.button.button--quiet`.
 
-## Nest child elements
+## Group related rules
 
-Without `&`, a nested selector targets descendants of the parent.
+Nesting also works with at-rules, which can keep responsive or state-specific styles near the component:
 
 ```css
-.navigation {
-  display: flex;
+.card {
+  display: grid;
   gap: 1rem;
 
-  a {
-    color: #1f2937;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+  @media (min-width: 48rem) {
+    grid-template-columns: 1fr 2fr;
   }
 }
 ```
-
-The hover selector becomes `.navigation a:hover`.
-
-## Combine selectors
-
-You can nest comma-separated selectors when several elements share the same styles.
-
-```css
-.article {
-  h2,
-  h3 {
-    color: #111827;
-    line-height: 1.2;
-  }
-}
-```
-
-This is equivalent to writing `.article h2, .article h3`.
 
 ## Keep nesting shallow
 
-Nesting is helpful for relationships that are genuinely local, but deeply nested selectors become hard to understand and can be overly specific.
-
-```css
-/* Prefer this */
-.menu-item {
-  color: #374151;
-}
-
-.menu-item:hover {
-  color: #2563eb;
-}
-
-/* Avoid long, fragile selector chains */
-.page .sidebar .menu .menu-item a span {
-  color: #2563eb;
-}
-```
-
-## Good practices
-
-- Use nesting for component children and states that belong together.
-- Keep nesting to a few levels at most.
-- Use `&` whenever the nested selector modifies the current selector.
-- Check the final selector: nested rules still follow normal cascade and specificity rules.
-- Prefer clear class names over long descendant chains.
-
-:::tip
-Native CSS nesting is supported in modern browsers. If your project supports older browsers, ensure your build tool transforms nested CSS or provide an appropriate fallback.
-:::
+Deeply nested selectors can become difficult to understand and may create overly specific selectors. Keep nesting to a small number of levels and avoid using it to mirror every layer of your HTML.
 
 ## Key points
 
-- Nesting groups related CSS rules in one place.
-- A nested selector without `&` selects descendants.
-- `&` represents the current selector and is ideal for states such as `:hover` and modifiers such as `.is-active`.
-- Shallow nesting keeps styles predictable and easy to maintain.
+- Nested selectors are combined with their parent selector.
+- Use `&` to refer explicitly to the parent selector.
+- Nesting can group component rules and at-rules together.
+- Keep nesting shallow so selectors stay readable and predictable.
