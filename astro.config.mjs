@@ -214,6 +214,10 @@ export default defineConfig({
               link: "/css/css-variables",
             },
             {
+              label: "CSS Custom Property Registration",
+              link: "/css/css-property-registration",
+            },
+            {
               label: "CSS Font Loading",
               link: "/css/css-font-loading",
             },
