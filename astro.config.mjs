@@ -178,6 +178,10 @@ export default defineConfig({
               link: "/css/css-selectors",
             },
             {
+              label: "CSS Architecture and Naming",
+              link: "/css/css-architecture",
+            },
+            {
               label: "CSS Cascade and Specificity",
               link: "/css/css-cascade-specificity",
             },
