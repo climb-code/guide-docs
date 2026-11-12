@@ -362,6 +362,10 @@ export default defineConfig({
               link: "/css/css-scroll-snap",
             },
             {
+              label: "CSS Scroll Anchoring",
+              link: "/css/css-scroll-anchoring",
+            },
+            {
               label: "CSS Scroll-driven Animations",
               link: "/css/css-scroll-driven-animations",
             },
@@ -1459,6 +1463,10 @@ export default defineConfig({
               label: "Hashing and Encryption",
               link: "/system-design/hashing-encryption-interview-questions/",
             },
+            {
+              label: "Payment Webhook Interview Question",
+              link: "/system-design/payment-webhook-interview-question/",
+            },
           ],
         },
         {
@@ -1467,6 +1475,10 @@ export default defineConfig({
             {
               label: "SQL Injection Interview Question",
               link: "/interview-questions/sql-injection-interview-question",
+            },
+            {
+              label: "CSS Interview Question: Scroll Anchoring",
+              link: "/interview-questions/css-interview-question",
             },
             {
               label: "Debugging Interview Questions and Answers",
