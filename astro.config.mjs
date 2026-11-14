@@ -178,6 +178,10 @@ export default defineConfig({
               link: "/css/css-selectors",
             },
             {
+              label: "CSS :has() Selector",
+              link: "/css/css-has-selector",
+            },
+            {
               label: "CSS Architecture and Naming",
               link: "/css/css-architecture",
             },
