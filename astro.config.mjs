@@ -310,6 +310,10 @@ export default defineConfig({
               link: "/css/css-transitions-animations",
             },
             {
+              label: "CSS Animation Composition",
+              link: "/css/css-animation-composition",
+            },
+            {
               label: "CSS Starting Style",
               link: "/css/css-starting-style",
             },
