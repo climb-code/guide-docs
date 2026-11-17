@@ -378,6 +378,10 @@ export default defineConfig({
               link: "/css/css-scroll-driven-animations",
             },
             {
+              label: "CSS Scroll-State Queries",
+              link: "/css/css-scroll-state-queries",
+            },
+            {
               label: "CSS Scrollbar Styling",
               link: "/css/css-scrollbar-styling",
             },
