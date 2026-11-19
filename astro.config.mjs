@@ -358,6 +358,10 @@ export default defineConfig({
               link: "/css/css-functions",
             },
             {
+              label: "CSS Environment Variables",
+              link: "/css/css-environment-variables",
+            },
+            {
               label: "CSS Filters and Blend Modes",
               link: "/css/css-filters-blend-modes",
             },
