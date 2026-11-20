@@ -230,6 +230,10 @@ export default defineConfig({
               link: "/css/css-font-loading",
             },
             {
+              label: "CSS font-size-adjust",
+              link: "/css/css-font-size-adjust",
+            },
+            {
               label: "CSS Object Fit and Position",
               link: "/css/css-object-fit",
             },
