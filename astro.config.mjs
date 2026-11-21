@@ -230,6 +230,10 @@ export default defineConfig({
               link: "/css/css-font-loading",
             },
             {
+              label: "CSS font-size-adjust",
+              link: "/css/css-font-size-adjust",
+            },
+            {
               label: "CSS Object Fit and Position",
               link: "/css/css-object-fit",
             },
@@ -358,6 +362,10 @@ export default defineConfig({
               link: "/css/css-functions",
             },
             {
+              label: "CSS Environment Variables",
+              link: "/css/css-environment-variables",
+            },
+            {
               label: "CSS Filters and Blend Modes",
               link: "/css/css-filters-blend-modes",
             },
@@ -376,6 +384,10 @@ export default defineConfig({
             {
               label: "CSS Scroll-driven Animations",
               link: "/css/css-scroll-driven-animations",
+            },
+            {
+              label: "CSS Scroll-State Queries",
+              link: "/css/css-scroll-state-queries",
             },
             {
               label: "CSS Scrollbar Styling",
