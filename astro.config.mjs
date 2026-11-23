@@ -254,6 +254,10 @@ export default defineConfig({
               link: "/css/css-text-wrapping",
             },
             {
+              label: "CSS Text Wrapping Balance",
+              link: "/css/css-text-wrap-balance",
+            },
+            {
               label: "CSS Table Layout",
               link: "/css/css-table-layout",
             },
