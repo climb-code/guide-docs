@@ -1513,6 +1513,10 @@ export default defineConfig({
               link: "/interview-questions/nextjs-cdn-cache-interview-question",
             },
             {
+              label: "Next.js Server and Client Components Interview Questions",
+              link: "/interview-questions/nextjs-server-client-components-interview-questions",
+            },
+            {
               label: "Python Interview Questions",
               link: "/interview-questions/python-interview-questions",
             },
