@@ -334,6 +334,10 @@ export default defineConfig({
               link: "/css/css-transforms",
             },
             {
+              label: "CSS Motion Path",
+              link: "/css/css-motion-path",
+            },
+            {
               label: "CSS Accessibility",
               link: "/css/css-accessibility",
             },
