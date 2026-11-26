@@ -230,6 +230,10 @@ export default defineConfig({
               link: "/css/css-font-loading",
             },
             {
+              label: "CSS Font Palettes",
+              link: "/css/css-font-palette",
+            },
+            {
               label: "CSS font-size-adjust",
               link: "/css/css-font-size-adjust",
             },
