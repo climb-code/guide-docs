@@ -278,6 +278,10 @@ export default defineConfig({
               link: "/css/css-form-controls",
             },
             {
+              label: "CSS Field Sizing",
+              link: "/css/css-field-sizing",
+            },
+            {
               label: "CSS Display",
               link: "/css/css-display",
             },
