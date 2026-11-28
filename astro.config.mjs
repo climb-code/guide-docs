@@ -254,6 +254,10 @@ export default defineConfig({
               link: "/css/css-text-decoration",
             },
             {
+              label: "CSS Text Emphasis",
+              link: "/css/css-text-emphasis",
+            },
+            {
               label: "CSS Text Wrapping",
               link: "/css/css-text-wrapping",
             },
