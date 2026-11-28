@@ -230,6 +230,10 @@ export default defineConfig({
               link: "/css/css-font-loading",
             },
             {
+              label: "CSS Font Palettes",
+              link: "/css/css-font-palette",
+            },
+            {
               label: "CSS font-size-adjust",
               link: "/css/css-font-size-adjust",
             },
@@ -248,6 +252,10 @@ export default defineConfig({
             {
               label: "CSS Text Decoration",
               link: "/css/css-text-decoration",
+            },
+            {
+              label: "CSS Text Emphasis",
+              link: "/css/css-text-emphasis",
             },
             {
               label: "CSS Text Wrapping",
@@ -272,6 +280,10 @@ export default defineConfig({
             {
               label: "CSS Form Controls",
               link: "/css/css-form-controls",
+            },
+            {
+              label: "CSS Field Sizing",
+              link: "/css/css-field-sizing",
             },
             {
               label: "CSS Display",
@@ -332,6 +344,10 @@ export default defineConfig({
             {
               label: "CSS Transforms",
               link: "/css/css-transforms",
+            },
+            {
+              label: "CSS Motion Path",
+              link: "/css/css-motion-path",
             },
             {
               label: "CSS Accessibility",
